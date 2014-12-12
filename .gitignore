@@ -54,3 +54,6 @@ img/*
 .*.swo
 .*.swm
 
+*.png
+*.jpg
+*.gif
