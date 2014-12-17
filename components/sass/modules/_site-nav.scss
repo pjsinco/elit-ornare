@@ -1,18 +1,41 @@
 .site-nav {
 
-  &__home {
-
+  clear: both;
+  transition: all ease-out .3s;
+    
+  .js & {
+    overflow: hidden;
+    max-height: 0;
+  }
+  
+  &.active {
+    max-height: 15em;
   }
 
-  &__item {
+  &__list {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid lighten($font-color-primary, 25%);
+  }
 
+
+  &__item {
+    display: block;
+    padding: .8em;
+    border-bottom: 1px solid lighten($font-color-primary, 25%);
   }
 
   &__link {
 
     &--toggle {
-      
+      float: left;
+      display: block;
+      padding: 1em;
     }
+  }
+
+  &__home {
+
   }
 
 }

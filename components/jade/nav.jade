@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title Elit Ornare | Nav
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href='css/style.css' rel='stylesheet')
+    <!--[if lt IE 9]>
+    script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
+    <![endif]-->
+
+    script.
+      (function(d) {
+        var config = {
+          kitId: 'vdi5qvx',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+
+  body
+    div.page-wrap
+      header#top.top
+        div.top-bar
+          div.site-branding--alpha: a(href='/') The DO
+          div.site-branding--beta
+            a(href='http://www.osteopathic.org' title='American Osteopathic Association')
+              span(data-icon!="&#xe600;").site-search__action
+        
+        div.second-bar
+          a(href="#site-nav").site-nav__link--toggle
+            span(data-icon!="&#xe60f;")
+          nav(role='navigation').site-nav#site-nav
+            ul.site-nav__list
+              li.site-nav__item: a(href='#') Patient Care
+              li.site-nav__item: a(href='#') Innovation
+              li.site-nav__item: a(href='#') Training
+              li.site-nav__item: a(href='#') Profession
+              li.site-nav__item: a(href='#') Policy
+              li.site-nav__item: a(href='#') Lifestyle
+              div.site-search
+              li.site-nav__item.site-nav__item--search: a(href='/search')#search-toggle.search-toggle Search
+              
+              span(data-icon!="&#xe608;").site-search__action
+    section.ad
+      div.ad--leaderboard
+
+
+    
+    
+    script(src='js/jquery.min.js')
+    script(src='js/nav.js')
+    script(src='http://localhost:35729/livereload.js')
+
