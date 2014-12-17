@@ -6,10 +6,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-svgstore");
   grunt.loadNpmTasks("grunt-grunticon");
+  grunt.loadNpmTasks("grunt-autoprefixer");
 
 
   grunt.initConfig({
-  
+
+    autoprefixer: {
+      css: {
+        src: 'builds/dev/css/**/*.css',
+      }
+    },
+
     grunticon: {
 
       myIcons: {
@@ -70,7 +77,7 @@ module.exports = function(grunt) {
       
       sass: {
         files: ['components/sass/**/*.scss'],
-        tasks: ['compass:dev'] 
+        tasks: ['compass:dev', 'autoprefixer:css'] 
       },
 
       compileHtml: {
