@@ -21,6 +21,7 @@
   ],
   "devDependencies": {
     "jquery": "~2.1.1",
-    "picturefill": "~2.2.0"
+    "picturefill": "~2.2.0",
+    "modernizr": "~2.8.3"
   }
 }

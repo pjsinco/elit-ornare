@@ -47,6 +47,7 @@ components/vendor/*
 
 builds/dev/img/*
 builds/dev/fonts/*
+builds/dev/js/*
 fonts/*
 img/*
 
