@@ -8,9 +8,12 @@ $font-size-base: 1.1875em;
 $font-weight-normal: normal;
 
 
-$color-primary: #ef3f23;
-/*$color-secondary: */
-$color-link: #077cc2;
+
+$red: #ef3f23;
+$lightgray: #d0d0d0;
+$blue: #077cc2;
+
+$color-primary: $red;
 
 $small-range: (0em, 30em); // 0 to 480px
 $medium-range: (30.063em, 48em); // 481px to 768px

@@ -19,37 +19,36 @@ html
       })(document);
 
   body
-    div.page-wrap
-      header#top.top
-        section.site-branding
-          div.site-branding--alpha: a(href='/').site-branding__link Elit Ornare
-          div.site-branding--beta: a(href='http://www.osteopathic.org' title='American Osteopathic Association')
-              span(data-icon!="&#xe600;")
-        
-        div.second-bar
-          a(href="#site-nav").site-nav__link--toggle
-            span(data-icon!="&#xe60f;")
-          nav(role='navigation').site-nav#site-nav
-            ul.site-nav__list
-              li.site-nav__item: a(href='#') Patient Care
-              li.site-nav__item: a(href='#') Innovation
-              li.site-nav__item: a(href='#') Training
-              li.site-nav__item: a(href='#') Profession
-              li.site-nav__item: a(href='#') Policy
-              li.site-nav__item: a(href='#') Lifestyle
+    header(role="banner")#top.top
+      section.site-branding
+        div.site-branding--alpha: a(href='/').site-branding__link Elit Ornare
+        div.site-branding--beta: a(href='http://www.osteopathic.org' title='American Osteopathic Association')
+            span(data-icon!="&#xe600;")
+      
+      section.second-bar
+        a(href="#site-nav").site-nav__link--toggle
+          span(data-icon!="&#xe60f;")
+        nav(role='navigation').site-nav#site-nav
+          ul.site-nav__list
+            li.site-nav__item: a(href='#') Patient Care
+            li.site-nav__item: a(href='#') Innovation
+            li.site-nav__item: a(href='#') Training
+            li.site-nav__item: a(href='#') Profession
+            li.site-nav__item: a(href='#') Policy
+            li.site-nav__item: a(href='#') Lifestyle
 
-          section.site-search
-            form(action="/search")#search-form.site-search__form
-              label#search-label.site-search__label(for='q')
-              button(type='submit').site-search__button
-                span(data-icon!="&#xe608;")
-              input(type='text' name='q' placeholder='Enter search terms')#q.site-search__input
-                
-          
+        //-section.site-search
+          //-form(action="/search")#search-form.site-search__form
+            //-label#search-label.site-search__label(for='q')
+            //-button(type='submit').site-search__button
+              //-span(data-icon!="&#xe608;")
+            //-input(type='text' name='q' placeholder='Enter search terms')#q.site-search__input
               
+        
+            
 
-      section.ad
-        div.ad--leaderboard
+    section.ad
+      div.ad--leaderboard
 
 
     
