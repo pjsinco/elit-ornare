@@ -20,11 +20,10 @@ html
   body
     div.page-wrap
       header#top.top
-        div.top-bar
-          div.site-branding--alpha: a(href='/') The DO
-          div.site-branding--beta
-            a(href='http://www.osteopathic.org' title='American Osteopathic Association')
-              span(data-icon!="&#xe600;").site-search__action
+        section.site-branding
+          div.site-branding--alpha: a(href='/').site-branding__link Elit Ornare
+          div.site-branding--beta: a(href='http://www.osteopathic.org' title='American Osteopathic Association')
+              span(data-icon!="&#xe600;")
         
         div.second-bar
           a(href="#site-nav").site-nav__link--toggle
@@ -37,12 +36,19 @@ html
               li.site-nav__item: a(href='#') Profession
               li.site-nav__item: a(href='#') Policy
               li.site-nav__item: a(href='#') Lifestyle
-              div.site-search
-              li.site-nav__item.site-nav__item--search: a(href='/search')#search-toggle.search-toggle Search
+
+          section.site-search
+            form(action="/search")#search-form.site-search__form
+              label#search-label.site-search__label(for='q')
+              button(type='submit').site-search__button
+                span(data-icon!="&#xe608;")
+              input(type='text' name='q' placeholder='Enter search terms')#q.site-search__input
+                
+          
               
-              span(data-icon!="&#xe608;").site-search__action
-    section.ad
-      div.ad--leaderboard
+
+      section.ad
+        div.ad--leaderboard
 
 
     

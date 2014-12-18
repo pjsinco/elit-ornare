@@ -1,11 +1,24 @@
 .site-branding {
+  height: 3em;
+  background-color: $color-primary;
+  text-transform: uppercase;
+  text-align: center;
+
+  &__link {
+    color: #fff;
+  }
 
   &--alpha {
-
+    position: relative;
+    top: 1em;
+    letter-spacing: .25em;
   }
 
   &--beta {
     /*@include srt();*/
+    position: relative;
+    top: -1em;
+    display: none;
   }
 
 }
