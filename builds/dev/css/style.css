@@ -240,14 +240,15 @@ html {
 
 /* line 7, ../../../components/sass/base/_base.scss */
 body {
-  font-family: "proxima-nova", Arial, sans-serif; }
+  font-family: "proxima-nova", Arial, sans-serif;
+  background-color: #fff; }
 
-/* line 11, ../../../components/sass/base/_base.scss */
+/* line 12, ../../../components/sass/base/_base.scss */
 a {
   text-decoration: none;
   color: #077cc2; }
 
-/* line 16, ../../../components/sass/base/_base.scss */
+/* line 17, ../../../components/sass/base/_base.scss */
 ul {
   /*list-style: none;*/ }
 
@@ -472,13 +473,15 @@ span[data-icon]:hover {
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
   padding: 0 .5em; }
-  /* line 4, ../../../components/sass/modules/_content.scss */
-  .content__main {
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%; }
-  /* line 8, ../../../components/sass/modules/_content.scss */
-  .content__secondary {
-    width: 32.20339%;
-    float: right;
-    margin-right: 0; }
+  @media screen and (min-width: 64em) {
+    /* line 4, ../../../components/sass/modules/_content.scss */
+    .content__main {
+      width: 66.10169%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media screen and (min-width: 64em) {
+    /* line 10, ../../../components/sass/modules/_content.scss */
+    .content__secondary {
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; } }

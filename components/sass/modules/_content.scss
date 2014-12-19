@@ -2,11 +2,15 @@
   padding: 0 .5em;
 
   &__main {
-    @include span(8 of 12);
+    @include breakpoint($xlarge-start) {
+      @include span(8 of 12);
+    }
   }
 
   &__secondary {
-    @include span(last 4 of 12);
+    @include breakpoint($xlarge-start) {
+      @include span(last 4 of 12);
+    }
   }
 
 }
