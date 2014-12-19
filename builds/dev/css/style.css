@@ -253,11 +253,13 @@ ul {
 
 @-ms-viewport {
   width: device-width; }
-/* line 6, ../../../components/sass/layout/_index.scss */
+@viewport {
+  width: device-width; }
+/* line 10, ../../../components/sass/layout/_index.scss */
 .page-wrap {
   position: relative; }
 
-/* line 10, ../../../components/sass/layout/_index.scss */
+/* line 14, ../../../components/sass/layout/_index.scss */
 .container {
   max-width: 60em;
   margin-left: auto;
@@ -310,7 +312,7 @@ ul {
       background-clip: content-box;
       background-position: left top; }
 
-/* line 14, ../../../components/sass/layout/_index.scss */
+/* line 18, ../../../components/sass/layout/_index.scss */
 .site-main {
   padding: 0 .5em; }
 
@@ -473,7 +475,7 @@ span[data-icon]:hover {
   /* line 8, ../../../components/sass/modules/_ad.scss */
   .ad--wide-shallow {
     width: 728px; }
-    @media (min-width: 30em) {
+    @media screen and (min-width: 30em) {
       /* line 8, ../../../components/sass/modules/_ad.scss */
       .ad--wide-shallow {
         /*width: 728px;*/ } }

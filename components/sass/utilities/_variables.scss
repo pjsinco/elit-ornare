@@ -20,11 +20,12 @@ $color-primary: $red;
 /*
  * Breakpoint
  */
+$all: 'all';
+$medium-start: 'screen' 30em;
+$large-start: 'screen' 48em;
+$xlarge-start: 'screen' 64em;
+$xxlarge-start: 'screen' 90em;
 
-$medium-start: 30em;
-$large-start: 48em;
-$xlarge-start: 64em;
-$xxlarge-start: 90em;
 
 //$small-range: (0em, 30em); // 0 to 480px
 //$medium-range: (30.063em, 48em); // 481px to 768px
