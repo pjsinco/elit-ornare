@@ -1,0 +1,41 @@
+%ad-pos {
+  margin: .5em auto;
+}
+
+.ad {
+  @include container();
+
+  &--wide-shallow {
+    @extend %ad-pos;
+    width: 320px;
+
+    @media #{$large-up} {
+      width: 728px;
+    }
+  }
+
+  &--med-rect {
+
+  }
+
+  &:before {
+    color: $gray;
+    content: "Advertisement";
+    margin: 1em auto;
+    width: 12em;
+    display: block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: .5em;
+    letter-spacing: .25em;
+    text-align: center;
+
+  }
+
+  &:after {
+    content: '';
+    border-bottom: 1px solid $lightgray;
+    width: span(12);
+  }
+
+}

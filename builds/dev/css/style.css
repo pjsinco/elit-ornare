@@ -304,7 +304,7 @@ span[data-icon]:hover {
   .nav__item {
     display: block;
     /*padding: .8em;*/
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #ccccf0;
     text-align: center;
     /*text-transform: uppercase;*/
     /*letter-spacing: .25em;*/ }
@@ -372,3 +372,43 @@ span[data-icon]:hover {
     /* line 23, ../../../components/sass/modules/_site-search.scss */
     .site-search__input[type=text] {
       padding: .5em 0 .5em 2em; }
+
+/* line 1, ../../../components/sass/modules/_ad.scss */
+.ad--wide-shallow {
+  margin: .5em auto; }
+
+/* line 5, ../../../components/sass/modules/_ad.scss */
+.ad {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .ad:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  /* line 8, ../../../components/sass/modules/_ad.scss */
+  .ad--wide-shallow {
+    /*@include span(12);*/
+    width: 320px; }
+    @media only screen and (min-width: lower-bound(48.063em, 64em)) {
+      /* line 8, ../../../components/sass/modules/_ad.scss */
+      .ad--wide-shallow {
+        width: 728px; } }
+  /* line 22, ../../../components/sass/modules/_ad.scss */
+  .ad:before {
+    color: #6b7574;
+    content: "Advertisement";
+    margin: 1em auto;
+    width: 12em;
+    display: block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: .5em;
+    letter-spacing: .25em;
+    text-align: center; }
+  /* line 36, ../../../components/sass/modules/_ad.scss */
+  .ad:after {
+    content: '';
+    border-bottom: 1px solid #ccccf0;
+    width: 100%; }
