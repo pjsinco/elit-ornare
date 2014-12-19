@@ -3,7 +3,7 @@
 }
 
 .ad {
-  @include container();
+  /*@include container();*/
 
   &--wide-shallow {
     @extend %ad-pos;
@@ -15,7 +15,8 @@
   }
 
   &--med-rect {
-
+    @extend %ad-pos;
+    width: 300px;
   }
 
   &:before {
@@ -29,13 +30,13 @@
     font-size: .5em;
     letter-spacing: .25em;
     text-align: center;
-
   }
 
   &:after {
     content: '';
+    width: 100%;
+    display: block;
     border-bottom: 1px solid $lightgray;
-    width: span(12);
   }
 
 }

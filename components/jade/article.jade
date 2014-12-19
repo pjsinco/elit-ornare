@@ -23,18 +23,25 @@ html
     div.page#page
       include header
 
-      section.container.ad
-        div.ad--wide-shallow
-          img(src="img/leader-0.gif" alt='leaderboard')
+      div.container
+        div.ad
+          div.ad--wide-shallow
+            img(src="img/leader-0.gif" alt='leaderboard')
 
-      div#main.site-main
+      div#main.content
         div.container
-          section#primary.content-main
+          section#primary.content__main
             article.story
               header.story__header
                 figure.story__figure--feature
                 h1.story__header--primary Media 101: How to position yourself as a medical expert
-          section#secondary.content-secondary
+          section#secondary.content__secondary
+            div.ad
+              div.ad--med-rect
+                img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+            div.ad
+              div.ad--med-rect
+                img(src="img/medium-rect-0.gif" alt='medium-rectangle')
       
     
     
