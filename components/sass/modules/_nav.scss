@@ -1,9 +1,11 @@
 .nav {
 
+  position: absolute;
+  width: 100%;
   clear: both;
   transition: all ease-out .3s;
   /*background: $red;*/
-  background: rgba(255,255,255,0.8);
+  background: rgba($white,0.9);
     
   .js & {
     overflow: hidden;
