@@ -20,16 +20,20 @@ html
       })(document);
 
   body
-    include header
+    div.page#page
+      include header
 
-    section.container.ad
-      div.ad--wide-shallow
-        img(src="img/leader-0.gif" alt='leaderboard')
+      section.container.ad
+        div.ad--wide-shallow
+          img(src="img/leader-0.gif" alt='leaderboard')
 
-    section.content.container
-      article.story
-        header.story__header
-          figure.story__figure--feature
+      div#main.site-main.container
+        section#primary.content-main
+          article.story
+            header.story__header
+              figure.story__figure--feature
+              h1.story__header--primary Media 101: How to position yourself as a medical expert
+        section#secondary.content-secondary
       
     
     
