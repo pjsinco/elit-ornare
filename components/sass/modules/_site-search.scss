@@ -14,11 +14,11 @@
     border: none;
     background: transparent;
     position: absolute;
-    top: .5em;
+    top: .1em;
   }
 
   &__input {
-    width: 100%;
+    width: 90%;
 
     &[type=text] {
       padding: .5em 0 .5em 2em;

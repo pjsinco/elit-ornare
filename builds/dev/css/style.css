@@ -285,34 +285,36 @@ span[data-icon]:hover {
   clear: both;
   -webkit-transition: all ease-out .3s;
           transition: all ease-out .3s;
-  background: #ef3f23; }
-  /* line 7, ../../../components/sass/modules/_site-nav.scss */
+  /*background: $red;*/
+  background: rgba(255, 255, 255, 0.8); }
+  /* line 8, ../../../components/sass/modules/_site-nav.scss */
   .js .nav {
     overflow: hidden;
     max-height: 0; }
-  /* line 12, ../../../components/sass/modules/_site-nav.scss */
+  /* line 13, ../../../components/sass/modules/_site-nav.scss */
   .nav.active {
     max-height: 21em; }
-  /* line 16, ../../../components/sass/modules/_site-nav.scss */
+  /* line 17, ../../../components/sass/modules/_site-nav.scss */
   .nav__list {
     margin: 0;
     padding: 0;
+    line-height: 2.5em;
     /*border-top: 1px solid lighten($font-color-primary, 25%);*/ }
-  /* line 23, ../../../components/sass/modules/_site-nav.scss */
+  /* line 25, ../../../components/sass/modules/_site-nav.scss */
   .nav__item {
     display: block;
-    padding: .8em;
+    /*padding: .8em;*/
     border-bottom: 1px solid #d0d0d0;
     text-align: center;
     /*text-transform: uppercase;*/
     /*letter-spacing: .25em;*/ }
-    /* line 31, ../../../components/sass/modules/_site-nav.scss */
+    /* line 33, ../../../components/sass/modules/_site-nav.scss */
     .nav__item--link {
-      color: #fff; }
-  /* line 36, ../../../components/sass/modules/_site-nav.scss */
+      color: black; }
+  /* line 38, ../../../components/sass/modules/_site-nav.scss */
   .nav__link {
     cursor: pointer; }
-    /* line 39, ../../../components/sass/modules/_site-nav.scss */
+    /* line 41, ../../../components/sass/modules/_site-nav.scss */
     .nav__link--toggle {
       position: absolute;
       top: .5em;
@@ -363,10 +365,10 @@ span[data-icon]:hover {
     border: none;
     background: transparent;
     position: absolute;
-    top: .5em; }
+    top: .1em; }
   /* line 20, ../../../components/sass/modules/_site-search.scss */
   .site-search__input {
-    width: 100%; }
+    width: 90%; }
     /* line 23, ../../../components/sass/modules/_site-search.scss */
     .site-search__input[type=text] {
       padding: .5em 0 .5em 2em; }
