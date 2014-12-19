@@ -10,3 +10,7 @@
 .container {
   @include container;
 }
+
+.site-main {
+  padding: 0 .5em;
+}
