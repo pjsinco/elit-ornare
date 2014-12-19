@@ -50,3 +50,7 @@ a lot of time setting up icon system
 * [pattern for our nav](http://codepen.io/bradfrost/pen/sHvaz)
 
 ###Thu Dec 18 11:30:58 CST 2014
+
+
+###Fri Dec 19 08:24:30 CST 2014
+should we switch form [hamburger to "menu"](https://econsultancy.com/blog/65511-hamburger-menus-for-mobile-navigation-do-they-work)?
