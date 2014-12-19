@@ -1,13 +1,15 @@
 doctype html
 html
   head
-    title Elit Ornare | Article - News
+    title Elit Ornare | Article
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(href='css/style.css' rel='stylesheet')
     <!--[if lt IE 9]>
     script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
     <![endif]-->
 
+    script(src="js/modernizr.js")
+    //typekit
     script.
       (function(d) {
         var config = {
@@ -18,31 +20,15 @@ html
       })(document);
 
   body
-    div.page-wrap
-      header#top.top
-        div.top-bar
-          div.site-branding--alpha: a(href='/') The DO
-          div.site-branding--beta
-            a(href='http://www.osteopathic.org' title='American Osteopathic Association')
-              span(data-icon!="&#xe601;").site-search__action
-        
-        div.second-bar
-          div.site-nav__link--toggle
-            span(data-icon!="&#xe60f;")
-          nav(role='navigation').site-nav 
-            ul.site-nav__list
-              li.site-nav__item: a(href='#') Patient Care
-              li.site-nav__item: a(href='#') Innovation
-              li.site-nav__item: a(href='#') Training
-              li.site-nav__item: a(href='#') Profession
-              li.site-nav__item: a(href='#') Policy
-              li.site-nav__item: a(href='#') Lifestyle
-              div.site-search
-              li.site-nav__item.site-nav__item--search: a(href='/search')#search-toggle.search-toggle Search
-              
-              span(data-icon!="&#xe608;").site-search__action
+    include header
 
-          
+    section.ad
+      div.ad--leaderboard
 
+
+    
+    
+    script(src='js/jquery.min.js')
+    script(src='js/nav.js')
     script(src='http://localhost:35729/livereload.js')
 
