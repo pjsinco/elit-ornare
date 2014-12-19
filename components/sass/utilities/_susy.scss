@@ -3,11 +3,11 @@ $susy: (
   columns: 12,
   container: 60em,
   debug: (
-    /*image: show-columns,*/
+    image: show-columns,
     /*image: hide,*/
     color: rgba(#66f, .25),
-    /*output: overlay,*/
-    /*toggle: top right,*/
+    output: overlay,
+    toggle: top right,
   ),
 );
 
