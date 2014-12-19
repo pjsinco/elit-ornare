@@ -7,10 +7,10 @@
 
   &--wide-shallow {
     @extend %ad-pos;
-    width: 320px;
+    width: 728px;
 
-    @media #{$large-up} {
-      width: 728px;
+    @include breakpoint($medium-start) {
+      /*width: 728px;*/
     }
   }
 

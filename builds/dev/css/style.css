@@ -227,6 +227,9 @@ th {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+/*
+ * Breakpoint
+ */
 /* line 1, ../../../components/sass/base/_base.scss */
 html {
   font-size: 100%;
@@ -389,13 +392,12 @@ span[data-icon]:hover {
     clear: both; }
   /* line 8, ../../../components/sass/modules/_ad.scss */
   .ad--wide-shallow {
-    /*@include span(12);*/
-    width: 320px; }
-    @media only screen and (min-width: lower-bound(48.063em, 64em)) {
+    width: 728px; }
+    @media (min-width: 30em) {
       /* line 8, ../../../components/sass/modules/_ad.scss */
       .ad--wide-shallow {
-        width: 728px; } }
-  /* line 22, ../../../components/sass/modules/_ad.scss */
+        /*width: 728px;*/ } }
+  /* line 21, ../../../components/sass/modules/_ad.scss */
   .ad:before {
     color: #6b7574;
     content: "Advertisement";
@@ -407,7 +409,7 @@ span[data-icon]:hover {
     font-size: .5em;
     letter-spacing: .25em;
     text-align: center; }
-  /* line 36, ../../../components/sass/modules/_ad.scss */
+  /* line 35, ../../../components/sass/modules/_ad.scss */
   .ad:after {
     content: '';
     border-bottom: 1px solid #ccccf0;
