@@ -1,4 +1,4 @@
-.site-nav {
+.nav {
 
   clear: both;
   transition: all ease-out .3s;
@@ -10,7 +10,7 @@
   }
   
   &.active {
-    max-height: 18em;
+    max-height: 21em;
   }
 
   &__list {
@@ -24,14 +24,24 @@
     display: block;
     padding: .8em;
     border-bottom: 1px solid $lightgray;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: .25em;*/
+    
+    &--link {
+      color: #fff;
+    }
   }
 
   &__link {
     cursor: pointer;
 
     &--toggle {
-      float: left;
-      display: block;
+      position: absolute;
+      top: .5em;
+      left: 1em;
+      /*float: left;*/
+      /*display: block;*/
       /*padding: 1em;*/
       font-size: 1.5em;
       /*line-height: 0;*/

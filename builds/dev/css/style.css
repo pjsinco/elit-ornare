@@ -281,35 +281,44 @@ span[data-icon]:hover {
   font-size: 1.4em; }
 
 /* line 1, ../../../components/sass/modules/_site-nav.scss */
-.site-nav {
+.nav {
   clear: both;
   -webkit-transition: all ease-out .3s;
           transition: all ease-out .3s;
   background: #ef3f23; }
   /* line 7, ../../../components/sass/modules/_site-nav.scss */
-  .js .site-nav {
+  .js .nav {
     overflow: hidden;
     max-height: 0; }
   /* line 12, ../../../components/sass/modules/_site-nav.scss */
-  .site-nav.active {
-    max-height: 18em; }
+  .nav.active {
+    max-height: 21em; }
   /* line 16, ../../../components/sass/modules/_site-nav.scss */
-  .site-nav__list {
+  .nav__list {
     margin: 0;
     padding: 0;
     /*border-top: 1px solid lighten($font-color-primary, 25%);*/ }
   /* line 23, ../../../components/sass/modules/_site-nav.scss */
-  .site-nav__item {
+  .nav__item {
     display: block;
     padding: .8em;
-    border-bottom: 1px solid #d0d0d0; }
-  /* line 29, ../../../components/sass/modules/_site-nav.scss */
-  .site-nav__link {
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: .25em;*/ }
+    /* line 31, ../../../components/sass/modules/_site-nav.scss */
+    .nav__item--link {
+      color: #fff; }
+  /* line 36, ../../../components/sass/modules/_site-nav.scss */
+  .nav__link {
     cursor: pointer; }
-    /* line 32, ../../../components/sass/modules/_site-nav.scss */
-    .site-nav__link--toggle {
-      float: left;
-      display: block;
+    /* line 39, ../../../components/sass/modules/_site-nav.scss */
+    .nav__link--toggle {
+      position: absolute;
+      top: .5em;
+      left: 1em;
+      /*float: left;*/
+      /*display: block;*/
       /*padding: 1em;*/
       font-size: 1.5em;
       /*line-height: 0;*/
@@ -342,18 +351,6 @@ span[data-icon]:hover {
 .top {
   height: 3em;
   background-color: #ef3f23; }
-
-/* line 8, ../../../components/sass/modules/_top.scss */
-.top-bar {
-  /*position: relative;*/
-  /*text-align: center;*/
-  /*top: .5em;*/ }
-
-/* line 16, ../../../components/sass/modules/_top.scss */
-.second-bar {
-  position: relative;
-  top: -2.25em;
-  left: 1em; }
 
 /* line 1, ../../../components/sass/modules/_site-search.scss */
 .site-search {

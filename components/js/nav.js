@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $('body').addClass('js');
   var $menu = $('#site-nav'), 
-    $menulink = $('.site-nav__link--toggle');
+    $menulink = $('.nav__link--toggle');
 
   $menulink.click(function(evt) { 
     $menulink.toggleClass('active'); 
