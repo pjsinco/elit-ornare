@@ -1,11 +1,16 @@
-<!DOCTYPE html><!--[if IE 9 ]
-<html lang="en" class="ie9"></html><![endif]-->
+<!DOCTYPE html>
 <html>
   <head>
     <title>Elit Ornare | Article</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--typekit-->
+    <script src="//use.typekit.net/vdi5qvx.js"></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+      
+    </script>
     <script>
       //picture element html5 shim
       document.createElement('picture');
@@ -13,16 +18,6 @@
     </script>
     <script src="js/picturefill.min.js" async></script>
     <script src="js/modernizr.js"></script>
-    <!--typekit-->
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'vdi5qvx',
-          scriptTimeout: 3000
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
   </head>
   <body>
     <div id="page" class="page">
@@ -62,7 +57,7 @@
         <div class="container">
           <section id="primary" class="content__main">
             <article class="story">
-              <header class="story__header">
+              <header>
                 <figure class="image image--feature">
                   <picture>
                     <!--[if IE 9]>
@@ -73,9 +68,16 @@
                     </video>
                     <![endif]--><img srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO">
                   </picture>
-                  <figcaption class="image__caption"></figcaption>
+                  <figcaption class="image__caption image__caption--right">
+                    <Sed>posuere consectetur est at lobortis.</Sed>
+                  </figcaption>
                 </figure>
-                <h1 class="story__header--primary">Media 101: How to position yourself as a medical expert</h1>
+                <h5 class="story__kicker">Duis Arte</h5>
+                <h1 class="story__header">Media 101: How to position yourself as a medical expert</h1>
+                <h3 class="story__teaser">Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.</h3>
+                <div class="story__meta">
+                  <div class="meta"><span class="meta__byline">By</span> <span class="meta__author">Rose Raymond</span><span class="meta__date">Posted Dec. 14, 2014</span></div>
+                </div>
               </header>
             </article>
           </section>

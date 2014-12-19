@@ -1,7 +1,4 @@
 doctype html
-<!--[if IE 9 ]
-html(lang="en" class="ie9")
-<![endif]-->
 html
   head
     include head
@@ -18,7 +15,7 @@ html
         div.container
           section#primary.content__main
             article.story
-              header.story__header
+              header
                 figure.image.image--feature
                   picture
                     <!--[if IE 9]>
@@ -30,11 +27,19 @@ html
                     </video>
                     <![endif]-->
                     img(srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO")
-                  //-img.image__img
-                  figcaption.image__caption
-              
+                  figcaption.image__caption.image__caption--right
+                    Sed posuere consectetur est at lobortis.
                   
-                h1.story__header--primary Media 101: How to position yourself as a medical expert
+                h5.story__kicker Duis Arte
+                h1.story__header Media 101: How to position yourself as a medical expert
+                h3.story__teaser Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.
+                div.story__meta
+                  div.meta
+                    #[span.meta__byline By] 
+                    #[span.meta__author Rose Raymond]
+                    #[span.meta__date Posted Dec. 14, 2014]
+          
+                  
 
           section#secondary.content__secondary
             div.ad

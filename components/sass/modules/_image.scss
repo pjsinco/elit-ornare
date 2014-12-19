@@ -1,8 +1,25 @@
+%caption-base {
+  margin-top: .25em;
+  color: $font-color-lighter;
+  font-size: 1.125em;
+}
+
 .image {
 
   &__caption {
+    @extend %caption-base;
+
+    &--right {
+      text-align: right;
+    }
+
+    &--left {
+      text-align: left;
+      @extend %caption-base;
+    }
 
   }
+
 
   &__img {
 

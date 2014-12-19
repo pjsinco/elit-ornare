@@ -66,3 +66,5 @@ a lot of time setting up icon system
     4. Example resulting filename: caudle-omed@.33.jpg
     
 * We can [add straight html into jade](http://stackoverflow.com/questions/16094423/is-it-considered-bad-practise-to-use-html-in-jade)
+* In twentythirteen, check out the .search-field:focus for an on-demand search bar
+* Better than than .container: .context?

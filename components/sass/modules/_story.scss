@@ -1,18 +1,22 @@
 .story {
 
+  &__kicker {
+
+  }
+
   &__header {
+    font-family: $font-secondary;
+    line-height: 1.3;
+  }
+
+  &__teaser {
 
   }
 
-  &__figure {
-
-    &--feature {
-
-    }
-  }
-  
   &__meta {
 
   }
+
+  
 
 }

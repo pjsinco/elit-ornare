@@ -5,19 +5,15 @@ link(href='css/style.css' rel='stylesheet')
 script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
 <![endif]-->
 
+//typekit
+script(src="//use.typekit.net/vdi5qvx.js")
+script.
+  try{Typekit.load();}catch(e){}
+
 script.
   //picture element html5 shim
   document.createElement('picture');
   
 script(src="js/picturefill.min.js" async)
 script(src="js/modernizr.js")
-//typekit
-script.
-  (function(d) {
-    var config = {
-      kitId: 'vdi5qvx',
-      scriptTimeout: 3000
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
 
