@@ -55,8 +55,13 @@ a lot of time setting up icon system
 ###Fri Dec 19 08:24:30 CST 2014
 * should we switch form [hamburger to "menu"](https://econsultancy.com/blog/65511-hamburger-menus-for-mobile-navigation-do-they-work)?
 * (Breakpoint wiki)[https://github.com/at-import/breakpoint/wiki]
-* (How to merge master branch into feature branch)[http://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch]
-```
-git checkout feature-branch
-git rebase master
-```
+* First swing at extracting assets from photoshop
+    1. Name layer with what we want the file to be called (ex., caudle-omed)
+    2. Right-click on that layer and choose "Extract Assets ..."
+    3. Try these for suffixes:
+        * @.25 
+        * @.33
+        * @.50
+        * @.75  
+    4. Example resulting filename: caudle-omed@.33.jpg
+    

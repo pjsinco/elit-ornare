@@ -16,8 +16,17 @@ html
           section#primary.content__main
             article.story
               header.story__header
-                figure.story__figure--feature
+                figure.image.image--feature
+                  picture
+                    source(srcset="img/caudle-omed.jpg" media="(min-width: 768px") 
+                    source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 480px") 
+                    img(srcset="img/caudle-omed@.25.jpg" alt="Jennifer Caudle, DO")
+                  //-img.image__img
+                  figcaption.image__caption
+              
+                  
                 h1.story__header--primary Media 101: How to position yourself as a medical expert
+
           section#secondary.content__secondary
             div.ad
               div.ad--med-rect

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script>
+      //picture element html5 shim
+      document.createElement('picture');
+      
+    </script>
     <script src="js/picturefill.min.js" async></script>
     <script src="js/modernizr.js"></script>
     <!--typekit-->
@@ -57,7 +62,13 @@
           <section id="primary" class="content__main">
             <article class="story">
               <header class="story__header">
-                <figure class="story__figure--feature"></figure>
+                <figure class="image image--feature">
+                  <picture>
+                    <source srcset="img/caudle-omed.jpg" media="(min-width: 768px">
+                    <source srcset="img/caudle-omed@.50.jpg" media="(min-width: 480px"><img srcset="img/caudle-omed@.25.jpg" alt="Jennifer Caudle, DO">
+                  </picture>
+                  <figcaption class="image__caption"></figcaption>
+                </figure>
                 <h1 class="story__header--primary">Media 101: How to position yourself as a medical expert</h1>
               </header>
             </article>
