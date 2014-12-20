@@ -1,0 +1,23 @@
+.media {
+  
+  float: left;
+  width: 100%;
+
+  &--rev {
+    float: right;
+  }
+
+  &__img {
+    float: left;
+  }
+
+  &__title {
+    padding-top: .5em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-top: 1px solid $color-primary;
+    color: $color-primary;
+  }
+
+}

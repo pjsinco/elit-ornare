@@ -572,7 +572,7 @@ img {
 
 /* line 8, ../../../components/sass/modules/_story.scss */
 .story__title {
-  font-family: "adelle", serif;
+  font-family: "adelle", Georgia, serif;
   line-height: 1.3; }
 @media screen and (min-width: 48em) {
   /* line 24, ../../../components/sass/modules/_story.scss */
@@ -716,3 +716,22 @@ img {
       /* line 15, ../../../components/sass/modules/_pq.scss */
       .pq__body {
         text-align: right; } }
+
+/* line 1, ../../../components/sass/modules/_media.scss */
+.media {
+  float: left;
+  width: 100%; }
+  /* line 6, ../../../components/sass/modules/_media.scss */
+  .media--rev {
+    float: right; }
+  /* line 10, ../../../components/sass/modules/_media.scss */
+  .media__img {
+    float: left; }
+  /* line 14, ../../../components/sass/modules/_media.scss */
+  .media__title {
+    padding-top: .5em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-top: 1px solid #ef3f23;
+    color: #ef3f23; }
