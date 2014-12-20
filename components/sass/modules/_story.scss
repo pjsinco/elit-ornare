@@ -42,6 +42,14 @@
     }
   }
 
+  &__footer {
+    @include breakpoint($large-start) {
+      @include span(last 7 of 8);
+    }
+
+  }
+
+
   &__content {
 
   }

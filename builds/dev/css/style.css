@@ -586,6 +586,12 @@ img {
     width: 87.17949%;
     float: right;
     margin-right: 0; } }
+@media screen and (min-width: 48em) {
+  /* line 45, ../../../components/sass/modules/_story.scss */
+  .story__footer {
+    width: 87.17949%;
+    float: right;
+    margin-right: 0; } }
 
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
