@@ -6,6 +6,12 @@
 
 .image {
 
+  margin: 0;
+
+  &--primary {
+
+  }
+
   &__caption {
     @extend %caption-base;
 
