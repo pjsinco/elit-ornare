@@ -1,9 +1,15 @@
+%social-padding {
+  padding: 0;
+}
+
 .social {
 
   list-style-type: none;
-  padding: 0;
+  @extend %social-padding;
   
   &--inline {
+    @extend %social-padding;
+
     li {
       display: inline-block;
     }
@@ -45,6 +51,4 @@
   [class*='icon-youtube'] {
     color: $youtube;
   }
-
-
 }

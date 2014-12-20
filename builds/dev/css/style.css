@@ -649,38 +649,41 @@ img {
     text-align: left; }
 
 /* line 1, ../../../components/sass/modules/_social.scss */
-.social {
-  list-style-type: none;
+.social, .social--inline {
   padding: 0; }
-  /* line 7, ../../../components/sass/modules/_social.scss */
+
+/* line 5, ../../../components/sass/modules/_social.scss */
+.social {
+  list-style-type: none; }
+  /* line 13, ../../../components/sass/modules/_social.scss */
   .social--inline li {
     display: inline-block; }
-  /* line 12, ../../../components/sass/modules/_social.scss */
+  /* line 18, ../../../components/sass/modules/_social.scss */
   .social__icon {
     display: inline-block; }
     @media screen and (min-width: 48em) {
-      /* line 12, ../../../components/sass/modules/_social.scss */
+      /* line 18, ../../../components/sass/modules/_social.scss */
       .social__icon {
         display: block; } }
-  /* line 21, ../../../components/sass/modules/_social.scss */
+  /* line 27, ../../../components/sass/modules/_social.scss */
   .social__link {
     /*@include srt;*/ }
-  /* line 25, ../../../components/sass/modules/_social.scss */
+  /* line 31, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-facebook'] {
     color: #3b5999; }
-  /* line 29, ../../../components/sass/modules/_social.scss */
+  /* line 35, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-twitter'] {
     color: #5fa9dd; }
-  /* line 33, ../../../components/sass/modules/_social.scss */
+  /* line 39, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-linkedin'] {
     color: #007bb5; }
-  /* line 37, ../../../components/sass/modules/_social.scss */
+  /* line 43, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-gplus'] {
     color: #dc4a38; }
-  /* line 41, ../../../components/sass/modules/_social.scss */
+  /* line 47, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-pinterest'] {
     color: #cb2027; }
-  /* line 45, ../../../components/sass/modules/_social.scss */
+  /* line 51, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-youtube'] {
     color: #e12d27; }
 
