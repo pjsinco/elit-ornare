@@ -3,6 +3,12 @@
   list-style-type: none;
   padding: 0;
   
+  &--inline {
+    li {
+      display: inline-block;
+    }
+  }
+
   &__icon {
 
     display: inline-block;

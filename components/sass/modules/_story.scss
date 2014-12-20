@@ -19,17 +19,19 @@
   }
 
   
-  &__social
-    
+  &__social {
 
     &--top {
-    @include breakpoint($large-start) {
-      @include span(1 of 8);
+
+      @include breakpoint($large-start) {
+        @include span(1 of 8);
+      }
     }
 
     &--bottom {
 
     }
+
   }
 
 

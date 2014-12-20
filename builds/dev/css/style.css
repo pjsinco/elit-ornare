@@ -575,14 +575,13 @@ img {
   font-family: "adelle", serif;
   line-height: 1.3; }
 @media screen and (min-width: 48em) {
-  /* line 22, ../../../components/sass/modules/_story.scss */
-  .story__social
-  .story--top {
+  /* line 24, ../../../components/sass/modules/_story.scss */
+  .story__social--top {
     width: 10.25641%;
     float: left;
     margin-right: 2.5641%; } }
 @media screen and (min-width: 48em) {
-  /* line 36, ../../../components/sass/modules/_story.scss */
+  /* line 38, ../../../components/sass/modules/_story.scss */
   .story__body {
     width: 87.17949%;
     float: right;
@@ -653,32 +652,35 @@ img {
 .social {
   list-style-type: none;
   padding: 0; }
-  /* line 6, ../../../components/sass/modules/_social.scss */
+  /* line 7, ../../../components/sass/modules/_social.scss */
+  .social--inline li {
+    display: inline-block; }
+  /* line 12, ../../../components/sass/modules/_social.scss */
   .social__icon {
     display: inline-block; }
     @media screen and (min-width: 48em) {
-      /* line 6, ../../../components/sass/modules/_social.scss */
+      /* line 12, ../../../components/sass/modules/_social.scss */
       .social__icon {
         display: block; } }
-  /* line 15, ../../../components/sass/modules/_social.scss */
+  /* line 21, ../../../components/sass/modules/_social.scss */
   .social__link {
     /*@include srt;*/ }
-  /* line 19, ../../../components/sass/modules/_social.scss */
+  /* line 25, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-facebook'] {
     color: #3b5999; }
-  /* line 23, ../../../components/sass/modules/_social.scss */
+  /* line 29, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-twitter'] {
     color: #5fa9dd; }
-  /* line 27, ../../../components/sass/modules/_social.scss */
+  /* line 33, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-linkedin'] {
     color: #007bb5; }
-  /* line 31, ../../../components/sass/modules/_social.scss */
+  /* line 37, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-gplus'] {
     color: #dc4a38; }
-  /* line 35, ../../../components/sass/modules/_social.scss */
+  /* line 41, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-pinterest'] {
     color: #cb2027; }
-  /* line 39, ../../../components/sass/modules/_social.scss */
+  /* line 45, ../../../components/sass/modules/_social.scss */
   .social [class*='icon-youtube'] {
     color: #e12d27; }
 
