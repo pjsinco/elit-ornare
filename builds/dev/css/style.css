@@ -255,10 +255,16 @@ a {
   color: #077cc2; }
 
 /* line 17, ../../../components/sass/base/_base.scss */
+p {
+  color: #333333;
+  margin-bottom: 1em;
+  line-height: 1.3; }
+
+/* line 23, ../../../components/sass/base/_base.scss */
 ul {
   /*list-style: none;*/ }
 
-/* line 21, ../../../components/sass/base/_base.scss */
+/* line 27, ../../../components/sass/base/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
