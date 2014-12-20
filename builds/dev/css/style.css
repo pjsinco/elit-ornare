@@ -266,7 +266,7 @@ ul {
 
 /* line 27, ../../../components/sass/base/_base.scss */
 img {
-  max-width: 100%;
+  /*max-width: 100%;*/
   height: auto; }
 
 @-ms-viewport {
@@ -632,10 +632,19 @@ img {
 /* line 7, ../../../components/sass/modules/_image.scss */
 .image {
   margin: 0; }
-  /* line 18, ../../../components/sass/modules/_image.scss */
+  /* line 11, ../../../components/sass/modules/_image.scss */
+  .image__img {
+    margin-left: -1em;
+    max-width: 108%; }
+    @media screen and (min-width: 30em) {
+      /* line 11, ../../../components/sass/modules/_image.scss */
+      .image__img {
+        margin-left: 0;
+        max-width: 100%; } }
+  /* line 29, ../../../components/sass/modules/_image.scss */
   .image__caption--right {
     text-align: right; }
-  /* line 22, ../../../components/sass/modules/_image.scss */
+  /* line 33, ../../../components/sass/modules/_image.scss */
   .image__caption--left {
     text-align: left; }
 

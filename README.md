@@ -74,3 +74,6 @@ a lot of time setting up icon system
 ###Sat Dec 20 06:28:16 CST 2014
 * Good [article](http://www.zell-weekeat.com/context-with-susy/) about Susy contexts
 * [Possible sticker hover animation](http://www.git-tower.com/learn/)
+* good candidates for minor breakpoints: 
+    + **584px** That's when the body text column starts to get wider 
+      than the default desktop measure of 552px

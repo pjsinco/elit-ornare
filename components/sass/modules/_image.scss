@@ -8,6 +8,17 @@
 
   margin: 0;
 
+  &__img {
+    // negative margin the override containing block's padding
+    margin-left: -1em;
+    max-width: 108%;
+
+    @include breakpoint($medium-start) {
+      margin-left: 0; 
+      max-width: 100%;
+    }
+  }
+
   &--primary {
 
   }
@@ -27,8 +38,5 @@
   }
 
 
-  &__img {
-
-  }
 
 }
