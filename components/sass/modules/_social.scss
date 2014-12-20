@@ -1,0 +1,36 @@
+.social {
+  
+  &--list {
+    list-style-type: none;
+  }
+  
+  &__link {
+    /*@include srt;*/
+  }
+
+  [class*='icon-facebook'] {
+    color: $facebook;
+  }
+
+  [class*='icon-twitter'] {
+    color: $twitter;
+  }
+
+  [class*='icon-linkedin'] {
+    color: $linkedin;
+  }
+
+  [class*='icon-gplus'] {
+    color: $gplus;
+  }
+
+  [class*='icon-pinterest'] {
+    color: $pinterest;
+  }
+
+  [class*='icon-youtube'] {
+    color: $youtube;
+  }
+
+
+}
