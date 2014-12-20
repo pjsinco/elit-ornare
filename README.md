@@ -69,3 +69,6 @@ a lot of time setting up icon system
 * In twentythirteen, check out the .search-field:focus for an on-demand search bar
 * Better than than .container: .context?
 * [Picturefill!](http://scottjehl.github.io/picturefill/)
+
+
+###Sat Dec 20 06:28:16 CST 2014
