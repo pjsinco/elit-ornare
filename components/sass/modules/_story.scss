@@ -20,7 +20,10 @@
 
   
   &__social--top {
-    @include span(1 of 8);
+  
+    @include breakpoint($large-start) {
+      @include span(1 of 8);
+    }
   }
 
   &__social--bottom {
@@ -28,7 +31,10 @@
   }
 
   &__body {
-    @include span(last 7 of 8);
+
+    @include breakpoint($large-start) {
+      @include span(last 7 of 8);
+    }
   }
 
   &__content {

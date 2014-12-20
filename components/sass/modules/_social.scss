@@ -2,6 +2,16 @@
   
   &--list {
     list-style-type: none;
+
+  }
+
+  &__icon {
+
+    display: inline-block;
+
+    @include breakpoint($large-start) {
+      display: block;
+    }
   }
   
   &__link {

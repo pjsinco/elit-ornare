@@ -362,13 +362,7 @@ img {
       background-clip: content-box;
       background-position: left top; }
 
-/* line 22, ../../../components/sass/layout/_index.scss */
-.srt {
-  position: absolute;
-  top: -9999px;
-  left: -9999px; }
-
-/* line 27, ../../../components/sass/layout/_index.scss */
+/* line 23, ../../../components/sass/layout/_index.scss */
 .text-replace {
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -612,16 +606,18 @@ img {
 .story__header {
   font-family: "adelle", serif;
   line-height: 1.3; }
-/* line 22, ../../../components/sass/modules/_story.scss */
-.story__social--top {
-  width: 10.25641%;
-  float: left;
-  margin-right: 2.5641%; }
-/* line 30, ../../../components/sass/modules/_story.scss */
-.story__body {
-  width: 87.17949%;
-  float: right;
-  margin-right: 0; }
+@media screen and (min-width: 48em) {
+  /* line 22, ../../../components/sass/modules/_story.scss */
+  .story__social--top {
+    width: 10.25641%;
+    float: left;
+    margin-right: 2.5641%; } }
+@media screen and (min-width: 48em) {
+  /* line 33, ../../../components/sass/modules/_story.scss */
+  .story__body {
+    width: 87.17949%;
+    float: right;
+    margin-right: 0; } }
 
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
@@ -655,24 +651,31 @@ img {
 /* line 3, ../../../components/sass/modules/_social.scss */
 .social--list {
   list-style-type: none; }
-/* line 7, ../../../components/sass/modules/_social.scss */
+/* line 8, ../../../components/sass/modules/_social.scss */
+.social__icon {
+  display: inline-block; }
+  @media screen and (min-width: 48em) {
+    /* line 8, ../../../components/sass/modules/_social.scss */
+    .social__icon {
+      display: block; } }
+/* line 17, ../../../components/sass/modules/_social.scss */
 .social__link {
   /*@include srt;*/ }
-/* line 11, ../../../components/sass/modules/_social.scss */
+/* line 21, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-facebook'] {
   color: #3b5999; }
-/* line 15, ../../../components/sass/modules/_social.scss */
+/* line 25, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-twitter'] {
   color: #5fa9dd; }
-/* line 19, ../../../components/sass/modules/_social.scss */
+/* line 29, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-linkedin'] {
   color: #007bb5; }
-/* line 23, ../../../components/sass/modules/_social.scss */
+/* line 33, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-gplus'] {
   color: #dc4a38; }
-/* line 27, ../../../components/sass/modules/_social.scss */
+/* line 37, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-pinterest'] {
   color: #cb2027; }
-/* line 31, ../../../components/sass/modules/_social.scss */
+/* line 41, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-youtube'] {
   color: #e12d27; }
