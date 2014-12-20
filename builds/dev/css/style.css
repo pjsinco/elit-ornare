@@ -582,7 +582,7 @@ img {
     margin-right: 2.5641%; } }
 @media screen and (min-width: 48em) {
   /* line 38, ../../../components/sass/modules/_story.scss */
-  .story__body {
+  .story__body-text {
     width: 87.17949%;
     float: right;
     margin-right: 0; } }
