@@ -1,5 +1,32 @@
 .content {
-  padding: 0 .5em;
+  padding-top: 0;
+  padding-right: .5em;
+  padding-bottom: 0;
+  padding-left: .5em;
+
+  
+  // CONVENIENCE
+  // this is just so there's a bar in chrome
+  // dev tools mobile view that corresponds
+  // to a width of 320px
+  // *take this out at some point*
+  @include breakpoint($small-start) {
+    padding-top: 0;
+    padding-right: .5em;
+    padding-bottom: 0;
+    padding-left: .5em;
+  }
+  
+  @include breakpoint ($medium-start) {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  @include breakpoint ($large-start) {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  
 
   &__main {
     @include breakpoint($xlarge-start) {

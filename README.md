@@ -72,3 +72,4 @@ a lot of time setting up icon system
 
 
 ###Sat Dec 20 06:28:16 CST 2014
+* Good [article](http://www.zell-weekeat.com/context-with-susy/) about Susy contexts

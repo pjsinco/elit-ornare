@@ -1,19 +1,26 @@
 .pq {
-  background: aliceblue;
   @include clearfix();
-  float: left;
-  position: relative;
-  right: span(1 of 7 wide);
-  width: span(3 of 7);
-  /*margin-right: -#{gutter(7)};*/
-  /*margin-right: -4em;*/
+  
+  @include breakpoint($large-start) {
+    float: left;
+    position: relative;
+    right: span(1 of 7 wide);
+    width: span(3 of 7);
+    margin-right: -#{span(1 of 7) };
+    /*margin-right: -4em;*/
+
+  }
 
 
   &__body {
     font-family: 'adelle', serif;
     font-weight: bold;
     font-size: 2em;
-    text-align: right;
+    text-align: center;
+
+    @include breakpoint($large-start) {
+      text-align: right;
+    }
   }
 
 }

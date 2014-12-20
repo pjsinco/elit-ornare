@@ -621,15 +621,35 @@ img {
 
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
-  padding: 0 .5em; }
+  padding-top: 0;
+  padding-right: .5em;
+  padding-bottom: 0;
+  padding-left: .5em; }
+  @media screen and (min-width: 20em) {
+    /* line 1, ../../../components/sass/modules/_content.scss */
+    .content {
+      padding-top: 0;
+      padding-right: .5em;
+      padding-bottom: 0;
+      padding-left: .5em; } }
+  @media screen and (min-width: 30em) {
+    /* line 1, ../../../components/sass/modules/_content.scss */
+    .content {
+      padding-right: 1em;
+      padding-left: 1em; } }
+  @media screen and (min-width: 48em) {
+    /* line 1, ../../../components/sass/modules/_content.scss */
+    .content {
+      padding-right: 2em;
+      padding-left: 2em; } }
   @media screen and (min-width: 64em) {
-    /* line 4, ../../../components/sass/modules/_content.scss */
+    /* line 31, ../../../components/sass/modules/_content.scss */
     .content__main {
       width: 66.10169%;
       float: left;
       margin-right: 1.69492%; } }
   @media screen and (min-width: 64em) {
-    /* line 10, ../../../components/sass/modules/_content.scss */
+    /* line 37, ../../../components/sass/modules/_content.scss */
     .content__secondary {
       width: 32.20339%;
       float: right;
@@ -682,18 +702,24 @@ img {
 
 /* line 1, ../../../components/sass/modules/_pq.scss */
 .pq {
-  background: aliceblue;
   overflow: hidden;
-  *zoom: 1;
-  float: left;
-  position: relative;
-  right: 14.70588%;
-  width: 41.17647%;
-  /*margin-right: -2.94118%;*/
-  /*margin-right: -4em;*/ }
-  /* line 12, ../../../components/sass/modules/_pq.scss */
+  *zoom: 1; }
+  @media screen and (min-width: 48em) {
+    /* line 1, ../../../components/sass/modules/_pq.scss */
+    .pq {
+      float: left;
+      position: relative;
+      right: 14.70588%;
+      width: 41.17647%;
+      margin-right: -11.76471%;
+      /*margin-right: -4em;*/ } }
+  /* line 15, ../../../components/sass/modules/_pq.scss */
   .pq__body {
     font-family: 'adelle', serif;
     font-weight: bold;
     font-size: 2em;
-    text-align: right; }
+    text-align: center; }
+    @media screen and (min-width: 48em) {
+      /* line 15, ../../../components/sass/modules/_pq.scss */
+      .pq__body {
+        text-align: right; } }
