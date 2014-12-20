@@ -11,12 +11,8 @@
   position: relative;
 }
 
-.container-12 {
+.block {
   @include container(12);
-}
-
-.container-8 {
-  @include container(8);
 }
 
 //http://www.filamentgroup.com/lab/bulletproof_icon_fonts.html
