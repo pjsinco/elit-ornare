@@ -629,12 +629,15 @@ img {
   color: #6b7574;
   font-size: 1.125em; }
 
-/* line 12, ../../../components/sass/modules/_image.scss */
-.image__caption--right {
-  text-align: right; }
-/* line 16, ../../../components/sass/modules/_image.scss */
-.image__caption--left {
-  text-align: left; }
+/* line 7, ../../../components/sass/modules/_image.scss */
+.image {
+  margin: 0; }
+  /* line 18, ../../../components/sass/modules/_image.scss */
+  .image__caption--right {
+    text-align: right; }
+  /* line 22, ../../../components/sass/modules/_image.scss */
+  .image__caption--left {
+    text-align: left; }
 
 /* line 3, ../../../components/sass/modules/_social.scss */
 .social--list {
