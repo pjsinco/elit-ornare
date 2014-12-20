@@ -11,8 +11,12 @@
   position: relative;
 }
 
-.container {
-  @include container;
+.container-12 {
+  @include container(12);
+}
+
+.container-8 {
+  @include container(8);
 }
 
 .srt {

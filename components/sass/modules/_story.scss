@@ -1,5 +1,6 @@
 .story {
 
+
   &__kicker {
 
   }
@@ -18,5 +19,20 @@
   }
 
   
+  &__social--top {
+    @include span(1 of 8);
+  }
+
+  &__social--bottom {
+
+  }
+
+  &__body {
+    @include span(last 7 of 8);
+  }
+
+  &__content {
+
+  }
 
 }
