@@ -7,20 +7,17 @@
   font-style: normal;
 }
 
-span[data-icon] {
-
-  &:before {
-    font-family: icon-font;
-    content: attr(data-icon);
-    speak: none;
-    font-weight: 400;
-    font-style: normal;
-    /*font-size: 64px;*/
-    /*display:block;*/
-    /*line-height: 64px; */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: icon-font;
+  /*content: attr(data-icon);*/
+  speak: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   &:hover {
     /*color: fuchsia;*/
@@ -28,7 +25,51 @@ span[data-icon] {
 
 }
 
-.icon {
-  font-family: icon-font;
-  font-size: 1.4em;
+.icon-menu:before {
+	content: "\e60f";
+}
+.icon-aoa-solid:before {
+	content: "\e600";
+}
+.icon-arrow-down:before {
+	content: "\e601";
+}
+.icon-arrow-left:before {
+	content: "\e602";
+}
+.icon-arrow-right:before {
+	content: "\e603";
+}
+.icon-arrow-up:before {
+	content: "\e604";
+}
+.icon-comment:before {
+	content: "\e605";
+}
+.icon-email:before {
+	content: "\e606";
+}
+.icon-facebook:before {
+	content: "\e607";
+}
+.icon-glass:before {
+	content: "\e608";
+}
+.icon-gplus:before {
+	content: "\e609";
+}
+.icon-link:before {
+	content: "\e60a";
+}
+.icon-linkedin:before {
+	content: "\e60b";
+}
+.icon-pinterest:before {
+	content: "\e60c";
+}
+.icon-twitter:before {
+	content: "\e60d";
+}
+.icon-youtube:before {
+	content: "\e60e";
 }
