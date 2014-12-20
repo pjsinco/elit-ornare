@@ -679,3 +679,21 @@ img {
 /* line 41, ../../../components/sass/modules/_social.scss */
 .social [class*='icon-youtube'] {
   color: #e12d27; }
+
+/* line 1, ../../../components/sass/modules/_pq.scss */
+.pq {
+  background: aliceblue;
+  overflow: hidden;
+  *zoom: 1;
+  float: left;
+  position: relative;
+  right: 14.70588%;
+  width: 41.17647%;
+  /*margin-right: -2.94118%;*/
+  /*margin-right: -4em;*/ }
+  /* line 12, ../../../components/sass/modules/_pq.scss */
+  .pq__body {
+    font-family: 'adelle', serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: right; }
