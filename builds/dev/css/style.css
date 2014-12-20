@@ -228,6 +228,12 @@ th {
   box-sizing: border-box; }
 
 /*
+ * COLORS
+ */
+/*
+ * TYPOGRAPHY
+ */
+/*
  * Breakpoint
  */
 /* line 1, ../../../components/sass/base/_base.scss */
@@ -341,67 +347,83 @@ img {
 
 /* line 28, ../../../components/sass/modules/_icons.scss */
 .icon-menu:before {
-  content: "\e60f"; }
+  content: "\e60f";
+  color: #fff; }
 
-/* line 31, ../../../components/sass/modules/_icons.scss */
+/* line 32, ../../../components/sass/modules/_icons.scss */
 .icon-aoa-solid:before {
-  content: "\e600"; }
+  content: "\e600";
+  color: #333333; }
 
-/* line 34, ../../../components/sass/modules/_icons.scss */
+/* line 36, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-down:before {
-  content: "\e601"; }
-
-/* line 37, ../../../components/sass/modules/_icons.scss */
-.icon-arrow-left:before {
-  content: "\e602"; }
+  content: "\e601";
+  color: #333333; }
 
 /* line 40, ../../../components/sass/modules/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e602";
+  color: #333333; }
+
+/* line 44, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-right:before {
-  content: "\e603"; }
+  content: "\e603";
+  color: #333333; }
 
-/* line 43, ../../../components/sass/modules/_icons.scss */
+/* line 48, ../../../components/sass/modules/_icons.scss */
 .icon-arrow-up:before {
-  content: "\e604"; }
-
-/* line 46, ../../../components/sass/modules/_icons.scss */
-.icon-comment:before {
-  content: "\e605"; }
-
-/* line 49, ../../../components/sass/modules/_icons.scss */
-.icon-email:before {
-  content: "\e606"; }
+  content: "\e604";
+  color: #333333; }
 
 /* line 52, ../../../components/sass/modules/_icons.scss */
+.icon-comment:before {
+  content: "\e605";
+  color: #6b7574; }
+
+/* line 56, ../../../components/sass/modules/_icons.scss */
+.icon-email:before {
+  content: "\e606";
+  color: #b3b3b3; }
+
+/* line 60, ../../../components/sass/modules/_icons.scss */
 .icon-facebook:before {
-  content: "\e607"; }
-
-/* line 55, ../../../components/sass/modules/_icons.scss */
-.icon-glass:before {
-  content: "\e608"; }
-
-/* line 58, ../../../components/sass/modules/_icons.scss */
-.icon-gplus:before {
-  content: "\e609"; }
-
-/* line 61, ../../../components/sass/modules/_icons.scss */
-.icon-link:before {
-  content: "\e60a"; }
+  content: "\e607";
+  color: #3b5999; }
 
 /* line 64, ../../../components/sass/modules/_icons.scss */
+.icon-glass:before {
+  content: "\e608";
+  color: #333333; }
+
+/* line 68, ../../../components/sass/modules/_icons.scss */
+.icon-gplus:before {
+  content: "\e609";
+  color: #dc4a38; }
+
+/* line 72, ../../../components/sass/modules/_icons.scss */
+.icon-link:before {
+  content: "\e60a";
+  color: #333333; }
+
+/* line 76, ../../../components/sass/modules/_icons.scss */
 .icon-linkedin:before {
-  content: "\e60b"; }
+  content: "\e60b";
+  color: #007bb5; }
 
-/* line 67, ../../../components/sass/modules/_icons.scss */
+/* line 80, ../../../components/sass/modules/_icons.scss */
 .icon-pinterest:before {
-  content: "\e60c"; }
+  content: "\e60c";
+  color: #cb2027; }
 
-/* line 70, ../../../components/sass/modules/_icons.scss */
+/* line 84, ../../../components/sass/modules/_icons.scss */
 .icon-twitter:before {
-  content: "\e60d"; }
+  content: "\e60d";
+  color: #5fa9dd; }
 
-/* line 73, ../../../components/sass/modules/_icons.scss */
+/* line 88, ../../../components/sass/modules/_icons.scss */
 .icon-youtube:before {
-  content: "\e60e"; }
+  content: "\e60e";
+  color: #e12d27; }
 
 /* line 1, ../../../components/sass/modules/_nav.scss */
 .nav {
@@ -435,7 +457,7 @@ img {
     /*letter-spacing: .25em;*/ }
     /* line 35, ../../../components/sass/modules/_nav.scss */
     .nav__item--link {
-      color: black; }
+      color: #333333; }
   /* line 40, ../../../components/sass/modules/_nav.scss */
   .nav__link {
     cursor: pointer; }

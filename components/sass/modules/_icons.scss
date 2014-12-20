@@ -27,49 +27,65 @@
 
 .icon-menu:before {
 	content: "\e60f";
+  color: $white;
 }
 .icon-aoa-solid:before {
 	content: "\e600";
+  color: $black;
 }
 .icon-arrow-down:before {
 	content: "\e601";
+  color: $black;
 }
 .icon-arrow-left:before {
 	content: "\e602";
+  color: $black;
 }
 .icon-arrow-right:before {
 	content: "\e603";
+  color: $black;
 }
 .icon-arrow-up:before {
 	content: "\e604";
+  color: $black;
 }
 .icon-comment:before {
 	content: "\e605";
+  color: $gray;
 }
 .icon-email:before {
 	content: "\e606";
+  color: $mediumgray;
 }
 .icon-facebook:before {
 	content: "\e607";
+  color: $facebook;
 }
 .icon-glass:before {
 	content: "\e608";
+  color: $black;
 }
 .icon-gplus:before {
 	content: "\e609";
+  color: $gplus;
 }
 .icon-link:before {
 	content: "\e60a";
+  color: $black;
 }
 .icon-linkedin:before {
 	content: "\e60b";
+  color: $linkedin;
 }
 .icon-pinterest:before {
 	content: "\e60c";
+  color: $pinterest;
 }
 .icon-twitter:before {
 	content: "\e60d";
+  color: $twitter;
 }
 .icon-youtube:before {
 	content: "\e60e";
+  color: $youtube;
 }
