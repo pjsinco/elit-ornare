@@ -88,4 +88,9 @@ a lot of time setting up icon system
     * added a robots meta tag to prevent searching enginges from searching the web page
     * deploying on [eo-build.10rempatrick.com](http://eo-build.10rempatrick.com) 
         * done: Sun Dec 21 10:14:21 CST 2014
-
+* EHS tag config script contains this beauty. 
+    * ```
+    document.write('<scr'+'ipt type="text/javascript" src="'+ehs_tagsrc+'"></scr'+'ipt>');
+    ```
+    * How to avoid it?
+        * maybe this way: [How to fix document.write](http://www.feedthebot.com/pagespeed/avoid-document-write.html)
