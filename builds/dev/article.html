@@ -55,7 +55,16 @@
       </header>
       <div class="block">
         <div class="ad">
-          <div class="ad--wide-shallow"><img src="img/leader-0.gif" alt="leaderboard"></div>
+          <div class="ad--wide-shallow">
+            <picture>
+              <!--[if IE 9]>
+              <video style="display: none">
+              <![endif]-->
+              <source srcset="img/leader-0.gif" media="(min-width: 768px)"><!--[if IE 9]>
+              </video>
+              <![endif]--><img srcset="img/wide-banner-0.gif" alt="Wide banner" class="ad__img">
+            </picture>
+          </div>
         </div>
       </div>
       <div id="main" class="content">

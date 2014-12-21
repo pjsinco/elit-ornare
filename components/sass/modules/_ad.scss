@@ -5,9 +5,14 @@
 .ad {
   /*@include container();*/
 
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
   &--wide-shallow {
     @extend %ad-pos;
-    width: 728px;
+    width: 99%;
 
     @include breakpoint($medium-start) {
       /*width: 728px;*/
