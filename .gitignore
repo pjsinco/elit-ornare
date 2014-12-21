@@ -50,6 +50,7 @@ builds/dev/fonts/*
 builds/dev/js/*
 fonts/*
 img/*
+misc/*
 
 .*.swp
 .*.swo
