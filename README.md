@@ -82,3 +82,4 @@ a lot of time setting up icon system
 * Thumbnail size: 140px x 93px
 * **related** module
     * uses default thumbnail size 140pxx93px
+* Our viewport is scrollable horizontally for the moment because the leaderboard ad is sticking out
