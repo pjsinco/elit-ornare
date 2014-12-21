@@ -10,33 +10,36 @@
   &__img {
     margin-right: 1em;
     float: left;
-    /*display: block;*/
-    max-width: 100%;
-    /*height: auto;*/
+
+    @include breakpoint($medium-minor-start) {
+      margin-bottom: 1em;      
+    }
   }
 
   &__title {
     padding-top: .5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    border-top: 3px solid $lightgray;
     text-transform: uppercase;
     letter-spacing: .1em;
-    border-top: 1px solid $color-primary;
-    color: $color-primary;
+    color: $gray;
 
-    @include breakpoint($large-start) {
+    @include breakpoint($medium-minor-start) {
       font-size: .875em;
-      color: $gray;
-      border-top: 1px dashed $lightgray;
     }
   }
 
   &__body {
     color: $gray;
+    @include breakpoint($medium-minor-start) {
+      width: 8.75em;
+    }
   }
   
   &__head {
     font-weight: normal;
     font-size: 1.125em;
+    line-height: 1.22;
   }
 
   &__link {

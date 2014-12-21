@@ -50,10 +50,11 @@
   }
 
 
-  &__related {
+  &__box {
     @include clearfix();
-    @include breakpoint($large-start) {
+    @include breakpoint($medium-minor-start) {
       margin-left: 1.5em;
+      margin-bottom: 1em;
       width: 11.875em;
       float: right;
     }
