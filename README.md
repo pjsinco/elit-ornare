@@ -77,3 +77,7 @@ a lot of time setting up icon system
 * good candidates for minor breakpoints: 
     + **584px** That's when the body text column starts to get wider 
       than the default desktop measure of 552px
+
+###Sun Dec 21 06:02:38 CST 2014
+* Thumbnail size: 140px x 93px
+
