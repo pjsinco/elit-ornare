@@ -94,3 +94,4 @@ a lot of time setting up icon system
     ```
     * How to avoid it?
         * maybe this way: [How to fix document.write](http://www.feedthebot.com/pagespeed/avoid-document-write.html)
+* [AppendAround](https://github.com/filamentgroup/AppendAround) for moving content around based on viewport size
