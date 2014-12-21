@@ -52,7 +52,11 @@
 
   &__related {
     @include clearfix();
-    
+    @include breakpoint($large-start) {
+      margin-left: 1.5em;
+      width: 11.875em;
+      float: right;
+    }
   }
 
   &__content {

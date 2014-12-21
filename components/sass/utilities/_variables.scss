@@ -34,12 +34,12 @@ $font-weight-normal: normal;
  * Breakpoint
  */
 $all: 'all';
-$small-start: 'screen' 20em; // not really needed
-$medium-start: 'screen' 30em;
-$medium-minor-start: 'screen' 36em;
-$large-start: 'screen' 48em;
-$xlarge-start: 'screen' 64em;
-$xxlarge-start: 'screen' 90em;
+$small-start: 'screen' 20em;        // not really needed
+$medium-start: 'screen' 30em;       // 480px
+$medium-minor-start: 'screen' 36em; // 576px
+$large-start: 'screen' 48em;        // 768px
+$xlarge-start: 'screen' 64em;       // 1024px
+$xxlarge-start: 'screen' 90em;      // 1440px
 
 
 //$small-range: (0em, 30em); // 0 to 480px
