@@ -75,9 +75,10 @@ a lot of time setting up icon system
 * Good [article](http://www.zell-weekeat.com/context-with-susy/) about Susy contexts
 * [Possible sticker hover animation](http://www.git-tower.com/learn/)
 * good candidates for minor breakpoints: 
-    + **584px** That's when the body text column starts to get wider 
+    * **584px** That's when the body text column starts to get wider 
       than the default desktop measure of 552px
 
 ###Sun Dec 21 06:02:38 CST 2014
 * Thumbnail size: 140px x 93px
-
+* **related** module
+    * uses default thumbnail size 140pxx93px

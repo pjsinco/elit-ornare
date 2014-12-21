@@ -51,6 +51,7 @@
 
 
   &__related {
+    @include clearfix();
     
   }
 

@@ -592,6 +592,10 @@ img {
     width: 87.17949%;
     float: right;
     margin-right: 0; } }
+/* line 53, ../../../components/sass/modules/_story.scss */
+.story__related {
+  overflow: hidden;
+  *zoom: 1; }
 
 /* line 1, ../../../components/sass/modules/_content.scss */
 .content {
@@ -726,8 +730,12 @@ img {
     float: right; }
   /* line 10, ../../../components/sass/modules/_media.scss */
   .media__img {
-    float: left; }
-  /* line 14, ../../../components/sass/modules/_media.scss */
+    margin-right: 1em;
+    float: left;
+    /*display: block;*/
+    max-width: 100%;
+    /*height: auto;*/ }
+  /* line 18, ../../../components/sass/modules/_media.scss */
   .media__title {
     padding-top: .5em;
     margin-bottom: 1.5em;
