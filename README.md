@@ -83,3 +83,9 @@ a lot of time setting up icon system
 * **related** module
     * uses default thumbnail size 140pxx93px
 * Our viewport is scrollable horizontally for the moment because the leaderboard ad is sticking out
+* Adds new repo for deploying build: eo-build
+    * so now we have a repo within a repo
+    * added a robots meta tag to prevent searching enginges from searching the web page
+    * deploying on [eo-build.10rempatrick.com](http://eo-build.10rempatrick.com) 
+        * done: Sun Dec 21 10:14:21 CST 2014
+
