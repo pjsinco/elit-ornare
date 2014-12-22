@@ -5,6 +5,16 @@
 .ad {
   /*@include container();*/
 
+  &--med-rect {
+    @extend %ad-pos;
+    width: 300px;
+
+    @include breakpoint($screen $medium-minor-start $large-start) {
+      float: right;
+      margin-left: 1em;
+    };
+  }
+
   &__img {
     display: block;
     margin: 0 auto;
@@ -14,15 +24,15 @@
     @extend %ad-pos;
     width: 99%;
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($screen $medium-start) {
       /*width: 728px;*/
     }
   }
 
-  &--med-rect {
-    @extend %ad-pos;
-    width: 300px;
-  }
+//  &--med-rect {
+//    /*@extend %ad-pos;*/
+//    /*width: 300px;*/
+//  }
 
   &:before {
     color: $gray;

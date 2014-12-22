@@ -5,7 +5,7 @@
     &-parent-a {
       display: block;
 
-      @include breakpoint($large-start) {
+      @include breakpoint($screen $large-start) {
         display: none;
       }
     }
@@ -13,7 +13,7 @@
     &-parent-b {
       display: none;
 
-      @include breakpoint($large-start) {
+      @include breakpoint($screen $large-start) {
         display: block;
       }
     }
@@ -24,7 +24,7 @@
     &-parent-a {
       display: block;
 
-      @include breakpoint($large-start) {
+      @include breakpoint($screen $large-start) {
         display: none;
       }
     }
@@ -32,7 +32,7 @@
     &-parent-b {
       display: none;
 
-      @include breakpoint($large-start) {
+      @include breakpoint($screen $large-start) {
         display: block;
       }
     }

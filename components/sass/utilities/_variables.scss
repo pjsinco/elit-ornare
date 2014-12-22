@@ -35,14 +35,15 @@ $font-weight-normal: normal;
  * Breakpoint
  */
 $all: 'all';
+$screen: 'screen';
 // $small-start not needed--for quick sizing in chrome dev
-$small-start: 'screen' 20em;          // 320px
-$medium-start: 'screen' 30em;         // 480px
-$medium-minor-start: 'screen' 36em;   // 576px
-$medium-minor-minor-start: 'screen' 43em; // 688px
-$large-start: 'screen' 48em;          // 768px
-$xlarge-start: 'screen' 64em;         // 1024px
-$xxlarge-start: 'screen' 90em;        // 1440px
+$small-start              : 20em;              // 320px
+$medium-start             : 30em;             // 480px
+$medium-minor-start       : 36em;       // 576px
+$medium-minor-minor-start : 43em; // 688px
+$large-start              : 48em;              // 768px
+$xlarge-start             : 64em;             // 1024px
+$xxlarge-start            : 90em;            // 1440px
 
 
 //$small-range: (0em, 30em); // 0 to 480px
