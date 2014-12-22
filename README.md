@@ -113,5 +113,5 @@
     *  ```-c``` link to stylsheet
     *  ```-o``` output
 * TODO need a max-width on body text
-* TODO our small-screen viewport is floaty horizontally
+* TODO ~~our small-screen viewport is floaty horizontally~~ Mon Dec 22 14:02:18 CST 2014
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
