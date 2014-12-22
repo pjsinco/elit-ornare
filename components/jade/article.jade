@@ -55,7 +55,6 @@ html
                   li.social__icon: a(href='#'): span.icon-comment #[span.text-replace Comments]
             
               div.story__body-text
-
                 p
                   | Many physicians write articles for local news outlets and pursue radio and television appearances to stay up-to-date on health news and increase their practice's visibility. But physicians should realize that their active involvement with the media can also benefit their community and public health, said media health expert Jennifer Caudle, DO, during an OMED session Tuesday.
                 
@@ -104,6 +103,7 @@ html
                 p
                   | When pitching yourself as a source, choose a news hook related to your field of expertise, Dr. Caudle suggested. For instance, around the holidays, news outlets may be producing segments on holiday stress. Also consider offering a new twist on a perennially covered topic, such as weight loss. Make sure your pitch is a good fit for the outlet's target demographic, whether it's composed of parents, the elderly or another group.
                 
+                aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-a
                 p
                   | Pitches are best sent via email, Dr. Caudle said, and should be relatively short and easy to read. She suggests sending an email in which you identify yourself, say what your expertise is, and briefly introduce your idea in a single paragraph.
                 
@@ -159,12 +159,9 @@ html
             aside(data-set="rover-don-parent").ad.rover-don-parent-b
               div.ad--med-rect.rover-don
                 img(src="img/medium-rect-0.gif" alt='medium-rectangle')
-            //-aside(data-set="rover-don-parent").ad.rover-don-parent-b
-              //-div.ad--med-rect.rover-don
-                //-img(src="img/medium-rect-0.gif" alt='medium-rectangle')
-            //-aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-a
-              //-div.ad--med-rect.rover-peggy
-                //-img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+            aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-b
+              div.ad--med-rect.rover-peggy
+                img(src="img/medium-rect-0.gif" alt='medium-rectangle')
       
     script(src='js/jquery.min.js')
     script(src='js/nav.js')
@@ -172,4 +169,5 @@ html
     script.
       /* call appendAound */
       $('.rover-don').appendAround();
+      $('.rover-peggy').appendAround();
     script(src='http://localhost:35729/livereload.js')
