@@ -110,4 +110,7 @@
 
     > Instead do ```git add -u```. Even better, skip the add stage and do ```git commit -a -m"blah"```
 * [pandoc](http://johnmacfarlane.net/pandoc/demos.html)
-```pandoc -c pandoc.css README.md -o readme.html```
+```pandoc -s -c pandoc.css README.md -o readme.html```
+    *  ```-s``` standalone
+    *  ```-c``` link to stylsheet
+    *  ```-o``` output
