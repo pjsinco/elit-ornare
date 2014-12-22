@@ -10,7 +10,7 @@
   // dev tools mobile view that corresponds
   // to a width of 320px
   // *take this out at some point*
-  @include breakpoint($small-start) {
+  @include breakpoint($screen $small-start) {
     padding-top: 0;
     padding-right: .5em;
     padding-bottom: 0;
@@ -29,13 +29,13 @@
   
 
   &__main {
-    @include breakpoint($xlarge-start) {
+    @include breakpoint($screen $xlarge-start) {
       @include span(8 of 12);
     }
   }
 
   &__secondary {
-    @include breakpoint($xlarge-start) {
+    @include breakpoint($screen $xlarge-start) {
       @include span(last 4 of 12);
     }
   }

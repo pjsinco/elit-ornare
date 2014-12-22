@@ -2,7 +2,7 @@
   @include clearfix();
   display: none;
   
-  @include breakpoint($large-start) {
+  @include breakpoint($screen $large-start) {
     display: block;
     float: left;
     position: relative;
@@ -20,7 +20,7 @@
     font-size: 2em;
     text-align: center;
 
-    @include breakpoint($large-start) {
+    @include breakpoint($screen $large-start) {
       text-align: right;
     }
   }

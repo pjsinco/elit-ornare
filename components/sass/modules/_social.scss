@@ -19,7 +19,7 @@
 
     display: inline-block;
 
-    @include breakpoint($large-start) {
+    @include breakpoint($screen $large-start) {
       display: block;
     }
   }

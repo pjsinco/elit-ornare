@@ -23,7 +23,7 @@
 
     &--top {
 
-      @include breakpoint($large-start) {
+      @include breakpoint($screen $large-start) {
         @include span(1 of 8);
       }
     }
@@ -37,13 +37,13 @@
 
   &__body-text {
 
-    @include breakpoint($large-start) {
+    @include breakpoint($screen $large-start) {
       @include span(last 7 of 8);
     }
   }
 
   &__footer {
-    @include breakpoint($large-start) {
+    @include breakpoint($screen $large-start) {
       @include span(last 7 of 8);
     }
 
@@ -52,7 +52,7 @@
 
   &__box {
     @include clearfix();
-    @include breakpoint($medium-minor-start) {
+    @include breakpoint($screen $medium-minor-start) {
       margin-left: 1.5em;
       margin-bottom: 1em;
       width: 11.875em;

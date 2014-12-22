@@ -1,7 +1,5 @@
 #notes so yeah
 
-
-
 ###Thu Dec 11 19:31:09 CST 2014###
 * **Use Parallels**
     * http://macbookpro is equivalent to http://localhost  
@@ -114,3 +112,5 @@
     *  ```-s``` standalone
     *  ```-c``` link to stylsheet
     *  ```-o``` output
+* TODO need a max-width on body text
+* TODO our small-screen viewport is floaty horizontally
