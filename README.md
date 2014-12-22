@@ -99,4 +99,6 @@ a lot of time setting up icon system
 
 ### Mon Dec 22 04:19:33 CST 2014
 * [AppendAround](https://github.com/filamentgroup/AppendAround) for moving elements around the DOM based on the breakpoint in play
+* Hide pull quotes in smallest screens?
+    * Might be a good place for an ad
 
