@@ -96,3 +96,7 @@ a lot of time setting up icon system
         * maybe this way: [How to fix document.write](http://www.feedthebot.com/pagespeed/avoid-document-write.html)
 * [AppendAround](https://github.com/filamentgroup/AppendAround) for moving content around based on viewport size
 * PageSpeed on eo-build: 57/100 mobile speed Sun Dec 21 11:36:48 CST 2014
+
+### Mon Dec 22 04:19:33 CST 2014
+* [AppendAround](https://github.com/filamentgroup/AppendAround) for moving elements around the DOM based on the breakpoint in play
+
