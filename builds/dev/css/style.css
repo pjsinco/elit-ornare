@@ -713,24 +713,26 @@ img {
 /* line 1, ../../../components/sass/modules/_pq.scss */
 .pq {
   overflow: hidden;
-  *zoom: 1; }
+  *zoom: 1;
+  display: none; }
   @media screen and (min-width: 48em) {
     /* line 1, ../../../components/sass/modules/_pq.scss */
     .pq {
+      display: block;
       float: left;
       position: relative;
       right: 14.70588%;
       width: 41.17647%;
       margin-right: -11.76471%;
       /*margin-right: -4em;*/ } }
-  /* line 15, ../../../components/sass/modules/_pq.scss */
+  /* line 17, ../../../components/sass/modules/_pq.scss */
   .pq__body {
     font-family: 'adelle', serif;
     font-weight: bold;
     font-size: 2em;
     text-align: center; }
     @media screen and (min-width: 48em) {
-      /* line 15, ../../../components/sass/modules/_pq.scss */
+      /* line 17, ../../../components/sass/modules/_pq.scss */
       .pq__body {
         text-align: right; } }
 

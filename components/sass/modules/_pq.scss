@@ -1,7 +1,9 @@
 .pq {
   @include clearfix();
+  display: none;
   
   @include breakpoint($large-start) {
+    display: block;
     float: left;
     position: relative;
     right: span(1 of 7 wide);
