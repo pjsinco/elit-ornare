@@ -1,15 +1,15 @@
 #notes so yeah
 
-**Use Parallels**
-http://macbookpro is equivalent to http://localhost  
-See: [Connecting Parallels VMs to your Mac localhost file for testing](http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349)
 
 
 ###Thu Dec 11 19:31:09 CST 2014###
-a lot of time setting up icon system  
-* started with c. coyier's defs/use system  
-* moved to grunticon, which uses background images  
-* so that's where we're at now; back to defs/use at some point?  
+* **Use Parallels**
+    * http://macbookpro is equivalent to http://localhost  
+    * See: [Connecting Parallels VMs to your Mac localhost file for testing](http://www.toddvachon.com/2013/04/connecting-parallels-vms-to-your-mac-localhost-file-for-testing/349)
+* a lot of time setting up icon system  
+    * started with c. coyier's defs/use system  
+    * moved to grunticon, which uses background images  
+    * so that's where we're at now; back to defs/use at some point?  
 
 ###Fri Dec 12 09:20:37 CST 2014
 * installed svgo  
@@ -40,7 +40,7 @@ a lot of time setting up icon system
     }>)
     ```
 
-* using adobe edge inspect on my android 4.3 phone, I see that svg defs/use doesn't work. so back to background system?
+* using adobe edge inspect on my android 2.3 phone, I see that svg defs/use doesn't work. so back to background system?
 
 ###Wed Dec 17 10:13:09 CST 2014
 * deploys icon-font
@@ -54,7 +54,7 @@ a lot of time setting up icon system
 
 ###Fri Dec 19 08:24:30 CST 2014
 * should we switch form [hamburger to "menu"](https://econsultancy.com/blog/65511-hamburger-menus-for-mobile-navigation-do-they-work)?
-* (Breakpoint wiki)[https://github.com/at-import/breakpoint/wiki]
+* [Breakpoint wiki](https://github.com/at-import/breakpoint/wiki)
 * First swing at extracting assets from photoshop
     1. Name layer with what we want the file to be called (ex., caudle-omed)
     2. Right-click on that layer and choose "Extract Assets ..."
