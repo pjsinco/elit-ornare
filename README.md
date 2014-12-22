@@ -1,4 +1,4 @@
-#notes um yeah
+#notes so yeah
 
 
 
