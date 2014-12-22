@@ -45,6 +45,7 @@ node_modules/*
 bower_components/*
 components/vendor/*
 
+builds/*
 builds/dev/img/*
 builds/dev/fonts/*
 builds/dev/js/*
