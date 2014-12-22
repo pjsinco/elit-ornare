@@ -114,3 +114,4 @@
     *  ```-o``` output
 * TODO need a max-width on body text
 * TODO our small-screen viewport is floaty horizontally
+* Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
