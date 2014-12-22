@@ -146,16 +146,6 @@ html
                 p
                   | "Osteopathic physicians have an opportunity with these media outlets to promote what we do, especially because what we do is so in line with concepts that the general public is interested in now in terms of medical care, such as holistic medicine," said Dr. Misra, a family physician from East Lansing, Michigan. "We have a unique opportunity at this time in history to promote our brand and promote what we do, and we need to take advantage of that."
 
-
-
-
-                  
-  
-                
-                  
-                  
-                          
-
               footer.story__footer  
                 ul.story__social--bottom.social--inline
                   li.social__icon: a(href='#'): span.icon-facebook #[span.text-replace Facebook]
@@ -163,13 +153,12 @@ html
                   li.social__icon: a(href='#'): span.icon-linkedin #[span.text-replace LinkedIn]
                   li.social__icon: a(href='#'): span.icon-pinterest #[span.text-replace Pinterest]
 
-
           section#secondary.content__secondary
-            aside.ad
-              div.ad--med-rect
+            aside(data-set="rover-don-parent").ad.rover-don-parent-a
+              div.ad--med-rect.rover-don
                 img(src="img/medium-rect-0.gif" alt='medium-rectangle')
-            aside.ad
-              div.ad--med-rect
+            aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-a
+              div.ad--med-rect.rover-peggy
                 img(src="img/medium-rect-0.gif" alt='medium-rectangle')
       
     script(src='js/jquery.min.js')
