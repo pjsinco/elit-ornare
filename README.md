@@ -1,4 +1,4 @@
-#Static mockup of new site
+#Notes so yeah
 
 **Use Parallels**
 http://macbookpro is equivalent to http://localhost  
@@ -101,4 +101,11 @@ a lot of time setting up icon system
 ### Mon Dec 22 04:19:33 CST 2014
 * Hide pull quotes in smallest screens?
     * Might be a good place for an ad
+* git commit from within vim
+```
+:! git add % ; git commit -m "[commit message]"
+```
+* [ Hmmm ](http://stackoverflow.com/questions/1675464/how-can-i-combine-these-git-commands):
+    > I say this: Don't do ```git add .```  
 
+    > Instead do ```git add -u```. Even better, skip the add stage and do ```git commit -a -m"blah"```
