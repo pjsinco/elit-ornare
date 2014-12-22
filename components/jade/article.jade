@@ -71,6 +71,8 @@ html
                 aside.pq
                   div.pq__body
                     | Who better to talk about health than everyone sitting in this room?
+    
+                aside(data-set="rover-don-parent").ad.rover-don-parent-a
 
                 p
                   | "You hear all these almost ridiculous claims or studies that are being talked about in the news, maybe without context, maybe without perspective," she said. "Throughout the years I've [wondered], 'Who is actually reading these studies? Who's in charge of presenting this information to the public?'&nbsp;"
@@ -154,17 +156,20 @@ html
                   li.social__icon: a(href='#'): span.icon-pinterest #[span.text-replace Pinterest]
 
           section#secondary.content__secondary
-            aside(data-set="rover-don-parent").ad.rover-don-parent-a
+            aside(data-set="rover-don-parent").ad.rover-don-parent-b
               div.ad--med-rect.rover-don
                 img(src="img/medium-rect-0.gif" alt='medium-rectangle')
-            aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-a
-              div.ad--med-rect.rover-peggy
-                img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+            //-aside(data-set="rover-don-parent").ad.rover-don-parent-b
+              //-div.ad--med-rect.rover-don
+                //-img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+            //-aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-a
+              //-div.ad--med-rect.rover-peggy
+                //-img(src="img/medium-rect-0.gif" alt='medium-rectangle')
       
     script(src='js/jquery.min.js')
     script(src='js/nav.js')
     script(src='js/appendAround.js')
     script.
       /* call appendAound */
-      $('.rover').appendAround();
+      $('.rover-don').appendAround();
     script(src='http://localhost:35729/livereload.js')
