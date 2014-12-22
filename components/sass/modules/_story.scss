@@ -23,7 +23,7 @@
 
     &--top {
 
-      @include breakpoint($screen $large-start) {
+      @include breakpoint($screen $medium-minor-minor-start) {
         @include span(1 of 8);
       }
     }
@@ -37,13 +37,13 @@
 
   &__body-text {
 
-    @include breakpoint($screen $large-start) {
+    @include breakpoint($screen $medium-minor-minor-start) {
       @include span(last 7 of 8);
     }
   }
 
   &__footer {
-    @include breakpoint($screen $large-start) {
+    @include breakpoint($screen $medium-minor-start) {
       @include span(last 7 of 8);
     }
 
