@@ -1,4 +1,4 @@
-#Notes so yeah
+#notes so yeah
 
 **Use Parallels**
 http://macbookpro is equivalent to http://localhost  
