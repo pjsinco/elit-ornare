@@ -1,5 +1,5 @@
 %ad-pos {
-  margin: .5em auto;
+  margin: 0 auto;
 }
 
 .ad {
@@ -22,17 +22,12 @@
 
   &--wide-shallow {
     @extend %ad-pos;
-    width: 99%;
+    width: 100%;
 
     @include breakpoint($screen $medium-start) {
       /*width: 728px;*/
     }
   }
-
-//  &--med-rect {
-//    /*@extend %ad-pos;*/
-//    /*width: 300px;*/
-//  }
 
   &:before {
     color: $gray;
@@ -48,10 +43,12 @@
   }
 
   &:after {
+    margin-top: .5em;
     content: '';
     width: 100%;
     display: block;
     border-bottom: 1px solid $lightgray;
+    
   }
 
 }
