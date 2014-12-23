@@ -11,7 +11,7 @@
   &__img {
     // negative margin the override containing block's padding
     margin-left: -($outside-gutter-small);
-    max-width: 108%;
+    max-width: 106%;
 
     @include breakpoint($screen $medium-start) {
       margin-left: 0; 
