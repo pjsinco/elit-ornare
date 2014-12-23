@@ -155,3 +155,5 @@
     * this is working well so far
 
 * don't forget sometimes we need to ```grunt compile-jade``` after switching branches
+
+* TODO more outside padding on medium screens
