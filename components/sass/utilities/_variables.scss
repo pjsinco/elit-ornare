@@ -37,13 +37,14 @@ $font-weight-normal: normal;
 $all: 'all';
 $screen: 'screen';
 // $small-start not needed--for quick sizing in chrome dev
-$small-start              : 20em;              // 320px
-$medium-start             : 30em;             // 480px
-$medium-minor-start       : 36em;       // 576px
-$medium-minor-minor-start : 43em; // 688px
-$large-start              : 48em;              // 768px
-$xlarge-start             : 64em;             // 1024px
-$xxlarge-start            : 90em;            // 1440px
+$small-start              : 20em; //  320px
+$small-minor-start        : 25em; //  400px
+$medium-start             : 30em; //  480px
+$medium-minor-start       : 36em; //  576px
+$medium-minor-minor-start : 43em; //  688px
+$large-start              : 48em; //  768px
+$xlarge-start             : 64em; //  1024px
+$xxlarge-start            : 90em; //  1440px
 
 $outside-gutter-small: .5em;
 $outside-gutter-medium: 1em;
