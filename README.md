@@ -175,7 +175,9 @@
     * *w-w-w-wait:* our **story** should ```span(8 of 12)```, no? not be a ```container```?
 
 * TODO we lost our figcaption --> needs a **container** mixin
+* TODO wrap our ads in a link
 
 * pagespeed: 57 mobile
 
 * so, on mediumish views, having the thin white column on the left is kinda jarring
+
