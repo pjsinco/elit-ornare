@@ -21,10 +21,15 @@
     padding-left:  $outside-gutter-medium;
   }
 
-  @include breakpoint ($large-start) {
+  @include breakpoint ($medium-minor-minor-start) {
     padding-right: $outside-gutter-large;
     padding-left:  $outside-gutter-large;
   }
+
+//  @include breakpoint ($large-start) {
+//    padding-right: $outside-gutter-large;
+//    padding-left:  $outside-gutter-large;
+//  }
   
 
   &__main {
