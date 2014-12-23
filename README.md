@@ -115,3 +115,9 @@
 * TODO need a max-width on body text
 * TODO ~~our small-screen viewport is floaty horizontally~~ Mon Dec 22 14:02:18 CST 2014
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
+* PageSpeed on eo-build: 57/100 mobile Mon Dec 22 16:42:44 CST 2014
+
+### Tue Dec 23 06:18:02 CST 2014
+* susy grid possibilities
+    * [example](http://sassmeister.com/gist/8381773), 
+* TODO we need a fat gutter between our main column and secondary column on article page, without breaking our rhythm

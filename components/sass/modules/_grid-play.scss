@@ -1,0 +1,65 @@
+$gridplay: (
+  global-box-sizing: border-box,
+  /*gutter-position: split,*/
+  columns: 12,
+  container: 992px,
+  gutters: .25,
+  debug: (
+    image: show-columns,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: top right,
+  ),
+);
+
+.grid-play {
+
+  &--a {
+    background: fuchsia;
+    @include span(8 of $gridplay);
+  }
+
+  &--b {
+    background: gold;
+    /*@include span(full);*/
+    /*@include span(4 last of $gridplay);*/
+    @include span(30% last);
+  }
+
+  &--c {
+    background: goldenrod;
+    @include span(1 of $gridplay);
+  }
+
+  &--d {
+    @include span(1 of $gridplay);
+    background: darkorange;
+  }
+
+  &--e {
+    @include span(1 last of $gridplay);
+    background: skyblue;
+  }
+}
+
+.row {
+  @include container($gridplay);
+  margin-top: 1em;
+  
+}
+
+.rule {
+
+  &--before {
+    position: relative;
+
+    &:before {
+      content: '';
+      border-left: 1px solid crimson;
+      left: -6%;
+      position: absolute;
+      height: 100%;
+    }
+  }
+
+}
