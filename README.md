@@ -113,6 +113,7 @@
     *  ```-c``` link to stylsheet
     *  ```-o``` output
 * TODO need a max-width on body text
+    * maybe 570px/35.625em?
 * TODO ~~our small-screen viewport is floaty horizontally~~ Mon Dec 22 14:02:18 CST 2014
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
 * PageSpeed on eo-build: 57/100 mobile Mon Dec 22 16:42:44 CST 2014
