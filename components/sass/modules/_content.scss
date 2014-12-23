@@ -1,7 +1,12 @@
 .content {
-  padding-right: $outside-gutter-small;
-  padding-left: $outside-gutter-small;
-  margin-top: 1em;
+
+  @include breakpoint($large-minor-start) {
+    @include container();
+  }
+
+  /*padding-right: $outside-gutter-small;*/
+  /*padding-left: $outside-gutter-small;*/
+  /*margin-top: 1em;*/
 
   
   // CONVENIENCE
@@ -11,19 +16,21 @@
   // *take this out at some point*
   @include breakpoint($screen $small-start) {
     padding-top: 0;
-    padding-right: $outside-gutter-small;
+    /*padding-right: $outside-gutter-small;*/
+    padding-right: 0;
     padding-bottom: 0;
-    padding-left: $outside-gutter-small;
+    /*padding-left: $outside-gutter-small;*/
+    padding-left: 0;
   }
   
   @include breakpoint ($medium-start) {
-    padding-right: $outside-gutter-medium;
-    padding-left:  $outside-gutter-medium;
+    /*padding-right: $outside-gutter-medium;*/
+    /*padding-left:  $outside-gutter-medium;*/
   }
 
   @include breakpoint ($medium-minor-minor-start) {
-    padding-right: $outside-gutter-large;
-    padding-left:  $outside-gutter-large;
+    /*padding-right: $outside-gutter-large;*/
+    /*padding-left:  $outside-gutter-large;*/
   }
 
 //  @include breakpoint ($large-start) {
@@ -32,14 +39,14 @@
 //  }
   
 
-  &__main {
-    @include breakpoint($screen $xlarge-start) {
+  &__primary {
+    @include breakpoint($screen $large-minor-start) {
       @include span(8 of 12);
     }
   }
 
   &__secondary {
-    @include breakpoint($screen $xlarge-start) {
+    @include breakpoint($screen $large-minor-start) {
       @include span(last 4 of 12);
     }
   }

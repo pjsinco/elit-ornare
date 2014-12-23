@@ -1,5 +1,18 @@
 .story {
 
+  @include container(95%);
+  
+  @include breakpoint($medium-start) {
+    @include container(95%);
+  }
+
+  @include breakpoint($large-start) {
+    @include container(95%);
+  }
+
+  @include breakpoint($large-minor-start) {
+
+  }
 
   &__kicker {
 
@@ -34,7 +47,6 @@
 
   }
 
-
   &__body-text {
 
     @include breakpoint($screen $medium-minor-minor-start) {
@@ -48,7 +60,6 @@
     }
 
   }
-
 
   &__box {
     @include clearfix();
