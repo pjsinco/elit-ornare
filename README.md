@@ -153,3 +153,5 @@
         @min-width: 652px --> 930px
         ```
     * this is working well so far
+
+* don't forget sometimes we need to ```grunt compile-jade``` after switching branches
