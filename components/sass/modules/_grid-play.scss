@@ -14,7 +14,18 @@ $gridplay: (
 
 .grid-play {
 
+  &--img {
+    background: darkblue;
+    @include bleed(1em);
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
   &--a {
+    padding: 1em;
     background: fuchsia;
     @include span(8 of $gridplay);
   }
