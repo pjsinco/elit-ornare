@@ -161,3 +161,4 @@
 * TODO more outside padding on medium screens
 
 * maybe we don't need a page wrapper?
+    * but the nice thing is we can set a ```position: relative;``` on it
