@@ -163,13 +163,16 @@
 * maybe we don't need a page wrapper?
     * but the nice thing is we can set a ```position: relative;``` on it
     * maybe we can set it on .content
+    * so we're flying w/out a wrapper *Tue Dec 23 16:30:30 CST 2014*
 
 * so we break into our 2/3, 1/3 page grid on an article, right now, at 896px ($large-minor-start)
     * otherwise, we're 1 col on those smaller screens
 
 * **TODAY** Blueprints + girders -- focusing on structure, markup as clear and simple as possible
 
-* so our **story** module has a 95% container to start
+* so our **story** module has a 95% ```container``` to start
     * otherwise it would bleed to the edges, so that's how we're controlling our outside spacing
+    * *w-w-w-wait:* our **story** should ```span(8 of 12)```, no? not be a ```container```?
 
-* todo we lost our figcaption --> needs a **container** mixin
+* TODO we lost our figcaption --> needs a **container** mixin
+
