@@ -159,3 +159,5 @@
     * shortcut: ```gcj```
 
 * TODO more outside padding on medium screens
+
+* maybe we don't need a page wrapper?
