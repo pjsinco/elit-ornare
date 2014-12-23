@@ -155,6 +155,7 @@
         ```
     * this is working well so far
 
-* don't forget sometimes we need to ```grunt compile-jade``` after switching branches
+* don't forget sometimes we need to ```grunt compile-jade``` after switching branches 
+    * shortcut: ```gcj```
 
 * TODO more outside padding on medium screens
