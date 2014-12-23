@@ -11,10 +11,6 @@
   position: relative;
 }
 
-.row {
-  @include container();
-}
-
 //http://www.filamentgroup.com/lab/bulletproof_icon_fonts.html
 .text-replace {
   clip: rect(0 0 0 0);

@@ -1,6 +1,5 @@
 .story {
 
-
   &__kicker {
 
   }
@@ -34,7 +33,6 @@
 
   }
 
-
   &__body-text {
 
     @include breakpoint($screen $medium-minor-minor-start) {
@@ -48,7 +46,6 @@
     }
 
   }
-
 
   &__box {
     @include clearfix();
