@@ -163,3 +163,6 @@
 * maybe we don't need a page wrapper?
     * but the nice thing is we can set a ```position: relative;``` on it
     * maybe we can set it on .content
+
+* so we break into our 2/3, 1/3 page grid on an article, right now, at 896px ($large-minor-start)
+    * otherwise, we're 1 col on those smaller screens
