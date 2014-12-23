@@ -176,3 +176,6 @@
 
 * TODO we lost our figcaption --> needs a **container** mixin
 
+* pagespeed: 57 mobile
+
+* so, on mediumish views, having the thin white column on the left is kinda jarring
