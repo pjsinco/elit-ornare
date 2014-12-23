@@ -168,3 +168,8 @@
     * otherwise, we're 1 col on those smaller screens
 
 * **TODAY** Blueprints + girders -- focusing on structure, markup as clear and simple as possible
+
+* so our **story** module has a 95% container to start
+    * otherwise it would bleed to the edges, so that's how we're controlling our outside spacing
+
+* todo we lost our figcaption --> needs a **container** mixin

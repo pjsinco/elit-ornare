@@ -3,7 +3,7 @@
   display: none;
   
   @include breakpoint($screen $large-start) {
-    display: block;
+    /*display: block;*/
     float: left;
     position: relative;
     right: span(1 of 7 wide);
