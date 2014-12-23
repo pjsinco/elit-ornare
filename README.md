@@ -143,3 +143,6 @@
         ```
 
         * see grid-play.html and _grid-play.scss
+
+* picturefill: how many versions, and what sizes, of the image to use?
+    * ?: 460, 620, 700

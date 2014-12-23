@@ -1,6 +1,6 @@
 .content {
-  padding-right: .5em;
-  padding-left: .5em;
+  padding-right: $outside-gutter-small;
+  padding-left: $outside-gutter-small;
   margin-top: 1em;
 
   
@@ -11,19 +11,19 @@
   // *take this out at some point*
   @include breakpoint($screen $small-start) {
     padding-top: 0;
-    padding-right: .5em;
+    padding-right: $outside-gutter-small;
     padding-bottom: 0;
-    padding-left: .5em;
+    padding-left: $outside-gutter-small;
   }
   
   @include breakpoint ($medium-start) {
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: $outside-gutter-medium;
+    padding-left:  $outside-gutter-medium;
   }
 
   @include breakpoint ($large-start) {
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: $outside-gutter-large;
+    padding-left:  $outside-gutter-large;
   }
   
 
