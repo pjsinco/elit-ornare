@@ -1,5 +1,19 @@
 .story {
 
+  @include container(95%);
+  
+  @include breakpoint($medium-start) {
+    @include container(95%);
+  }
+
+  @include breakpoint($large-start) {
+    @include container(95%);
+  }
+
+  @include breakpoint($large-minor-start) {
+
+  }
+
   &__kicker {
 
   }

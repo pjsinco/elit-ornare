@@ -158,7 +158,7 @@
 * don't forget sometimes we need to ```grunt compile-jade``` after switching branches 
     * shortcut: ```gcj```
 
-* TODO more outside padding on medium screens
+* TODO ~~more outside padding on medium screens~~2014-23-12
 
 * maybe we don't need a page wrapper?
     * but the nice thing is we can set a ```position: relative;``` on it
@@ -166,3 +166,5 @@
 
 * so we break into our 2/3, 1/3 page grid on an article, right now, at 896px ($large-minor-start)
     * otherwise, we're 1 col on those smaller screens
+
+* **TODAY** Blueprints + girders -- focusing on structure, markup as clear and simple as possible
