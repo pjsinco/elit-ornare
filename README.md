@@ -139,10 +139,17 @@
 
         * the secondary column
         ```
-        @include span(30% last); // this % value will give us our fat gutter and hold a med-rect ad
+        /* this % value will give us our fat gutter and hold a med-rect ad */
+        @include span(30% last); 
         ```
 
         * see grid-play.html and _grid-play.scss
 
 * picturefill: how many versions, and what sizes, of the image to use?
-    * ?: 460, 620, 700
+    * here's what we're working with now:
+        ```
+                  default --> 410px (image size)
+        @min-width: 410px --> 620px
+        @min-width: 652px --> 930px
+        ```
+    * this is working well so far
