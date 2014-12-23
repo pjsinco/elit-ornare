@@ -101,7 +101,7 @@
     * Might be a good place for an ad
 * git commit from within vim
 ```
-:! git add % ; git commit -m "[commit message]"
+:! git add % ; git commit -m "mods readme"
 ```
 * [ Hmmm ](http://stackoverflow.com/questions/1675464/how-can-i-combine-these-git-commands):
     > I say this: Don't do ```git add .```  
