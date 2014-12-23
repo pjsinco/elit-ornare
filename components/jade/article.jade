@@ -21,22 +21,21 @@ html
     div.content#main
       section.content__primary#primary
         article.story
+          figure.image.image--primary
+            picture
+              <!--[if IE 9]>
+              <video style="display: none">
+              <![endif]-->
+              //-source(srcset="img/caudle-omed.jpg" media="(min-width: 768px)") 
+              source(srcset="img/caudle-omed@.75.jpg" media="(min-width: 652px)") 
+              source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
+              <!--[if IE 9]>
+              </video>
+              <![endif]-->
+              img(srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO").image__img
+            figcaption.image__caption.image__caption--right 
+              | Sed Consectetur Lobortis, LL
           header
-            figure.image.image--primary
-              picture
-                <!--[if IE 9]>
-                <video style="display: none">
-                <![endif]-->
-                //-source(srcset="img/caudle-omed.jpg" media="(min-width: 768px)") 
-                source(srcset="img/caudle-omed@.75.jpg" media="(min-width: 652px)") 
-                source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
-                <!--[if IE 9]>
-                </video>
-                <![endif]-->
-                img(srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO").image__img
-              figcaption.image__caption.image__caption--right 
-                | Sed Consectetur Lobortis, LL
-              
             h5.story__kicker Duis Arte
             h1.story__title Media 101: How to position yourself as a medical expert
             h3.story__teaser Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.
