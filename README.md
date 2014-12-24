@@ -118,7 +118,7 @@
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
 * PageSpeed on eo-build: 57/100 mobile Mon Dec 22 16:42:44 CST 2014
 
-### Tue Dec 23 06:18:02 CST 2014
+###Tue Dec 23 06:18:02 CST 2014
 * susy grids 
     * [example](http://sassmeister.com/gist/8381773), [zell](http://www.zell-weekeat.com/tag/susy/)
 * TODO ~~we need a fat gutter between our main column and secondary column on article page, without breaking our rhythm~~ Tue Dec 23 09:19:09 CST 2014
@@ -181,3 +181,8 @@
 
 * so, on mediumish views, having the thin white column on the left is kinda jarring
 
+###Wed Dec 24 06:27:07 2014 CST
+* let's move **related** to the story footer in small, med screens?
+    * disruptive otherwise, esp. with ads running in
+* todo fix .story bpoint on $large-minor-start
+    * set the max width
