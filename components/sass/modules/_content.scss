@@ -24,13 +24,13 @@
   }
   
   &__primary {
-    @include breakpoint($screen $large-minor-start) {
+    @include breakpoint($screen $xlarge-start) {
       @include span(8 of $gridpage);
     }
   }
 
   &__secondary {
-    @include breakpoint($screen $large-minor-start) {
+    @include breakpoint($screen $xlarge-start) {
       @include span(30% last of $gridpage);
     }
   }
