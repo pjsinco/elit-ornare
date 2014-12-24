@@ -14,7 +14,7 @@
     /*max-width: 106%;*/
     margin: 0 auto;
     width: 100%;
-    max-width: 48em;
+    max-width: $article-feature-image-max-width;
     height: auto;
     display: block;
   
@@ -30,6 +30,19 @@
 
   &__caption {
     @extend %caption-base;
+    margin-left: ((100 - $story-width) / 2);
+    margin-right: ((100 - $story-width) / 2);
+    max-width: $article-max-width;
+
+    @include breakpoint($medium-start) {
+      margin-left: ((100 - $story-width-medium) / 2);
+      margin-right: ((100 - $story-width-medium) / 2);
+    }
+
+    @include breakpoint($large-start) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &--right {
       text-align: right;
@@ -41,7 +54,4 @@
     }
 
   }
-
-
-
 }

@@ -9,10 +9,11 @@
   
   @include breakpoint($medium-start) {
     /*@include container(90%);*/
-    width: 90%;
+    width: $story-width-medium;
   }
 
   @include breakpoint($large-start) {
+    width: 100%;
     /*@include container(95%);*/
     /*@include span(8 of $gridpage);*/
   }
