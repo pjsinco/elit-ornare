@@ -184,7 +184,7 @@
 ###Wed Dec 24 06:27:07 2014 CST
 * let's move **related** to the story footer in small, med screens?
     * disruptive otherwise, esp. with ads running in
-* TODO fix .story bpoint on $large-minor-start
+* TODO ~~fix .story bpoint on $large-minor-start~~Wed Dec 24 11:06:22 2014 CST 
     * set the max width
         * max-width on .story should be 40.9824375em
             * that's its width at desktop
@@ -195,3 +195,6 @@
     * .story is 728px wide --> same as leaderboard
 
 * let's let med-rects run into the story at some wider views
+    * OK! Wed Dec 24 11:05:58 2014 CST 
+
+* Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent
