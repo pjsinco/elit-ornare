@@ -1,16 +1,26 @@
+%center {
+  margin: 0 auto;
+}
+
 .story {
 
-  @include container(94%);
+  /*@include container(94%);*/
+  width: 94%;
+  @extend %center;
+
   
   @include breakpoint($medium-start) {
-    @include container(90%);
+    /*@include container(90%);*/
+    width: 90%;
   }
 
   @include breakpoint($large-start) {
     /*@include container(95%);*/
+    /*@include span(8 of $gridpage);*/
   }
 
   @include breakpoint($large-minor-start) {
+    width: 100%;
 
   }
 
