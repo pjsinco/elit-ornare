@@ -31,7 +31,7 @@
 
   &__secondary {
     @include breakpoint($screen $large-minor-start) {
-      @include span(last 4 of $gridpage);
+      @include span(30% last of $gridpage);
     }
   }
 
