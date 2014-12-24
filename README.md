@@ -184,5 +184,10 @@
 ###Wed Dec 24 06:27:07 2014 CST
 * let's move **related** to the story footer in small, med screens?
     * disruptive otherwise, esp. with ads running in
-* todo fix .story bpoint on $large-minor-start
+* TODO fix .story bpoint on $large-minor-start
     * set the max width
+        * max-width on .story should be 40.9824375em
+            * that's its width at desktop
+    * what if we set the max-width on .story as the same width of the leaderboard?
+* @890px width:
+    * .story is 728px wide --> same as leaderboard
