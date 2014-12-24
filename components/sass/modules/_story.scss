@@ -1,9 +1,9 @@
 .story {
 
-  @include container(95%);
+  @include container(94%);
   
   @include breakpoint($medium-start) {
-    @include container(95%);
+    @include container(90%);
   }
 
   @include breakpoint($large-start) {
