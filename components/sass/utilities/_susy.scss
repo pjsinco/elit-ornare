@@ -2,7 +2,7 @@ $susy: (
   global-box-sizing: border-box,
   columns: 12,
   /*container: 60em,*/
-  container: 62em,
+  container: $site-width,
   debug: (
     image: show-columns,
     /*image: hide,*/
@@ -16,7 +16,7 @@ $gridpage: (
   global-box-sizing: border-box,
   columns: 12,
   /*container: 60em,*/
-  container: 62em,
+  container: $site-width,
   gutters: .25,
   debug: (
     image: show-columns,
