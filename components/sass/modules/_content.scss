@@ -1,7 +1,7 @@
 .content {
 
   @include breakpoint($large-minor-start) {
-    @include container();
+    @include container($gridpage);
   }
 
   /*padding-right: $outside-gutter-small;*/
@@ -23,31 +23,15 @@
     padding-left: 0;
   }
   
-  @include breakpoint ($medium-start) {
-    /*padding-right: $outside-gutter-medium;*/
-    /*padding-left:  $outside-gutter-medium;*/
-  }
-
-  @include breakpoint ($medium-minor-minor-start) {
-    /*padding-right: $outside-gutter-large;*/
-    /*padding-left:  $outside-gutter-large;*/
-  }
-
-//  @include breakpoint ($large-start) {
-//    padding-right: $outside-gutter-large;
-//    padding-left:  $outside-gutter-large;
-//  }
-  
-
   &__primary {
     @include breakpoint($screen $large-minor-start) {
-      @include span(8 of 12);
+      @include span(8 of $gridpage);
     }
   }
 
   &__secondary {
     @include breakpoint($screen $large-minor-start) {
-      @include span(last 4 of 12);
+      @include span(last 4 of $gridpage);
     }
   }
 
