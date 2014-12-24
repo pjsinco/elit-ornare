@@ -9,6 +9,7 @@ $mediumgray: #b3b3b3;
 $lightgray: #ddd;
 $extralightgray: #f5f5f5;
 $blue: #077cc2;
+$bluegray: #2D4254; // la times
 $aoa: #1C446C;
 $facebook: #3b5999;
 $twitter: #5fa9dd;
@@ -43,6 +44,7 @@ $medium-start             : 30em;     //  480px
 $medium-minor-start       : 36em;     //  576px
 $medium-minor-minor-start : 43em;     //  688px
 $large-start              : 48em;     //  768px
+$leaderboard-start        : 50.5625em;//  809px
 $large-minor-start        : 56em;     //  896px
 $xlarge-start             : 64em;     //  1024px
 $xxlarge-start            : 90em;     //  1440px
@@ -50,6 +52,8 @@ $xxlarge-start            : 90em;     //  1440px
 $outside-gutter-small: .5em;
 $outside-gutter-medium: 1.25em;
 $outside-gutter-large: 2em;
+
+$article-max-width: 45.5em;
 
 //$small-range: (0em, 30em); // 0 to 480px
 //$medium-range: (30.063em, 48em); // 481px to 768px

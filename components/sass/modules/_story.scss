@@ -1,11 +1,9 @@
-%center {
-  margin: 0 auto;
-}
-
 .story {
 
   /*@include container(94%);*/
   width: 94%;
+  /*max-width: 40.9824375em;*/
+  max-width: $article-max-width;
   @extend %center;
 
   
