@@ -11,7 +11,7 @@
     @extend %ad-pos;
     width: 300px;
 
-    @include breakpoint($screen $medium-minor-start $large-start) {
+    @include breakpoint($screen $medium-minor-start $large-minor-start) {
       float: right;
       margin-left: 1em;
     };
