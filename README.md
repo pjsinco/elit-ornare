@@ -174,7 +174,7 @@
     * otherwise it would bleed to the edges, so that's how we're controlling our outside spacing
     * *w-w-w-wait:* our **story** should ```span(8 of 12)```, no? not be a ```container```?
 
-* TODO we lost our figcaption --> needs a **container** mixin
+* TODO ~~we lost our figcaption --> needs a **container** mixin~~Wed Dec 24 10:18:18 2014 CST 
 * TODO wrap our ads in a link
 
 * pagespeed: 57 mobile
@@ -189,5 +189,9 @@
         * max-width on .story should be 40.9824375em
             * that's its width at desktop
     * what if we set the max-width on .story as the same width of the leaderboard?
+        * so that'd be 45.5em
+
 * @890px width:
     * .story is 728px wide --> same as leaderboard
+
+* let's let med-rects run into the story at some wider views
