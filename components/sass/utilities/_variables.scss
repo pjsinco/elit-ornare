@@ -1,7 +1,7 @@
 /*
  * COLORS
  */
-$black: #333;
+$verydark: #333;
 $white: #fff;
 $red: #ef3f23;
 $gray: #6b7574;
@@ -28,11 +28,12 @@ $color-primary: $red;
 $font-primary: 'proxima-nova', Arial, sans-serif;
 $font-secondary: "adelle", Georgia, serif;
 
-$font-color: $black;
+$font-color: $verydark;
 $font-color-lighter: #6b7574;
 
 $font-size-base: 1.1875em;
-$font-weight-normal: normal;
+$normal: 400;
+$bold: 600;
 
 /*
  * Breakpoint
