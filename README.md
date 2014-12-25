@@ -198,3 +198,6 @@
     * OK! Wed Dec 24 11:05:58 2014 CST 
 
 * Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent
+
+###Thu
+* todo add $screen to all breakpoints
