@@ -6,14 +6,26 @@
   transition: all ease-out .3s;
   /*background: $red;*/
   background: rgba($white,0.9);
+  
+  @include breakpoint($screen $big-menu-start) {
+    position: static;
+    transition: none;
+  }
     
   .js & {
     overflow: hidden;
     max-height: 0;
+    @include breakpoint($screen $big-menu-start) {
+      overflow: visible;
+      max-height: 100%;
+    }
   }
   
   &.active {
     max-height: 21em;
+    @include breakpoint($screen $big-menu-start) {
+      max-height: 100%;
+    }
   }
 
   &__list {
@@ -26,14 +38,26 @@
 
   &__item {
     display: block;
-    /*padding: .8em;*/
     border-bottom: 1px solid $lightgray;
     text-align: center;
-    /*text-transform: uppercase;*/
-    /*letter-spacing: .25em;*/
     
+    @include breakpoint($screen $big-menu-start) {
+      margin-right: 1.230769231em;
+      display: inline-block;
+      border-bottom: none;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 0.8125em;
+    }
     &--link {
       color: $verydark;
+      @include breakpoint($screen $big-menu-start) {
+        color: $font-color-lighter;
+      }
+    }
+
+    &--last {
+      float: right;
     }
   }
 
@@ -44,12 +68,12 @@
       position: absolute;
       top: .5em;
       left: 1em;
-      /*float: left;*/
-      /*display: block;*/
-      /*padding: 1em;*/
       font-size: 1.5em;
-      /*line-height: 0;*/
       color: #fff;
+
+      @include breakpoint($screen $big-menu-start) {
+        display: none;
+      }
     }
   }
 

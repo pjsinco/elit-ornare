@@ -1,5 +1,3 @@
-$big-menu-start: $large-minor-start;
-
 .banner {
   @include container($gridpage);
   position: relative;
@@ -12,9 +10,10 @@ $big-menu-start: $large-minor-start;
   text-align: center;
 
   @include breakpoint($screen $big-menu-start) {
-    padding-bottom: 2em;
+    padding-bottom: 5em;
     border-bottom: 1px solid $lightgray;
     text-align: left;
+    background-color: $white;
   }
 
   &__link {
@@ -41,7 +40,8 @@ $big-menu-start: $large-minor-start;
     display: none;
     @include breakpoint($screen $big-menu-start) {
       float: right;
-      top: -1.25em;
+      top: -1.3em;
+      display: block;
 
       span {
         font-size: 1.875em;
