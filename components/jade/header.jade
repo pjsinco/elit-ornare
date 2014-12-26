@@ -19,6 +19,5 @@ header(role="banner").banner#banner
           section.site-search
             form(action="/search")#search-form.site-search__form
               label#search-label.site-search__label(for='q')
-              button(type='submit').site-search__button
-                span.icon-glass
-              input(type='text' name='q' placeholder='Enter search terms')#q.site-search__input
+                input(type='search' name='q' placeholder='Enter search terms')#q.site-search__input
+              input(type='submit').site-search__button--hide
