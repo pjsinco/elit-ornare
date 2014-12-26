@@ -7,6 +7,9 @@ html {
 body {
   font-family: $font-primary;
   background-color: $white;
+  @include breakpoint($screen $big-menu-start) {
+    border-top: 8px solid $color-primary;
+  }
 }
 
 a {
