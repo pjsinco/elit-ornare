@@ -24,12 +24,12 @@
   }
 
   &__input {
-    background-image: image-url('png/glass.png');
-    background-position: 0px center;
+    background-image: image-url('svg/glass.svg');
+    background-position: 7px center;
     background-repeat: no-repeat;
-    background-size: 24px 24px;
+    background-size: 18px 18px;
     position: relative;
-    padding-left: 2.75em;
+    padding-left: 2.5em;
     padding-right: 0;
     border: 0;
     cursor: pointer;
@@ -37,6 +37,10 @@
     width: 0;
     display: inline-block;
     transition: width 400ms ease, background 400ms ease;
+
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
 
     &:focus {
 
