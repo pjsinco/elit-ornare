@@ -1,11 +1,17 @@
 .banner {
   @include container($gridpage);
   position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),0 -5px 3px 10px #fff;
+  
+  @include breakpoint($screen $big-menu-start) {
+    box-shadow: none;
+  }
 }
 
 .site-branding {
   height: 3em;
-  background-color: $color-primary;
+  /*background-color: $color-primary;*/
+  background-color: $white;
   text-transform: uppercase;
   text-align: center;
 
@@ -17,7 +23,8 @@
   }
 
   &__link {
-    color: #fff;
+    /*color: #fff;*/
+    color: $color-primary;
     @include breakpoint($screen $big-menu-start) {
       color: $color-primary;
       font-size: 3.125em;
