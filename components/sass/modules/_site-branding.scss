@@ -1,26 +1,51 @@
+$big-menu-start: $large-minor-start;
+
+.banner {
+  @include container($gridpage);
+  position: relative;
+}
+
 .site-branding {
-  /*margin-left: .5em;*/
-  /*margin-right: .5em;*/
   height: 3em;
   background-color: $color-primary;
   text-transform: uppercase;
   text-align: center;
 
+  @include breakpoint($screen $big-menu-start) {
+    padding-bottom: 2em;
+    border-bottom: 1px solid $lightgray;
+    text-align: left;
+  }
+
   &__link {
     color: #fff;
+    @include breakpoint($screen $big-menu-start) {
+      color: $color-primary;
+      font-size: 3.125em;
+      letter-spacing: 0.2em;
+    }
   }
 
   &--alpha {
     position: relative;
     top: 1em;
     letter-spacing: .25em;
+    @include breakpoint($screen $big-menu-start) {
+    
+    }
   }
 
   &--beta {
-    /*@include srt();*/
     position: relative;
     top: -1em;
     display: none;
-  }
+    @include breakpoint($screen $big-menu-start) {
+      float: right;
+      top: -1.25em;
 
+      span {
+        font-size: 1.875em;
+      }
+    }
+  }
 }
