@@ -1,0 +1,25 @@
+header(role="banner").banner#banner
+  section.xsite-branding
+    div.xsite-branding--alpha: a(href='/').xsite-branding__link Elit Ornare
+    div.xsite-branding--beta: a(href='http://www.osteopathic.org' title='American Osteopathic Association')
+      span.icon-aoa-solid
+  
+  section.xsite-navigation
+    a(href="#site-nav").xnav__link--toggle
+      span.icon-menu
+    nav(role='navigation')#site-nav.xnav
+      ul.xnav__list
+        li.xnav__item: a(href='#').xnav__item--link Patient Care
+        li.xnav__item: a(href='#').xnav__item--link Innovation
+        li.xnav__item: a(href='#').xnav__item--link Training
+        li.xnav__item: a(href='#').xnav__item--link Profession
+        li.xnav__item: a(href='#').xnav__item--link Policy
+        li.xnav__item: a(href='#').xnav__item--link Lifestyle
+        li.xnav__item.xnav__item--last
+          section.xsite-search
+            form(action="/search")#search-form.xsite-search__form
+              label#search-label.xsite-search__label(for='q')
+              button(type='submit').xsite-search__button
+                span.icon-glass
+              input(type='text' name='q' placeholder='Enter search terms')#q.xsite-search__input
+
