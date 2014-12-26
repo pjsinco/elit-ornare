@@ -1,0 +1,65 @@
+.xnav {
+
+  /*position: absolute;*/
+  width: 100%;
+  clear: both;
+  /*transition: all ease-out .3s;*/
+  /*background: $red;*/
+  background: rgba($white,0.9);
+    
+  .js & {
+    /*overflow: hidden;*/
+    /*max-height: 0;*/
+  }
+  
+  &.active {
+    /*max-height: 21em;*/
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5em;
+    /*border-top: 1px solid lighten($font-color, 25%);*/
+  }
+
+
+  &__item {
+    /*display: block;*/
+    margin-right: 1.230769231em;
+    display: inline-block;
+    /*padding: .8em;*/
+    /*border-bottom: 1px solid $lightgray;*/
+    /*text-align: center;*/
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 0.8125em;
+    
+    &--link {
+      /*color: $verydark;*/
+      color: $font-color-lighter;
+    }
+
+    &--last {
+      float: right;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+
+    &--toggle {
+      display: none;
+      position: absolute;
+      top: .5em;
+      left: 1em;
+      font-size: 1.5em;
+      color: #fff;
+    }
+  }
+
+  &__home {
+
+  }
+
+}
