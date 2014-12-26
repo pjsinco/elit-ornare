@@ -200,6 +200,20 @@
 * Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent
 
 ###Fri Dec 26 08:44:27 2014 CST
-* todo add $screen to all breakpoints
-* todo ```span``` in .site-branding--beta needs a class
-* no input[placeholder] in ie9 and below
+* TODO add ```$screen``` to all breakpoints
+* TODO ```span``` in .site-branding--beta needs a class
+* no ```input[placeholder]``` in ie9 and below
+    * let's [not worry about it](http://html5please.com/#placeholder)
+
+        > A properly implemented form should have labels and any placeholders 
+        > should be supplementary. As such, they are not required for successful 
+        > completion of a form
+* search placeholder is janky in ie10
+    * it only appears, fleetingly, on the blur off transition
+    * here's a workaround--hide it in ie:
+        ```
+        &:-ms-input-placeholder {
+          color: transparent;
+        }
+        ```
+
