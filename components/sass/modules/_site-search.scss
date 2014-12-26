@@ -10,19 +10,45 @@
 
   }
 
+  &__submit {
+
+  }
+
   &__button {
     border: none;
-    background: transparent;
-    position: absolute;
-    top: .1em;
+    background: $lightgray;
+
+    &--hide {
+      display: none;
+    }
   }
 
   &__input {
-    width: 90%;
+    background-image: image-url('png/glass.png');
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    position: relative;
+    padding-left: 2.75em;
+    padding-right: 0;
+    border: 0;
+    cursor: pointer;
+    height: 2em;
+    width: 0;
+    display: inline-block;
+    transition: width 400ms ease, background 400ms ease;
 
-    &[type=text] {
-      padding: .5em 0 .5em 2em;
+    &:focus {
+
+      width: 10em;
+      outline: none;
+      border: 2px solid $lightgray;
+      cursor: text;
+
+      &[type=text] {
+        padding: .5em 0 .5em 2em;
+      }
     }
-  }
+  } 
 
 }
