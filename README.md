@@ -210,7 +210,7 @@
         > completion of a form
 * search placeholder is janky in ie10
     * it only appears, fleetingly, on the blur off transition
-    * here's a workaround--hide it in ie:
+    * here's a workaround--[hide it in ie](http://msdn.microsoft.com/en-us/library/ie/hh772745%28v=vs.85%29.aspx):
         ```
         &:-ms-input-placeholder {
           color: transparent;
