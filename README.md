@@ -199,5 +199,6 @@
 
 * Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent
 
-###Thu
+###Fri Dec 26 08:44:27 2014 CST
 * todo add $screen to all breakpoints
+* todo ```span``` in .site-branding--beta needs a class
