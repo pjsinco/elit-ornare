@@ -200,7 +200,7 @@
 * Wed Dec 24 11:06:37 2014 CST our breakpoints on article are finally looking decent
 
 ###Fri Dec 26 08:44:27 2014 CST
-* TODO add ```$screen``` to all breakpoints
+* TODO ~~add ```$screen``` to all breakpoints~~ Sat Dec 27 15:34:04 2014 CST
 * TODO ```span``` in .site-branding--beta needs a class
 * no ```input[placeholder]``` in ie9 and below
     * let's [not worry about it](http://html5please.com/#placeholder)
@@ -217,3 +217,5 @@
         }
         ```
 * **TODAY** site nav stylin' up
+
+###Sat Dec 27 15:24:16 2014 CST
