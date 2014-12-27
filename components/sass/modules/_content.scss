@@ -1,6 +1,6 @@
 .content {
 
-  @include breakpoint($large-minor-start) {
+  @include breakpoint($screen $large-minor-start) {
     @include container($gridpage);
   }
 

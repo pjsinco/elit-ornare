@@ -34,12 +34,12 @@
     margin-right: ((100 - $story-width) / 2);
     max-width: $article-max-width;
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($screen $medium-start) {
       margin-left: ((100 - $story-width-medium) / 2);
       margin-right: ((100 - $story-width-medium) / 2);
     }
 
-    @include breakpoint($large-start) {
+    @include breakpoint($screen $large-start) {
       margin-left: auto;
       margin-right: auto;
     }
