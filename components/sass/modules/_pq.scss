@@ -2,8 +2,8 @@
   @include clearfix();
   display: none;
   
-  @include breakpoint($screen $large-start) {
-    /*display: block;*/
+  @include breakpoint($screen $big-menu-start) {
+    display: block;
     float: left;
     position: relative;
     right: span(1 of 7 wide);
