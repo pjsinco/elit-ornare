@@ -1,5 +1,6 @@
 .content {
 
+  @include clearfix();
   @include breakpoint($screen $large-minor-start) {
     @include container($gridpage);
   }
@@ -24,8 +25,20 @@
   }
   
   &__primary {
+    position: relative;
     @include breakpoint($screen $xlarge-start) {
       @include span(8 of $gridpage);
+
+      &:after {
+        content: '';
+        border-right: 1px solid $lightgray;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -1.2em;
+        height: 100%;
+        
+      }
     }
   }
 
