@@ -112,7 +112,7 @@
     *  ```-s``` standalone
     *  ```-c``` link to stylsheet
     *  ```-o``` output
-* TODO need a max-width on body text
+* TODO ~~need a max-width on body text~~
     * maybe 570px/35.625em?
 * TODO ~~our small-screen viewport is floaty horizontally~~ Mon Dec 22 14:02:18 CST 2014
 * Our Typekit [colophon](https://typekit.com/colophons/vdi5qvx)
@@ -175,7 +175,7 @@
     * *w-w-w-wait:* our **story** should ```span(8 of 12)```, no? not be a ```container```?
 
 * TODO ~~we lost our figcaption --> needs a **container** mixin~~Wed Dec 24 10:18:18 2014 CST 
-* TODO wrap our ads in a link
+* TODO ~~wrap our ads in a link~~ Sat Dec 27 15:48:20 2014 CST
 
 * pagespeed: 57 mobile
 
