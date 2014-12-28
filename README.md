@@ -249,3 +249,8 @@
 * how would line-height: 1.5 look on the body?
 
 * TODO we need some more bottom margin on figcaption in the body
+
+* our measure today, at biggest screen, is 72 chars
+    * 1.125em / 1.4
+    * at its widest, our measure tops out at 94 chars
+        * too wide?
