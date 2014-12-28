@@ -1,8 +1,9 @@
 .comment-link {
   position: absolute;
+  display: inline-block;
   top: .5em;
   right: 0;
-  display: inline-block;
+  text-align: right;
 
   &__link {
     font-size: 2.5em;
@@ -10,13 +11,19 @@
   }
 
   &__body {
-    position: absolute;
-    top: .18181818em;
+    /*position: absolute;*/
+    position: relative;
+    float: right;
+    /*top: .18181818em;*/
+    top: -1.65em;
+    left: .3em;
+
     width: 100%;
     text-align: center;
     font-size: .6em;
     letter-spacing: .09090909091em;
     color: $white;
+    
   
   }
 
