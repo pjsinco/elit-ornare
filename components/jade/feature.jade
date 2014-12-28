@@ -1,0 +1,105 @@
+doctype html
+html
+  head
+    include head
+  body
+    include ie8-comment
+    include header
+
+    aside.ad.ad--wide-shallow
+      //-todo this is just tempoary
+      a(href="#")
+        picture
+          <!--[if IE 9]>
+          <video style="display: none">
+          <![endif]-->
+          source(srcset="img/leader-0.gif" media="(min-width: 768px)") 
+          <!--[if IE 9]>
+          </video>
+          <![endif]-->
+          img(srcset="img/wide-banner-0.gif" alt="Wide banner").ad__img
+
+    div.content#main
+      section.content__primary#primary
+        article
+          figure.image.image--primary
+            picture
+              <!--[if IE 9]>
+              <video style="display: none">
+              <![endif]-->
+              //-source(srcset="img/caudle-omed.jpg" media="(min-width: 768px)") 
+              source(srcset="img/caudle-omed@.75.jpg" media="(min-width: 652px)") 
+              source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
+              <!--[if IE 9]>
+              </video>
+              <![endif]-->
+              img(srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO").image__img
+            figcaption.image__caption.image__caption--right 
+              | Sed Consectetur Lobortis, LL
+          div.story
+            header.story__header
+              h5.story__kicker Ipsum Malesuada
+              h1.story__title The ABCs of clinical rotations: Always be curious
+              h3.story__teaser An OMS IV offers her tips on excelling in clinical rotations. Chief among them: Ask questions, know your patients, carry snacks.
+              div.story__meta
+                div.meta #[span.meta__byline By] #[span.meta__author Leslie Tamura, OMS IV] #[span.meta__date Posted Dec. 21, 2014]
+  
+              ul.story__social--top.social
+                li.social__icon: a(href='#'): span.icon-facebook #[span.text-replace Facebook]
+                li.social__icon: a(href='#'): span.icon-twitter #[span.text-replace Twitter]
+                li.social__icon: a(href='#'): span.icon-linkedin #[span.text-replace LinkedIn]
+                li.social__icon: a(href='#'): span.icon-pinterest #[span.text-replace Pinterest]
+                li.social__icon: a(href='#'): span.icon-email #[span.text-replace Email]
+                li.social__icon: a(href='#'): span.icon-comment #[span.text-replace Comments]
+          
+            div.story__body-text
+              
+              aside.pq
+                div.pq__body
+                  | Who better to talk about health than everyone sitting in this room?
+      
+              aside(data-set="rover-don-parent").ad.ad--med-rect.rover-don-parent-a
+                div.rover-don
+                  a(href="#"): img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+  
+              include story__box
+  
+              aside(data-set="rover-peggy-parent").ad.ad--med-rect.rover-peggy-parent-a
+                div.rover-peggy
+                  a(href="#"): img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+              
+              figure.image.image--secondary
+                picture
+                  <!--[if IE 9]>
+                  <video style="display: none">
+                  <![endif]-->
+                  //-source(srcset="img/caudle-wcau@720.jpg" media="(min-width: 768px") 
+                  source(srcset="img/caudle-wcau@720.jpg" media="(min-width: 480px)") 
+                  <!--[if IE 9]>
+                  </video>
+                  <![endif]-->
+                  img(srcset="img/caudle-wcau@480.jpg" alt="Jennifer Caudle, DO").image__img
+                figcaption.image__caption.image__caption--left
+                  | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. 
+                  | #[a(href="#") (Porta Fusce)]
+  
+  
+            footer.story__footer  
+              ul.story__social--bottom.social--inline
+                li.social__icon: a(href='#'): span.icon-facebook #[span.text-replace Facebook]
+                li.social__icon: a(href='#'): span.icon-twitter #[span.text-replace Twitter]
+                li.social__icon: a(href='#'): span.icon-linkedin #[span.text-replace LinkedIn]
+                li.social__icon: a(href='#'): span.icon-pinterest #[span.text-replace Pinterest]
+  
+      section.content__secondary#secondary
+        aside(data-set="rover-don-parent").ad.rover-don-parent-b
+        aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-b
+    
+    script(src='js/jquery.min.js')
+    script(src='js/nav.js')
+    script(src='js/appendAround.js')
+    script.
+      /* call appendAound */
+      $('.rover-don').appendAround();
+      $('.rover-peggy').appendAround();
+    script(src='http://localhost:35729/livereload.js')
