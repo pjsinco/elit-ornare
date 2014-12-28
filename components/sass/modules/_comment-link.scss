@@ -1,0 +1,23 @@
+.comment-link {
+  position: absolute;
+  top: .5em;
+  right: 0;
+  display: inline-block;
+
+  &__link {
+    font-size: 2.5em;
+
+  }
+
+  &__body {
+    position: absolute;
+    top: .18181818em;
+    width: 100%;
+    text-align: center;
+    font-size: .6em;
+    letter-spacing: .09090909091em;
+    color: $white;
+  
+  }
+
+}
