@@ -1,9 +1,3 @@
-%caption-base {
-  margin-top: .5em;
-  color: $font-color-lighter;
-  max-width: $article-max-width;
-}
-
 .image {
 
   margin: 0;
@@ -18,7 +12,6 @@
     height: auto;
     display: block;
   
-
     @include breakpoint($screen $large-start) {
       max-width: $article-max-width;
     }
@@ -28,35 +21,7 @@
 
   }
 
-  &__caption {
-    @extend %caption-base;
-    margin-left: ((100 - $story-width) / 2);
-    margin-right: ((100 - $story-width) / 2);
-    font-size: 1em;
-    line-height: 1.3;
-
-    @include breakpoint($screen $medium-start) {
-      margin-left: ((100 - $story-width-medium) / 2);
-      margin-right: ((100 - $story-width-medium) / 2);
-    }
-
-    @include breakpoint($screen $large-start) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &--right {
-      text-align: right;
-    }
-
-    &--left {
-      text-align: left;
-      @extend %caption-base;
-    }
-    
-    &--feature {
-      font-size: 1.125em;
-    }
+  &--caption {
 
   }
 }
