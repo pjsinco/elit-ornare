@@ -220,3 +220,6 @@
 
 ###Sat Dec 27 15:24:16 2014 CST
 * pagespeed 57 mobile
+
+###Sun Dec 28 08:42:00 2014 CST
+
