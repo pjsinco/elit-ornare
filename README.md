@@ -228,8 +228,13 @@
 
 * [centering](http://css-tricks.com/centering-css-complete-guide/)
 
-* TODO email icon is a little big
+* ~~TODO email icon is a little big~~ Sun Dec 28 16:38:59 2014 CST
 
 * TODO slight boost to byline, date on bigger screens
 
 * TODO remove bottom margin when top social goes vertical
+
+* so, we're styling story__body-text's p tag in _base and h2, drop cap in _story
+    * we should prolly keep in the same place
+
+* TODO email icon is *still* a little big
