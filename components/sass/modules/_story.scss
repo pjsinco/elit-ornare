@@ -89,11 +89,22 @@
 
   &__body-text {
 
+    margin-top: 1em;
+
     > p:first-child:first-letter {
       margin-bottom: -.25em;
       float: left;
       font-size: 3em;
       line-height: 1;
+      color: $primarycolor;
+    }
+
+    > h2 {
+      margin-bottom: 0;
+      font-family: $secondaryfont;
+      font-size: 1.1875em;
+      line-height: $bodylineheight;
+      font-weight: 600;
       color: $primarycolor;
     }
 

@@ -232,3 +232,4 @@
 
 * TODO slight boost to byline, date on bigger screens
 
+* TODO remove bottom margin when top social goes vertical
