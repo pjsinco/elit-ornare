@@ -1,10 +1,10 @@
 .meta {
   position: relative;
   padding-top: .5em;
-  padding-bottom: .5em;
+  padding-bottom: .3em;
   border-top: 1px solid $lightgray;
   border-bottom: 1px solid $lightgray;
-  font-size: 1em;
+  font-size: .9em;
   letter-spacing: .05em;
   color: $verydark;
 
@@ -21,17 +21,18 @@
   }
 
   &__date {
-
-    display: inline-block;
+    position: relative;
+    display: block;
+    left: 60%;
     width: 40%;
     margin-top: .5em;
-    float: right;
-
+    /*float: right;*/
     letter-spacing: .05em;
     font-size: 0.875em;
     text-align: right;
-    line-height: 3;
+    line-height: 1;
     color: $mediumgray;
+    text-transform: uppercase;
     
   }
 
