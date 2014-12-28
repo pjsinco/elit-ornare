@@ -245,3 +245,5 @@
 
 * do we need adelle's font-weight: normal?
     * would our resources be better used on adelle black for pull quotes?
+
+* how would line-height: 1.5 look on the body?
