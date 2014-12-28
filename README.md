@@ -238,3 +238,5 @@
     * we should prolly keep in the same place
 
 * TODO email icon is *still* a little big
+
+* **TODAY** lotta story styling
