@@ -23,20 +23,26 @@
   &__date {
     position: relative;
     display: block;
-    left: 60%;
-    width: 40%;
+    /*left: 60%;*/
+    /*width: 40%;*/
     margin-top: .5em;
     /*float: right;*/
     letter-spacing: .05em;
     font-size: 0.875em;
-    text-align: right;
+    text-align: left;
     line-height: 1;
     color: $mediumgray;
     text-transform: uppercase;
     
   }
 
-
+  &__comment-link {
+    position: relative;
+    top: -1em;
+    display: inline-block;
+    float: right;
+    font-size: 2.5em;
+  }
 
 
 }
