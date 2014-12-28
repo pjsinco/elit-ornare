@@ -1,7 +1,7 @@
 %caption-base {
-  margin-top: .25em;
+  margin-top: .5em;
   color: $font-color-lighter;
-  font-size: 1.125em;
+  max-width: $article-max-width;
 }
 
 .image {
@@ -32,7 +32,8 @@
     @extend %caption-base;
     margin-left: ((100 - $story-width) / 2);
     margin-right: ((100 - $story-width) / 2);
-    max-width: $article-max-width;
+    font-size: 1em;
+    line-height: 1.3;
 
     @include breakpoint($screen $medium-start) {
       margin-left: ((100 - $story-width-medium) / 2);
@@ -51,6 +52,10 @@
     &--left {
       text-align: left;
       @extend %caption-base;
+    }
+    
+    &--feature {
+      font-size: 1.125em;
     }
 
   }
