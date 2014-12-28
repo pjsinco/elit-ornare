@@ -6,7 +6,7 @@
 .xsite-branding {
   padding-bottom: 2em;
   /*height: 3em;*/
-  /*background-color: $color-primary;*/
+  /*background-color: $primarycolor;*/
   text-transform: uppercase;
   /*text-align: center;*/
   border-bottom: 1px solid $lightgray;
@@ -14,7 +14,7 @@
 
   &__link {
     /*color: #fff;*/
-    color: $color-primary;
+    color: $primarycolor;
     font-size: 3.125em;
     letter-spacing: 0.2em;
   }

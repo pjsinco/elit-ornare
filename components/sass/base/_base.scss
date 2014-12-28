@@ -5,10 +5,10 @@ html {
 }
 
 body {
-  font-family: $font-primary;
+  font-family: $primaryfont;
   background-color: $white;
   @include breakpoint($screen $big-menu-start) {
-    border-top: 8px solid $color-primary;
+    border-top: 8px solid $primarycolor;
   }
 }
 
