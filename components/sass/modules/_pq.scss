@@ -1,8 +1,10 @@
 .pq {
-  @include clearfix();
   display: none;
   
   @include breakpoint($screen $big-menu-start) {
+    @include clearfix();
+    font-family: $secondaryfont;
+    color: $verydark;
     display: block;
     float: left;
     position: relative;
@@ -15,8 +17,9 @@
 
 
   &__body {
-    font-family: $primaryfont;
-    font-weight: bold;
+    /*font-family: $primaryfont;*/
+    padding: .5em 0;
+    font-weight: 800;
     font-size: 2em;
     text-align: center;
 
