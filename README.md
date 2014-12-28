@@ -216,6 +216,7 @@
           color: transparent;
         }
         ```
-* **TODAY** site nav stylin' up
+* **TODAY** site nav stylin
 
 ###Sat Dec 27 15:24:16 2014 CST
+* pagespeed 57 mobile
