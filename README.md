@@ -223,3 +223,6 @@
 
 ###Sun Dec 28 08:42:00 2014 CST
 * adelle semibold is font-weight: 600
+
+* ["Make sure list items don't have padding, but links do"](http://css-tricks.com/keep-margins-out-of-link-lists/)
+
