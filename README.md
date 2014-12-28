@@ -228,3 +228,5 @@
 
 * [centering](http://css-tricks.com/centering-css-complete-guide/)
 
+* TODO email icon is a little big
+
