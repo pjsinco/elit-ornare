@@ -226,3 +226,5 @@
 
 * ["Make sure list items don't have padding, but links do"](http://css-tricks.com/keep-margins-out-of-link-lists/)
 
+* [centering](http://css-tricks.com/centering-css-complete-guide/)
+
