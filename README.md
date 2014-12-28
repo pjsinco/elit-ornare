@@ -242,3 +242,6 @@
 * **TODAY** lotta story styling
 
 * should social icons be gray?
+
+* do we need adelle's font-weight: normal?
+    * would our resources be better used on adelle black for pull quotes?
