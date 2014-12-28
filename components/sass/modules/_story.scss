@@ -73,9 +73,10 @@
     &--top {
 
       margin-top: 1.5em;
-      margin-bottom: 1.25em;
+      /*margin-bottom: 1.25em;*/
 
-      @include breakpoint($screen $large-minor-start) {
+      /*@include breakpoint($screen $large-minor-start) {*/
+      @include breakpoint($screen $medium-start) {
         @include span(1 of 8);
       }
     }
