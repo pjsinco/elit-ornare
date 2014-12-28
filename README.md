@@ -240,3 +240,5 @@
 * TODO email icon is *still* a little big
 
 * **TODAY** lotta story styling
+
+* should social icons be gray?
