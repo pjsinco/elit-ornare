@@ -8,6 +8,10 @@
   letter-spacing: .05em;
   color: $verydark;
 
+  @include breakpoint($screen $large-start) {
+    font-size: 1em;
+  }
+
   &__by {
     font-style: italic;
     font-weight: 400;
