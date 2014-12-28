@@ -230,3 +230,5 @@
 
 * TODO email icon is a little big
 
+* TODO slight boost to byline, date on bigger screens
+
