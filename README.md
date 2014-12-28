@@ -247,3 +247,5 @@
     * would our resources be better used on adelle black for pull quotes?
 
 * how would line-height: 1.5 look on the body?
+
+* TODO we need some more bottom margin on figcaption in the body
