@@ -89,6 +89,14 @@
 
   &__body-text {
 
+    > p:first-child:first-letter {
+      margin-bottom: -.25em;
+      float: left;
+      font-size: 3em;
+      line-height: 1;
+      color: $primarycolor;
+    }
+
     @include breakpoint($screen $large-minor-start) {
       @include span(last 7 of 8);
     }
