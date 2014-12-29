@@ -261,3 +261,8 @@
     * put at bottom of smaller screens
 
 * [wp -- tags with commas inside them](http://blog.foobored.com/all/wordpress-tags-with-commas/)
+
+* TODO our arrow icons aren't showing up right in ie, ios safari
+
+* Our vertical rule in story nav's prev-next is a problem
+    * ideally, it should be as tall as the higher of the two columns
