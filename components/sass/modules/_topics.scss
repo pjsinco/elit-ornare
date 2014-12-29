@@ -1,0 +1,21 @@
+.topics {
+  padding-left: 0;
+  margin-top: .25em;
+  text-decoration: none;
+  line-height: 2.5;
+  
+
+  &__topic {
+    display: inline-block;
+  }
+
+  &__link {
+    padding: .5em;
+    background: $extralightgray;
+    color: $font-color;
+    &:hover {
+      text-decoration: none;
+      background: $lightgray;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.story-nav {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: $font-color;
+
+  &__emph {
+    font-weight: 600;
+  }
+  
+  &__link {
+    color: $font-color;
+
+    &--center {
+      margin-bottom: 2em;
+      display: block;
+      text-align: center;
+    }
+    
+    &--right {
+      float: right;
+      text-align: right;
+    }
+
+  }
+
+  &__more {
+  }
+
+}
