@@ -256,4 +256,8 @@
         * too wide?
 
 ###Mon Dec 29 05:14:25 2014 CST
+* related modules is a rover candidate
+    * run into story at larger screens
+    * put at bottom of smaller screens
+
 
