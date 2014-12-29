@@ -45,12 +45,12 @@ html
                 div.meta #[span.meta__by By] #[span.meta__author Euismod Mollis Purus] #[span.meta__date Wednesday, Dec. 14, 2014]
                   #[span.meta__comment-link.comment-link #[a(href='#').comment-link__link #[span.icon-comment #[span.text-replace Comments]] #[span.comment-link__body +]]]
   
-              ul.story__social--top.social
-                li.social__icon: a(href='#').social__link: span.icon-facebook #[span.text-replace Facebook]
-                li.social__icon: a(href='#').social__link: span.icon-twitter #[span.text-replace Twitter]
-                li.social__icon: a(href='#').social__link: span.icon-linkedin #[span.text-replace LinkedIn]
-                li.social__icon: a(href='#').social__link: span.icon-pinterest #[span.text-replace Pinterest]
-                li.social__icon: a(href='#').social__link: span.icon-email #[span.text-replace Email]
+              ul.story__social.social.social--shiftable
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-facebook #[span.text-replace Facebook]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-twitter #[span.text-replace Twitter]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-linkedin #[span.text-replace LinkedIn]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-pinterest #[span.text-replace Pinterest]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-email #[span.text-replace Email]
                 //-li.social__icon: a(href='#'): span.icon-comment #[span.text-replace Comments]
           
             div.story__body-text
@@ -152,11 +152,13 @@ html
                 | "Osteopathic physicians have an opportunity with these media outlets to promote what we do, especially because what we do is so in line with concepts that the general public is interested in now in terms of medical care, such as holistic medicine," said Dr. Misra, a family physician from East Lansing, Michigan. "We have a unique opportunity at this time in history to promote our brand and promote what we do, and we need to take advantage of that."
   
             footer.story__footer  
-              ul.story__social--bottom.social--inline
-                li.social__icon: a(href='#'): span.icon-facebook #[span.text-replace Facebook]
-                li.social__icon: a(href='#'): span.icon-twitter #[span.text-replace Twitter]
-                li.social__icon: a(href='#'): span.icon-linkedin #[span.text-replace LinkedIn]
-                li.social__icon: a(href='#'): span.icon-pinterest #[span.text-replace Pinterest]
+              ul.story__social.social
+                li.social__icon: a(href='#').social__link: span.icon-facebook #[span.text-replace Facebook]
+                li.social__icon: a(href='#').social__link: span.icon-twitter #[span.text-replace Twitter]
+                li.social__icon: a(href='#').social__link: span.icon-linkedin #[span.text-replace LinkedIn]
+                li.social__icon: a(href='#').social__link: span.icon-pinterest #[span.text-replace Pinterest]
+                li.social__icon: a(href='#').social__link: span.icon-email #[span.text-replace Email]
+
   
       section.content__secondary#secondary
         aside(data-set="rover-don-parent").ad.rover-don-parent-b

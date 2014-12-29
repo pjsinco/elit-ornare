@@ -2,6 +2,11 @@
   padding: 0;
 }
 
+%link-padding {
+  padding-left: .4em;
+  padding-right: .4em;
+}
+
 .social {
 
   @extend %social-padding;
@@ -9,11 +14,25 @@
   line-height: 3;
   text-align: center;
   
-  &--inline {
-    @extend %social-padding;
+  &--shiftable {
+    margin-top: 1.5em;
+    line-height: 3;
 
-    li {
-      display: inline-block;
+    @include breakpoint($screen $medium-start) {
+      @include span(1 of 8);
+    }
+
+    @include breakpoint($screen $large-start) {
+      line-height: 3.5;
+    }
+    
+
+    &__link {
+      @extend %link-padding;
+
+      @include breakpoint($screen $medium-start) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -21,20 +40,18 @@
 
     display: inline-block;
 
-    @include breakpoint($screen $large-minor-start) {
-      display: block;
-    }
-  
-    
+    /*@include breakpoint($screen $large-minor-start) {*/
+      /*display: block;*/
+    /*}*/
   }
   
   &__link {
     display: block;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
+    @extend %link-padding;
     
-    @include breakpoint($screen $medium-start) {
-      padding-left: 0;
+    @include breakpoint($screen $large-start) {
+      padding-left: 1em;
+      padding-right: 1em;
     }
   }
 
