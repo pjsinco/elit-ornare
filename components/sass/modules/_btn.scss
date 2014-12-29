@@ -1,0 +1,31 @@
+/// http://www.slideshare.net/jewlofthelotus/decoupling-the-frontend-through-modular-css
+
+.btn {
+
+  border-radius: 4px;
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+
+  &--primary {
+    background: $gray;
+  }
+
+  &--success {
+    /*background: ;*/
+  }
+
+  &--info {
+    /*background: ;*/
+  }
+
+  &--warning {
+    /*background: ;*/
+  }
+
+  &--danger {
+    /*background: ;*/
+  }
+
+}
