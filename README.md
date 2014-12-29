@@ -266,3 +266,5 @@
 
 * Our vertical rule in story nav's prev-next is a problem
     * ideally, it should be as tall as the higher of the two columns
+
+* **TODAY** marking up, styling story nav

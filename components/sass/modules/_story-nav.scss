@@ -1,17 +1,21 @@
 .story-nav {
   font-weight: 100;
-  text-transform: uppercase;
+  line-height: 1.5;
   color: $font-color;
 
   &__emph {
     font-weight: 600;
   }
+
+  &__standalone {
+    margin-bottom: 2em;
+  }
   
   &__link {
+    text-transform: uppercase;
     color: $font-color;
 
     &--center {
-      margin-bottom: 2em;
       display: block;
       text-align: center;
     }
@@ -24,6 +28,16 @@
   }
 
   &__more {
+    text-transform: uppercase;
+  }
+
+  &__prev-next {
+    @include clearfix;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px dashed $mediumgray;
+    border-bottom: 1px dashed $mediumgray;
   }
 
 }
