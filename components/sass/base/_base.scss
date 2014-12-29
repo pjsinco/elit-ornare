@@ -31,6 +31,10 @@ p {
   font-size: 1.125em;
   line-height: $bodylineheight;
   color: $verydark;
+
+  @include breakpoint($screen $large-start) {
+    line-height: $bodylineheight-bigger;
+  }
 }
 
 h1 {

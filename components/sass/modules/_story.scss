@@ -91,12 +91,19 @@
 
     margin-top: 1em;
 
+    // dropcap
     > p:first-child:first-letter {
       margin-bottom: -.25em;
       float: left;
       font-size: 3em;
       line-height: 1;
       color: $primarycolor;
+
+      @include breakpoint($screen $large-start) {
+        font-size: 3.5em;
+        margin-bottom: -.3125em;
+        line-height: .97;
+      }
     }
 
     > h2 {
@@ -106,6 +113,10 @@
       line-height: $bodylineheight;
       font-weight: 600;
       color: $primarycolor;
+      
+      @include breakpoint($screen $large-start) {
+        line-height: $bodylineheight-bigger;
+      }
     }
 
     @include breakpoint($screen $large-minor-start) {
