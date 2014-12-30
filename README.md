@@ -270,3 +270,4 @@
 * **TODAY** marking up, styling story nav
 
 ###Tue Dec 30 08:34:33 2014 CST
+* do we need the word *topics*?
