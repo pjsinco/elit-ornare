@@ -37,15 +37,15 @@ html
             figcaption.image__caption.caption.caption--feature.caption--right 
               | Sed Consectetur Lobortis, LL
           div.story
-            header.story__header
-              h5.story__kicker Duis Arte
-              h1.story__title Media 101: How to position yourself as a medical expert
-              h3.story__teaser Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.
-              div.story__meta
-                div.meta #[span.meta__by By] #[span.meta__author Euismod Mollis Purus] #[span.meta__date Wednesday, Dec. 14, 2014]
+            header.story-header
+              h5.story-header__kicker Duis Arte
+              h1.story-header__title Media 101: How to position yourself as a medical expert
+              h3.story-header__teaser Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.
+              div
+                div.story-meta #[span.story-meta__by By] #[span.story-meta__author Euismod Mollis Purus] #[span.story-meta__date Wednesday, Dec. 14, 2014]
                   #[span.meta__comment-link.comment-link #[a(href='#').comment-link__link #[span.icon-comment #[span.text-replace Comments]] #[span.comment-link__body +]]]
   
-              ul.story__social.social.social--shiftable
+              ul.social.social--shiftable
                 li.social__icon: a(href='#').social--shiftable__link: span.icon-facebook #[span.text-replace Facebook]
                 li.social__icon: a(href='#').social--shiftable__link: span.icon-twitter #[span.text-replace Twitter]
                 li.social__icon: a(href='#').social--shiftable__link: span.icon-linkedin #[span.text-replace LinkedIn]
@@ -151,17 +151,18 @@ html
               p
                 | "Osteopathic physicians have an opportunity with these media outlets to promote what we do, especially because what we do is so in line with concepts that the general public is interested in now in terms of medical care, such as holistic medicine," said Dr. Misra, a family physician from East Lansing, Michigan. "We have a unique opportunity at this time in history to promote our brand and promote what we do, and we need to take advantage of that."
   
-            footer.story__footer  
-              ul.story__social.social
+            footer.story-footer  
+              ul.social
                 li.social__icon: a(href='#').social__link: span.icon-facebook #[span.text-replace Facebook]
                 li.social__icon: a(href='#').social__link: span.icon-twitter #[span.text-replace Twitter]
                 li.social__icon: a(href='#').social__link: span.icon-linkedin #[span.text-replace LinkedIn]
                 li.social__icon: a(href='#').social__link: span.icon-pinterest #[span.text-replace Pinterest]
                 li.social__icon: a(href='#').social__link: span.icon-email #[span.text-replace Email]
 
+              div.story-footer__jump-link: a(href='#comments') #[span.story-nav__emph 5] comments #[span.icon-arrow-down]
+
               div.story-nav
-                div.story-nav__comments: a(href='#comments') #[span.story-nav__emph 5] comments #[span.icon-arrow-down]
-                div.story-nav__topics Topics
+                div.story-nav__title Topics
                   ul.topics 
                     li.topics__topic: a(href='#').topics__link Social Media
                     li.topics__topic: a(href='#').topics__link Media
@@ -170,7 +171,7 @@ html
                   
                 div.story-nav__more-in More in #[a(href='#').story-nav__emph Patient Care #[span.icon-arrow-right]]
 
-                div.story-nav__prev-next
+                div.prev-next
                   div.prev-next__next
                     a(href="#").prev-next__title Newer #[span.icon-arrow-right.space-to-left]
                     a(href='#').prev-next__link New Year’s resolutions: 10 life hacks to increase physician productivity 
@@ -183,6 +184,12 @@ html
                 img(src='img/milam112.jpg' alt='Elit Commodo Purus' width='95px').bio__img
                 div.bio__body
                   | Elit Commodo Purus, OMS IV, dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+              div.story-footer-credit
+                | Top of page: Photo of Dr. Caudle by #[a(href="#") Tristique Cras].
+
+              div.story-footer__jump-link: a(href='#primary') Top of page #[span.icon-arrow-up]
+
               div(style="padding-top: 10em;").this-is-just-to-create-space-temporarily-ok
 
       section.content__secondary#secondary

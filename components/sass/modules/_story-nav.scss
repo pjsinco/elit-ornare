@@ -14,22 +14,12 @@
   position: relative;
   font-weight: 100;
   line-height: 1.5;
+  /*text-transform: uppercase;*/
   color: $font-color;
 
 
   &__emph {
     font-weight: 600;
-  }
-
-  &__comments {
-    margin-bottom: 2em;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-
-    > a {
-      @extend %story-nav-link; 
-    }
   }
 
   &__more-in {
@@ -47,24 +37,18 @@
 
     @include breakpoint($screen $medium-minor-start) {
       position: absolute;
-      top: 2.875em;
+      top: 0;
       right: 0;
       text-align: right;
       border: 0;
     }
   }
   
-  &__topics {
+  &__title {
     text-transform: uppercase;
     color: $font-color-lightest;
   }
 
   &__prev-next {
-    position: relative;
-    @include clearfix;
-    /*padding-top: 2em;*/
-    /*padding-bottom: 2em;*/
-    @extend %dashed-line-top;
-    @extend %dashed-line-bottom;
   }
 }
