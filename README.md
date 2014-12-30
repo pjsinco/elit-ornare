@@ -276,6 +276,7 @@
 
 * [how] can we track locations, schools (, specialties) mentioned in stories?
     * then somewhere serve up all stories that mention OSU-COM or New Mexico or radiology?
+    * this would be extracurricular to tags
 
 * [wp debugging](http://nacin.com/2010/04/23/5-ways-to-debug-wordpress/)
     * also: [this one](http://wptavern.com/query-monitor-a-remarkably-comprehensive-debugging-plugin-for-wordpress)
@@ -284,3 +285,7 @@
     * seems like it
         * 'next': next in what? you might wonder
         * 'newer' sounds more enticing?
+
+* very cool how we got our vertical rule in prev-next to always line up with top of the words *PREV, NEXT*
+    * ```height: calc(100% - 43px);```
+    * learned here: [A couple of use cases for calc()](http://css-tricks.com/a-couple-of-use-cases-for-calc/)
