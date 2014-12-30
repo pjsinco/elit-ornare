@@ -279,3 +279,8 @@
 
 * [wp debugging](http://nacin.com/2010/04/23/5-ways-to-debug-wordpress/)
     * also: [this one](http://wptavern.com/query-monitor-a-remarkably-comprehensive-debugging-plugin-for-wordpress)
+
+* is 'newer' better than 'next' and 'older' better than 'previous'?
+    * seems like it
+        * 'next': next in what? you might wonder
+        * 'newer' sounds more enticing?
