@@ -14,12 +14,8 @@
   position: relative;
   font-weight: 100;
   line-height: 1.5;
-  text-transform: uppercase;
   color: $font-color;
 
-  a {
-    @extend %story-nav-link; 
-  }
 
   &__emph {
     font-weight: 600;
@@ -29,6 +25,11 @@
     margin-bottom: 2em;
     display: block;
     text-align: center;
+    text-transform: uppercase;
+
+    > a {
+      @extend %story-nav-link; 
+    }
   }
 
   &__more-in {
@@ -38,6 +39,11 @@
     @extend %dashed-line-top;
     /*@extend %dashed-line-bottom;*/
     text-align: center;
+    text-transform: uppercase;
+
+    > a {
+      @extend %story-nav-link; 
+    }
 
     @include breakpoint($screen $medium-minor-start) {
       position: absolute;
@@ -49,14 +55,14 @@
   }
   
   &__topics {
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     color: $font-color-lightest;
   }
 
   &__prev-next {
     @include clearfix;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    /*padding-top: 2em;*/
+    /*padding-bottom: 2em;*/
     @extend %dashed-line-top;
     @extend %dashed-line-bottom;
   }
