@@ -289,3 +289,5 @@
 * very cool how we got our vertical rule in **prev-next** to always line up with top of the words *OLDER, NEWER*
     * ```height: calc(100% - 43px);```
     * learned here: [A couple of use cases for calc()](http://css-tricks.com/a-couple-of-use-cases-for-calc/)
+
+* our author bio photo is 112px x 112px

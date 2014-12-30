@@ -108,6 +108,7 @@
 
   &__footer {
     margin-top: 3em;
+    font-size: 1em;
 
     @include breakpoint($screen $large-minor-start) {
       @include span(last 7 of 8);
