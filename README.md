@@ -276,3 +276,5 @@
 
 * [how] can we track locations, schools (, specialties) mentioned in stories?
     * then somewhere serve up all stories that mention OSU-COM or New Mexico or radiology?
+
+* [wp debugging](http://nacin.com/2010/04/23/5-ways-to-debug-wordpress/)
