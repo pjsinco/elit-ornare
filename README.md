@@ -286,6 +286,6 @@
         * 'next': next in what? you might wonder
         * 'newer' sounds more enticing?
 
-* very cool how we got our vertical rule in **prev-next** to always line up with top of the words *PREV, NEXT*
+* very cool how we got our vertical rule in **prev-next** to always line up with top of the words *OLDER, NEWER*
     * ```height: calc(100% - 43px);```
     * learned here: [A couple of use cases for calc()](http://css-tricks.com/a-couple-of-use-cases-for-calc/)
