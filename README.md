@@ -264,7 +264,7 @@
 
 * TODO our arrow icons aren't showing up right in ie, ios safari
 
-* Our vertical rule in story nav's prev-next is a problem
+* TODO ~~Our vertical rule in story nav's prev-next is a problem~~ Tue Dec 30 12:42:25 2014 CST
     * ideally, it should be as tall as the higher of the two columns
 
 * **TODAY** marking up, styling story nav
