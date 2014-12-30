@@ -293,3 +293,7 @@
 * our author bio photo is 95px x 95px
 
 * **TODAY** gets bottom-of-story nav looking good across all screens
+
+* [the daily beast](http://www.thedailybeast.com/articles/2014/12/30/russia-s-rebel-in-chief-escapes-house-arrest.html)
+
+* our leaderboard ad, and smaller-screen versions, should prolly go above our banner, huh?

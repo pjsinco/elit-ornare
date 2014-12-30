@@ -1,5 +1,9 @@
 %prev-next-base {
-  padding: 1em;
+  padding-top: 0;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -9,8 +13,8 @@
 .prev-next {
   position: relative;
   @include clearfix;
-  @extend %dashed-line-top;
-  @extend %dashed-line-bottom;
+  /*@extend %dashed-line-top;*/
+  /*@extend %dashed-line-bottom;*/
   
   &__prev {
     @extend %prev-next-base;
