@@ -21,7 +21,7 @@
         position: absolute;
         top: 50%;
         right: 50%;
-        height: 100%;
+        height: calc(100% - 43px);
         content: '';
         border-right: 1px dashed $mediumgray;
         transform: translateY(-50%);
