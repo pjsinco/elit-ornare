@@ -296,4 +296,4 @@
 
 * [the daily beast](http://www.thedailybeast.com/articles/2014/12/30/russia-s-rebel-in-chief-escapes-house-arrest.html)
 
-* our leaderboard ad should prolly go above our banner, huh?
+* our leaderboard ad, and smaller-screen versions, should prolly go above our banner, huh?
