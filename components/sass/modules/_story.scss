@@ -20,7 +20,6 @@
 
   @include breakpoint($screen $large-minor-start) {
     width: 100%;
-
   }
 
   &__kicker {
@@ -46,8 +45,6 @@
     @include breakpoint($screen $large-start) {
       font-size: 2.625em;
     }
-    
-  
   }
 
   &__teaser {
@@ -60,16 +57,11 @@
       font-size: 1.25em;
       line-height: 1.4;
     }
-  
   }
 
-  &__meta {
-
-  }
-
+  &__meta { }
   
   &__social {
-
     &--shiftable {
 
     }
@@ -77,11 +69,9 @@
     &--bottom {
 
     }
-
   }
 
   &__body-text {
-
     margin-top: 1em;
 
     // dropcap
@@ -123,7 +113,6 @@
     @include breakpoint($screen $large-minor-start) {
       @include span(last 7 of 8);
     }
-
   }
 
   &__box {
@@ -136,8 +125,5 @@
     }
   }
 
-  &__content {
-
-  }
-
+  &__content { }
 }

@@ -1,33 +1,50 @@
+%dashed-line-top {
+  border-top: 1px dashed $mediumgray;
+}
+
+%dashed-line-bottom {
+  border-bottom: 1px dashed $mediumgray;
+}
+
+%story-nav-link {
+  color: $font-color;
+}
+
 .story-nav {
   font-weight: 100;
   line-height: 1.5;
+  text-transform: uppercase;
   color: $font-color;
+
+  a {
+    @extend %story-nav-link; 
+  }
 
   &__emph {
     font-weight: 600;
   }
 
-  &__standalone {
+  &__comments {
     margin-bottom: 2em;
-  }
-  
-  &__link {
-    text-transform: uppercase;
-    color: $font-color;
-
-    &--center {
-      display: block;
-      text-align: center;
-    }
+    display: block;
+    text-align: center;
     
-    &--right {
+  }
+
+  &__more-in {
+    padding-top: .625em;
+    padding-bottom: .625em;
+    @extend %dashed-line-top;
+    @extend %dashed-line-bottom;
+    text-align: center;
+
+    @include breakpoint($screen $medium-minor-start) {
       float: right;
       text-align: right;
     }
-
   }
-
-  &__more {
+  
+  &__topics {
     text-transform: uppercase;
   }
 
@@ -36,8 +53,8 @@
     margin-top: 2em;
     padding-top: 2em;
     padding-bottom: 2em;
-    border-top: 1px dashed $mediumgray;
-    border-bottom: 1px dashed $mediumgray;
+    @extend %dashed-line-top;
+    @extend %dashed-line-bottom;
   }
 
 }
