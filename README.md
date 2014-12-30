@@ -273,3 +273,6 @@
 * do we need the word *topics*?
 
 * we're gonna redo some markup and style in story nav
+
+* [how] can we track locations, schools (, specialties) mentioned in stories?
+    * then somewhere serve up all stories that mention OSU-COM or New Mexico or radiology?
