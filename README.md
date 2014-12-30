@@ -271,3 +271,5 @@
 
 ###Tue Dec 30 08:34:33 2014 CST
 * do we need the word *topics*?
+
+* we're gonna redo some markup and style in story nav
