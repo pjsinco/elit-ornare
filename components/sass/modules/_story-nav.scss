@@ -60,6 +60,7 @@
   }
 
   &__prev-next {
+    position: relative;
     @include clearfix;
     /*padding-top: 2em;*/
     /*padding-bottom: 2em;*/

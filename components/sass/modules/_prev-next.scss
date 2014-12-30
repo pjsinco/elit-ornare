@@ -4,25 +4,23 @@
   width: 100%;
   text-align: center;
   
-  > a {
-    color: $font-color;
-  }
 }
 
 .prev-next {
-
-  /*&__nav {*/
-    /*position: relative;*/
+  /*position: relative;*/
     /*width: 50%;*/
   
   &__prev {
-    /*float: left;*/
     @extend %prev-next-base;
+
     @include breakpoint($screen $medium-start) { 
+      float: left;
+      width: 50%;
+
       &:after {
         position: absolute;
         top: 50%;
-        right: 0;
+        right: 50%;
         height: 100%;
         content: '';
         border-right: 1px dashed $mediumgray;
@@ -32,13 +30,18 @@
   }
 
   &__next {
-    /*float: right;*/
     @extend %prev-next-base;
+
+    @include breakpoint($screen $medium-start) { 
+      float: right;
+      width: 50%;
+
+    }
   }
-  /*}*/
 
   &__title {
     text-transform: uppercase;
+    color: $font-color;
   }
 
   &__link {
