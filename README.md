@@ -268,3 +268,5 @@
     * ideally, it should be as tall as the higher of the two columns
 
 * **TODAY** marking up, styling story nav
+
+###Tue Dec 30 08:34:33 2014 CST
