@@ -1,0 +1,36 @@
+.bio {
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  font-weight: 100;
+  
+  
+  &__title {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 100;
+    color: $font-color-lightest;
+  }
+
+  &__feature {
+    @include clearfix;
+    float: left;
+    margin-right: 1em;
+  }
+
+  &__img {
+    float: left;
+    margin-right: 1em;
+    clip-path: ellipse(50% 50% at 50% 50%);
+  }
+
+  &__body {
+    font-style: italic;
+    font-size: $font-size-base;
+    line-height: $bodylineheight;
+    color: $font-color-lighter;
+  }
+
+}
