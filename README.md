@@ -291,3 +291,5 @@
     * learned here: [A couple of use cases for calc()](http://css-tricks.com/a-couple-of-use-cases-for-calc/)
 
 * our author bio photo is 95px x 95px
+
+* **TODAY** gets bottom-of-story nav looking good across all screens
