@@ -290,4 +290,4 @@
     * ```height: calc(100% - 43px);```
     * learned here: [A couple of use cases for calc()](http://css-tricks.com/a-couple-of-use-cases-for-calc/)
 
-* our author bio photo is 112px x 112px
+* our author bio photo is 95px x 95px
