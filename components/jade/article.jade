@@ -43,7 +43,7 @@ html
               h3.story-header__teaser Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.
               div
                 div.story-meta #[span.story-meta__by By] #[span.story-meta__author Euismod Mollis Purus] #[span.story-meta__date Wednesday, Dec. 14, 2014]
-                  #[span.meta__comment-link.comment-link #[a(href='#').comment-link__link #[span.icon-comment #[span.text-replace Comments]] #[span.comment-link__body +]]]
+                  #[span.meta__comment-link.comment-link #[a(href='#comments').comment-link__link #[span.icon-comment #[span.text-replace Comments]] #[span.comment-link__body 5]]]
   
               ul.social.social--shiftable
                 li.social__icon: a(href='#').social--shiftable__link: span.icon-facebook #[span.text-replace Facebook]
@@ -191,8 +191,9 @@ html
 
               div.story-footer__jump-link: a(href='#primary') Top of page #[span.icon-arrow-up]
 
-              div(style="padding-top: 10em;").this-is-just-to-create-space-temporarily-ok
 
+            include comments
+            div(style="padding-top: 10em;").this-is-just-to-create-space-temporarily-ok
       section.content__secondary#secondary
         aside(data-set="rover-don-parent").ad.rover-don-parent-b
         aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-b
