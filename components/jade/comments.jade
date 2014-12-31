@@ -1,0 +1,98 @@
+div.story__commments.comments#comments
+  h2.comments__title 5 comments
+  ol.commments__list
+    li.comment#comment-1
+      article.comment__body
+        footer.comment__meta
+          div.comment__author
+            img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
+          b: a(href="#").comment__url Nullam Dapibus
+          div.comment__metadata
+            a(href="#comment-1")
+              time(datetime="2014-12-19T11:58:27+00:00") 
+                | Dec. 19, 2014 at 11:58 a.m.
+
+        div.comment__content
+          p
+            | Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+          p
+            | Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+        div.comment__reply
+          a(href='#' onclick='return addComment.moveForm( "div-comment-1", "1", "respond", "1" )') Reply
+
+    li.comment#comment-2
+      article.comment__body
+        footer.comment__meta
+          div.comment__author
+            img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
+          b: a(href="#").comment__url Tellus Mollis Purus
+          div.comment__metadata
+            a(href="#comment-2")
+              time(datetime="2014-12-20T17:31:17+00:00") 
+                | Dec. 20, 2014 at 5:31 p.m.
+
+        div.comment__content
+          p.
+            Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          p.
+            Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.
+          p.
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+        div.comment__reply
+          a(href='#' onclick='return addComment.moveForm( "div-comment-2", "2", "respond", "2" )') Reply
+      ol.comments__list.comment__children
+        li.comment#comment-3
+          article.comment__body
+            footer.comment__meta
+              div.comment__author
+                img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
+              b: a(href="#").comment__url Malesuada
+              div.comment__metadata
+                a(href="#comment-3")
+                  time(datetime="2014-12-21T12:23:17+00:00") 
+                    | Dec. 21, 2014 at 12:23 p.m.
+
+            div.comment__content
+              p.
+                Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+
+            div.comment__reply
+              a(href='#' onclick='return addComment.moveForm( "div-comment-3", "3", "respond", "3" )') Reply
+              article
+        li.comment#comment-4
+          article.comment__body
+            footer.comment__meta
+              div.comment__author
+                img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
+              b: a(href="#").comment__url Aenean Inceptos Parturient Dolor
+              div.comment__metadata
+                a(href="#comment-4")
+                  time(datetime="2014-12-21T19:02:01+00:00") 
+                    | Dec. 21, 2014 at 7:02 p.m.
+            div.comment__content
+              p.
+                Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus.
+              p.
+                Ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            div.comment__reply
+              a(href='#' onclick='return addComment.moveForm( "div-comment-4", "4", "respond", "4" )') Reply
+              article
+    li.comment#comment-5
+      article.comment__body
+        footer.comment__meta
+          div.comment__author
+            img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
+          b: a(href="#").comment__url pellentesque dolor
+          div.comment__metadata
+            a(href="#comment-5")
+              time(datetime="2014-12-23T05:52:17+00:00") 
+                | Dec. 23, 2014 at 5:52 p.m.
+
+        div.comment__content
+          p.
+            Tellus vehicula sit ligula.
+
+        div.comment__reply
+          a(href='#' onclick='return addComment.moveForm( "div-comment-5", "5", "respond", "5" )') Reply
