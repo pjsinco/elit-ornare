@@ -20,7 +20,6 @@ div.story__commments.comments#comments
 
         div.comment__reply
           a(href='#' onclick='return addComment.moveForm( "div-comment-1", "1", "respond", "1" )') Reply
-
     li.comment#comment-2
       article.comment__body
         footer.comment__meta
@@ -96,3 +95,24 @@ div.story__commments.comments#comments
 
         div.comment__reply
           a(href='#' onclick='return addComment.moveForm( "div-comment-5", "5", "respond", "5" )') Reply
+  div.comments__respond
+    h3.comments__title#reply-title Leave a comment
+    form(action='#' method='post' novalidate).comment-form#comment-form
+      p.comment-form__notes
+        Your email address will not be published.
+      p.comment-form__author
+        label(for="author") Your name#[span.comment-form__required *] 
+        input(name="author" type="text" size="30")#author
+      p.comment-form__email
+        label(for="email") Your email#[span.comment-form__required *] 
+        input(name="email" type="email" size="30")#email
+      p.comment-form__comment
+        label(for="comment") Your comment#[span.comment-form__required *] 
+        textarea(name="comment" cols="45" rows="8")#comment
+      p.comment-form__button
+        input(name="submit" type="submit" value="Post Comment").comment-form__submit.btn#submit
+        input(name="comment_post_ID" type="hidden" value="1")#comment_post_ID
+        input(name="comment_parent" type="hidden" value="0")#comment_parent
+      
+      
+      
