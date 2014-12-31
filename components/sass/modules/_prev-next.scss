@@ -62,5 +62,9 @@
     font-weight: 400;
     text-align: center;
     color: $font-color-lighter;
+
+    @include breakpoint($screen $medium-start) {
+      margin-top: 1em;
+    }
   }
 }
