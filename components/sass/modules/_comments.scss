@@ -1,6 +1,27 @@
 .comments {
 
+  margin-top: 3em;
+  color: #333;
   @include breakpoint($screen $large-minor-start) {
     @include span(last 7 of 8);
+  }
+
+  &__list {
+    margin-top: .5em;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: -.03em;
+    color: $font-color-lightest;
+  }
+ 
+  &__count {
+    font-weight: 600;
   }
 }

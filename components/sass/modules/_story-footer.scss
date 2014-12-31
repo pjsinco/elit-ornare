@@ -48,7 +48,7 @@
   &__img {
     float: left;
     margin-right: 1em;
-    clip-path: ellipse(50% 50% at 50% 50%);
+    @extend %clip-path-circle;
   }
 
   &__title {

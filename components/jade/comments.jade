@@ -1,12 +1,12 @@
 div.story__commments.comments#comments
-  h2.comments__title 5 comments
-  ol.commments__list
-    li.comment#comment-1
+  h2.comments__title #[span.comments__count 5] comments
+  ol.comments__list
+    li.comment.comment--first#comment-1
       article.comment__body
         footer.comment__meta
           div.comment__author
-            img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
-          b: a(href="#").comment__url Nullam Dapibus
+            //-img(src="img/avatar37.png" width="37" height="37").avatar.avatar-37.comment__avatar
+            h3.comment__author-name Nullam Dapibus
           div.comment__metadata
             a(href="#comment-1")
               time(datetime="2014-12-19T11:58:27+00:00") 
@@ -24,8 +24,8 @@ div.story__commments.comments#comments
       article.comment__body
         footer.comment__meta
           div.comment__author
-            img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
-          b: a(href="#").comment__url Tellus Mollis Purus
+            //-img(src="img/avatar37.png" width="37" height="37").avatar.avatar-37.comment__avatar
+            h3.comment__author-name Tellus Mollis Purus
           div.comment__metadata
             a(href="#comment-2")
               time(datetime="2014-12-20T17:31:17+00:00") 
@@ -46,8 +46,8 @@ div.story__commments.comments#comments
           article.comment__body
             footer.comment__meta
               div.comment__author
-                img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
-              b: a(href="#").comment__url Malesuada
+                //-img(src="img/avatar37.png" width="37" height="37").avatar.avatar-37.comment__avatar
+                h3.comment__author-name Malesuada
               div.comment__metadata
                 a(href="#comment-3")
                   time(datetime="2014-12-21T12:23:17+00:00") 
@@ -60,30 +60,32 @@ div.story__commments.comments#comments
             div.comment__reply
               a(href='#' onclick='return addComment.moveForm( "div-comment-3", "3", "respond", "3" )') Reply
               article
-        li.comment#comment-4
-          article.comment__body
-            footer.comment__meta
-              div.comment__author
-                img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
-              b: a(href="#").comment__url Aenean Inceptos Parturient Dolor
-              div.comment__metadata
-                a(href="#comment-4")
-                  time(datetime="2014-12-21T19:02:01+00:00") 
-                    | Dec. 21, 2014 at 7:02 p.m.
-            div.comment__content
-              p.
-                Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus.
-              p.
-                Ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            div.comment__reply
-              a(href='#' onclick='return addComment.moveForm( "div-comment-4", "4", "respond", "4" )') Reply
-              article
+        ol.comments__list.comment__children
+          li.comment#comment-4
+            article.comment__body
+              footer.comment__meta
+                div.comment__author
+                  //-img(src="img/avatar37.png" width="37" height="37").avatar.avatar-37.comment__avatar
+                  h3.comment__author-name Aenean Inceptos Parturient DolorAenean Inceptos Parturient Dolor Aenean Inceptos Parturient Dolor
+                div.comment__metadata
+                  a(href="#comment-4")
+                    time(datetime="2014-12-21T19:02:01+00:00") 
+                      | Dec. 21, 2014 at 7:02 p.m.
+              div.comment__content
+                p.
+                  Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus.
+                p.
+                  Ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              div.comment__reply
+                a(href='#' onclick='return addComment.moveForm( "div-comment-4", "4", "respond", "4" )') Reply
+                article
+  
     li.comment#comment-5
       article.comment__body
         footer.comment__meta
           div.comment__author
-            img(src="img/avatar-default.png" width="74" height="74").avatar.avatar--default.comment__avatar
-          b: a(href="#").comment__url pellentesque dolor
+            //-img(src="img/avatar37.png" width="37" height="37").avatar.avatar-37.comment__avatar
+            h3.comment__author-name pellentesque dolor
           div.comment__metadata
             a(href="#comment-5")
               time(datetime="2014-12-23T05:52:17+00:00") 

@@ -26,7 +26,7 @@ $linkcolor: $blue;
 /*
  * TYPOGRAPHY
  */
-$primaryfont: 'proxima-nova', Arial, sans-serif;
+$primaryfont: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $secondaryfont: 'adelle', Georgia, serif;
 
 $font-color: $verydark;
@@ -75,3 +75,10 @@ $story-width-medium: 90%;
 $article-feature-image-max-width: 48em;
 
 $big-menu-start: $xlarge-start;
+
+/*
+ * Special
+ */
+%clip-path-circle {
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
