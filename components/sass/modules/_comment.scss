@@ -1,10 +1,16 @@
 .comment {
-  margin-top: 3em;
+  margin-top: 1em;
   padding: 1em;
   border-left: 1px solid $lightgray;
   border-right: 1px solid $lightgray;
   border-bottom: 1px solid $lightgray;
   border-top: 3px solid $primarycolor;
+
+  &__children {
+    position: relative;
+    right: -1.0625em;
+    bottom: -1.0625em;
+  }
     
   
   &__body {
