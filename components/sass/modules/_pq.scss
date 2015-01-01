@@ -1,7 +1,7 @@
 .pq {
   display: none;
   
-  @include breakpoint($screen $big-menu-start) {
+  @include breakpoint($screen $large-minor-start) {
     @include clearfix();
     font-family: $secondaryfont;
     color: $verydark;

@@ -12,9 +12,8 @@
 
 .prev-next {
   position: relative;
+  padding-top: 2em;
   @include clearfix;
-  /*@extend %dashed-line-top;*/
-  /*@extend %dashed-line-bottom;*/
   
   &__prev {
     @extend %prev-next-base;
