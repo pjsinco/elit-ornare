@@ -4,11 +4,25 @@
 
 %list-item-base {
   position: relative;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
   clear: both;
+  font-family: $secondaryfont;
+  border-bottom: 1px dashed $mediumgray;
+}
+
+%link-base {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.3;
+  color: $font-color-lighter;
 }
 
 .widget {
   @include clearfix;
+  position: relative;
+  margin-left: -1.25em;
+  padding-left: 1.25em;
 
   @include breakpoint($screen $large-start $xlarge-start) {
     @include span(4 of 8);
@@ -18,18 +32,7 @@
     }
   }
 
-  
-  /*ul {*/
-    /*list-style-type: none;*/
-  /*}*/
-
-  /*ol {*/
-    /*list-style-type: decimal;*/
-  /*}*/
-
   &__list {
-    /*margin-left: 0;*/
-    /*padding-left: 1.125em;*/
     @extend %list-base;
     padding-left: 0;
   }
@@ -37,10 +40,10 @@
   &__list--counter {
     @extend %list-base;
     counter-reset: list-counter;
-    
   }
 
   &__list-item {
+    @include clearfix;
     @extend %list-item-base;
   }
 
@@ -62,6 +65,27 @@
 
   }
 
+  &__title {
+    margin-left: -2em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    font-size: 1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 600;
+    color: $font-color-lighter;
+    /*border-bottom: 4px solid $mediumgray;*/
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 2.4em;
+      content: '';
+      width: 100%;
+      border-bottom: 5px solid $primarycolor;
+    }
+  }
 
   &__feature {
     margin-right: 1em;
@@ -69,12 +93,10 @@
   }
 
   &__link {
-  
+    @extend %link-base;
   }
   
   &__head {
   
   }
-
-
 }
