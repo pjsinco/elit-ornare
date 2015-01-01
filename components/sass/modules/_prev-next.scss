@@ -12,8 +12,22 @@
 
 .prev-next {
   position: relative;
-  padding-top: 2em;
+  padding-top: 1em;
+  margin-left: -6%;
+  margin-right: -6%;
   @include clearfix;
+  background: $verydark;
+  color: $white;
+
+  [class*='icon-']:before {
+    color: $white;
+  }
+  
+  @include breakpoint($screen $large-start) { 
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   
   &__prev {
     @extend %prev-next-base;
@@ -28,7 +42,8 @@
         right: 50%;
         height: calc(100% - 43px);
         content: '';
-        border-right: 1px dashed $mediumgray;
+        /*border-right: 1px dashed $mediumgray;*/
+        border-right: 3px solid $white;
         transform: translateY(-50%);
       }
     }
@@ -46,7 +61,7 @@
 
   &__title {
     text-transform: uppercase;
-    color: $font-color;
+    color: $white;
   }
 
   &__link {
@@ -56,14 +71,14 @@
     margin-right: auto;
     max-width: 80%;
     display: block;
-    font-family: $secondaryfont;
+    /*font-family: $secondaryfont;*/
     font-size: 1.125em;
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
-    color: $font-color-lighter;
+    color: $white;
 
     @include breakpoint($screen $medium-start) {
-      margin-top: 1em;
+      /*margin-top: 1em;*/
     }
   }
 }

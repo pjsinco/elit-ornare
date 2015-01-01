@@ -8,6 +8,8 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
+  position: relative;
+  top: 1px;
   font-family: icon-font;
   /*content: attr(data-icon);*/
   speak: none;
