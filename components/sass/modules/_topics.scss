@@ -7,7 +7,7 @@
 
   @include breakpoint($screen $medium-minor-start) {
     margin-top: .25em;
-    max-width: 65%;
+    /*max-width: 65%;*/
   }
 
   &__topic {

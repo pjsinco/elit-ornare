@@ -16,7 +16,7 @@
   margin-left: -6%;
   margin-right: -6%;
   @include clearfix;
-  background: $verydark;
+  background: $primarycolor;
   color: $white;
 
   [class*='icon-']:before {
@@ -40,10 +40,11 @@
         position: absolute;
         top: 50%;
         right: 50%;
-        height: calc(100% - 43px);
+        /*height: calc(100% - 43px);*/
+        height: 100%;
         content: '';
         /*border-right: 1px dashed $mediumgray;*/
-        border-right: 3px solid $white;
+        border-right: 1px dashed $white;
         transform: translateY(-50%);
       }
     }
@@ -65,16 +66,16 @@
   }
 
   &__link {
-    /*margin-top: 1.25em;*/
-    margin-top: 0;
+    margin-top: .5em;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
     display: block;
-    /*font-family: $secondaryfont;*/
+    font-family: $secondaryfont;
     font-size: 1.125em;
     font-weight: 100;
     text-align: center;
+    line-height: $bodylineheight;
     color: $white;
 
     @include breakpoint($screen $medium-start) {
