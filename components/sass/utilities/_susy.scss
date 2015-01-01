@@ -31,3 +31,9 @@ $adleader: (
   container-position: center,
 );
 
+$secondary: (
+  global-box-sizing: border-box,
+  columns: 2,
+  container: $article-max-width,
+  gutters: .25,
+);

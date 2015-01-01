@@ -4,11 +4,21 @@
 
 %list-item-base {
   position: relative;
+  clear: both;
 }
 
 .widget {
   @include clearfix;
 
+  @include breakpoint($screen $large-start $xlarge-start) {
+    @include span(4 of 8);
+
+    &:last-child {
+      @include span(4 last of 8);
+    }
+  }
+
+  
   /*ul {*/
     /*list-style-type: none;*/
   /*}*/

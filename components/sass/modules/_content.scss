@@ -43,6 +43,19 @@
   }
 
   &__secondary {
+    width: 94%;
+    max-width: $article-max-width;
+    @extend %center;
+    
+    @include breakpoint($screen $medium-start) {
+      /*@include container(90%);*/
+      width: $story-width-medium;
+    }
+
+    @include breakpoint($screen $large-start) {
+      width: 94%;
+    }
+
     @include breakpoint($screen $xlarge-start) {
       @include span(30% last of $gridpage);
     }
