@@ -20,7 +20,7 @@
   height: 3em;
   /*background-color: $primarycolor;*/
   background-color: $white;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-align: center;
 
   @include breakpoint($screen $big-menu-start) {
@@ -36,14 +36,14 @@
     @include breakpoint($screen $big-menu-start) {
       color: $primarycolor;
       font-size: 3.125em;
-      letter-spacing: 0.2em;
+      /*letter-spacing: 0.2em;*/
     }
   }
 
   &--alpha {
     position: relative;
     top: 1em;
-    letter-spacing: .25em;
+    /*letter-spacing: .25em;*/
     @include breakpoint($screen $big-menu-start) {
     
     }
