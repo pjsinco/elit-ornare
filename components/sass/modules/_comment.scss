@@ -32,13 +32,14 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-    color: $primarycolor;
+    font-family: $secondaryfont;
+    color: $font-color;
   }
 
   &__content {
     clear: both;
     margin-top: 1em;
-    font-size: .875em;
+    font-size: 1em;
   }
 
   &__meta {
