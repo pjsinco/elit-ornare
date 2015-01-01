@@ -1,0 +1,70 @@
+%list-base {
+  list-style-type: none;
+}
+
+%list-item-base {
+  position: relative;
+}
+
+.widget {
+  @include clearfix;
+
+  /*ul {*/
+    /*list-style-type: none;*/
+  /*}*/
+
+  /*ol {*/
+    /*list-style-type: decimal;*/
+  /*}*/
+
+  &__list {
+    /*margin-left: 0;*/
+    /*padding-left: 1.125em;*/
+    @extend %list-base;
+    padding-left: 0;
+  }
+
+  &__list--counter {
+    @extend %list-base;
+    counter-reset: list-counter;
+    
+  }
+
+  &__list-item {
+    @extend %list-item-base;
+  }
+
+  &__list-item--counter {
+    @extend %list-item-base;
+  
+    &:before {
+      position: absolute;
+      left: -.75em;
+      content: counter(list-counter);
+      counter-increment: list-counter;
+      font-size: 3em;
+      color: $font-color-lighter;
+      
+    }
+  }
+
+  &--latest {
+
+  }
+
+
+  &__feature {
+    margin-right: 1em;
+    float: left;
+  }
+
+  &__link {
+  
+  }
+  
+  &__head {
+  
+  }
+
+
+}
