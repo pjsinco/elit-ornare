@@ -303,9 +303,13 @@
 * pagespeed mobile 57
 
 ###Wed Dec 31 09:23:40 2014 CST
-
 * [nice html tidier](http://www.dirtymarkup.com/)
 
 * TODO our **prev-next** needs more padding
 
 * **TODAY** comments--markup, styling
+
+###Thu Jan  1 06:21:13 2015 CST
+* dropcap isn't positioned correctly in firefox
+
+* logo fonts: ff enzo? beau sans?
