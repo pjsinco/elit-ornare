@@ -307,3 +307,5 @@
 * [nice html tidier](http://www.dirtymarkup.com/)
 
 * TODO our **prev-next** needs more padding
+
+* **TODAY** comments--markup, styling
