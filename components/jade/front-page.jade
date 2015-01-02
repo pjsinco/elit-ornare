@@ -7,9 +7,35 @@ html
     include header
 
     div.content#main
-      div.super
+      div.super.container
         div.super__feature
-          img(src="img/super962.jpg").super_img
+          figure.image.image--super
+            picture
+              <!--[if IE 9]>
+              <video style="display: none">
+              <![endif]-->
+              //-source(srcset="img/caudle-omed.jpg" media="(min-width: 768px)") 
+              //-source(srcset="img/caudle-omed@.75.jpg" media="(min-width: 652px)") 
+              //-source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
+              <!--[if IE 9]>
+              </video>
+              <![endif]-->
+              img(srcset="img/super962.jpg" alt="alt tag here ok").image__img--super
 
+      div.featured.container
+
+      div.this-is-thirds.container
+
+      div.social-pick
+
+      div.this-is-fourths.container
+
+      div.this-is-thirds.container
+
+      div.this-is-one.container
+
+      div.this-is-fourths.container
+
+    footer
 
     include footer

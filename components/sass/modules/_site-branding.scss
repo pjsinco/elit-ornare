@@ -24,7 +24,7 @@
   text-align: center;
 
   @include breakpoint($screen $big-menu-start) {
-    padding-bottom: 5em;
+    padding-bottom: 4em;
     border-bottom: 1px solid $lightgray;
     text-align: left;
     background-color: $white;
@@ -37,6 +37,18 @@
       color: $primarycolor;
       font-size: 3.125em;
       /*letter-spacing: 0.2em;*/
+    }
+
+    &:after {
+      content: "Dr.ing";
+      line-height: .5;
+      display: block;
+      font-weight: bold;
+      font-size: 1.5em;
+
+      @include breakpoint($screen $medium-minor-start) {
+        content: "Doctoring";
+      }
     }
   }
 
