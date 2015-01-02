@@ -313,3 +313,7 @@
 * dropcap isn't positioned correctly in firefox
 
 * logo fonts: ff enzo? beau sans?
+
+* **TODAY** markup, start to style widgets
+
+* **prev-next** is looking not good
