@@ -248,7 +248,7 @@
 
 * how would line-height: 1.5 look on the body?
 
-* TODO we need some more bottom margin on figcaption in the body
+* TODO ~~we need some more bottom margin on figcaption in the body~~
 
 * our measure today, at biggest screen, is 72 chars
     * 1.125em / 1.4
@@ -305,7 +305,7 @@
 ###Wed Dec 31 09:23:40 2014 CST
 * [nice html tidier](http://www.dirtymarkup.com/)
 
-* TODO our **prev-next** needs more padding
+* TODO ~~our **prev-next** needs more padding~~
 
 * **TODAY** comments--markup, styling
 
@@ -332,3 +332,4 @@
 
 * [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
     
+* banner looks funny in ie9
