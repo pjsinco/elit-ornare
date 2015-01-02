@@ -312,8 +312,19 @@
 ###Thu Jan  1 06:21:13 2015 CST
 * dropcap isn't positioned correctly in firefox
 
-* logo fonts: ff enzo? beau sans?
+* logo fonts possibles: ff enzo. beau sans.
 
 * **TODAY** markup, start to style widgets
 
 * **prev-next** is looking not good
+
+###Fri Jan  2 04:59:41 2015 CST
+* sticky stuff, hovers, etc.
+    * [http://codepen.io/philsinatra/pen/AfkuJ](http://codepen.io/philsinatra/pen/AfkuJ)
+    * [sticky header](http://codepen.io/iest/pen/mKpzA)
+    * [sticky on scroll up](http://codepen.io/tcmulder/pen/blzrc)
+    * [nav](http://codepen.io/TimRuby/pen/kLGic)
+    * [http://tympanus.net/Development/SelectInspiration/index8.html](http://tympanus.net/Development/SelectInspiration/index8.html)
+    * [hovers](http://tympanus.net/Development/HoverEffectIdeas/)
+    * [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
+    
