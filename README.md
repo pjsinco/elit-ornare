@@ -312,7 +312,10 @@
 ###Thu Jan  1 06:21:13 2015 CST
 * dropcap isn't positioned correctly in firefox
 
-* logo fonts possibles: ff enzo. beau sans.
+* logo 
+    * font possibles: ff enzo. beau sans.
+    * stitches, embroidered; subtle wrinkle ripple
+    * Dr.ing
 
 * **TODAY** markup, start to style widgets
 
