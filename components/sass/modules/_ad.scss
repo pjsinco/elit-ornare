@@ -34,7 +34,10 @@
   &:before {
     color: $gray;
     content: "Advertisement";
-    margin: 1em auto;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
     width: 12em;
     display: block;
     font-family: sans-serif;

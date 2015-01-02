@@ -33,9 +33,13 @@
   &__link {
     /*color: #fff;*/
     color: $primarycolor;
+    font-size: 2em;
+  
     @include breakpoint($screen $big-menu-start) {
       color: $primarycolor;
-      font-size: 3.125em;
+      font-size: 4.5em;
+      /*font-size: 3.125em;*/
+      /*font-size: 48px;*/
       /*letter-spacing: 0.2em;*/
     }
 
@@ -44,14 +48,15 @@
       line-height: .5;
       display: block;
       font-weight: bold;
-      font-size: 2em;
+      font-size: 1em;
 
       @include breakpoint($screen $medium-minor-start) {
         content: "Doctoring";
+        /*font-size: 2em;*/
       }
 
       @include breakpoint($screen $big-menu-start) {
-        font-size: 1.5em;
+        /*font-size: 4.5em;*/
       }
   
     }
