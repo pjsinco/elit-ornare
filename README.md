@@ -329,5 +329,6 @@
     * [nav](http://codepen.io/TimRuby/pen/kLGic)
     * [http://tympanus.net/Development/SelectInspiration/index8.html](http://tympanus.net/Development/SelectInspiration/index8.html)
     * [hovers](http://tympanus.net/Development/HoverEffectIdeas/)
-    * [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
+
+* [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
     
