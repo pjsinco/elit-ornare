@@ -313,8 +313,8 @@
 * dropcap isn't positioned correctly in firefox
 
 * logo 
-    * font possibles: ff enzo. beau sans.
-    * stitches, embroidered; subtle wrinkle ripple
+    * font possibles: ff enzo. beau sans. museo sans rounded. ff cocon web pro. anca. anisette std petite. parisine plus std sombre. adrianna.
+    * stitches, embroidered; subtle wrinkle ripple; sovba font.
     * Dr.ing
 
 * **TODAY** markup, start to style widgets
