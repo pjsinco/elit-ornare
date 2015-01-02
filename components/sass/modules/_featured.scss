@@ -1,0 +1,51 @@
+.featured {
+
+  &__primary {
+    background: aliceblue;
+    @include clearfix;
+
+
+    @include breakpoint($screen $big-menu-start) {
+      @include span(8 of $gridpage);
+    }
+  }
+
+  &__secondary {
+
+    @include breakpoint($screen $big-menu-start) {
+      @include span(30% last of $gridpage);
+    }
+  }
+
+  &__image {
+
+    @include breakpoint($screen $large-start) {
+      /*width: 35%;*/
+      /*float: left;*/
+      /*@include span(35%);*/
+      @include span(3 of 8);
+    }
+  }
+
+  &__body {
+
+    @include breakpoint($screen $large-start) {
+      /*width: 65%;*/
+      /*@include span(65% last);*/
+      @include span(5 last of 8);
+    }
+
+  }
+
+  &__kicker {
+
+    letter-spacing: .1em;
+    font-size: .875em;
+    text-transform: uppercase;
+    color: $primarycolor;
+  }
+      
+}
+
+
+

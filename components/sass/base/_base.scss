@@ -81,3 +81,7 @@ input, textarea {
     @extend textarea:focus;
   }
 } // input
+
+figure {
+  margin: 0;
+}

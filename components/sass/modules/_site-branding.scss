@@ -44,11 +44,16 @@
       line-height: .5;
       display: block;
       font-weight: bold;
-      font-size: 1.5em;
+      font-size: 2em;
 
       @include breakpoint($screen $medium-minor-start) {
         content: "Doctoring";
       }
+
+      @include breakpoint($screen $big-menu-start) {
+        font-size: 1.5em;
+      }
+  
     }
   }
 

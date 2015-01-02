@@ -1,7 +1,5 @@
 .image {
 
-  margin: 0;
-
   &__img {
     // negative margin the override containing block's padding
     /*margin-left: -($outside-gutter-small);*/
@@ -18,6 +16,10 @@
   }
 
   &--primary {
+
+  }
+
+  &--featured {
 
   }
 
