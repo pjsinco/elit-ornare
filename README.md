@@ -332,4 +332,4 @@
 
 * [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
     
-* banner looks funny in ie9
+* TODO ~~banner looks funny in ie9~~ Fri Jan  2 17:44:02 2015 CST
