@@ -5,4 +5,11 @@
     @include container($gridpage);
   }
 
+  &__image {
+    /*@include span(9 of $gridpage);*/
+  }
+
+  &__body {
+
+  }
 }
