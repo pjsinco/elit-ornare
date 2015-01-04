@@ -336,3 +336,8 @@
 
 ###Sun Jan  4 08:26:32 2015 CST
 * [nice responsive form pattern](http://codepen.io/chriscoyier/pen/DmnlJ?editors=110)
+
+* super image
+    * min height is about 478px on 992px wide
+
+* **TODAY** front-page super, featured
