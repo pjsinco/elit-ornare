@@ -1,7 +1,10 @@
 .super {
   
   position: relative;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $mediumgray;
   color: $white;
+
 
   @include breakpoint($screen $xlarge-start) {
     @include container($gridpage);
@@ -9,12 +12,13 @@
 
   &__image {
     /*@include span(9 of $gridpage);*/
+    position: relative;
   }
 
   &__body {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 2.125em;
+    left: 0;
     width: 50%;
     transform: translateY(-10%);
     float: right;
@@ -22,8 +26,21 @@
     padding-right: 2em;
     padding-bottom: 1em;
     padding-left: 2em;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.4);
+    /*border: 1px solid $white;*/
     color: inherit;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    padding: .5em;
+    border: 1px solid $extralightgray;
+    font-weight: 400;
+    font-size: .875em;
+    background: rgba(0,0,0,.1);
+    color: $extralightgray;
   }
 
   &__kicker {
@@ -46,7 +63,7 @@
     margin-bottom: 0;
     line-height: 1.2;
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 2em;
     color: inherit;
   }
 
