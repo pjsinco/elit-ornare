@@ -9,18 +9,19 @@ html
     div.content#main
       div.super.container
         div.super__feature
-          figure.image.image--super
+          figure.image--super
             picture
               <!--[if IE 9]>
               <video style="display: none">
               <![endif]-->
-              //-source(srcset="img/caudle-omed.jpg" media="(min-width: 768px)") 
-              //-source(srcset="img/caudle-omed@.75.jpg" media="(min-width: 652px)") 
+              source(srcset="img/super700.jpg" media="(min-width: 700px)") 
+              source(srcset="img/super600.jpg" media="(min-width: 480px)") 
               //-source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
               <!--[if IE 9]>
               </video>
               <![endif]-->
-              img(srcset="img/super962.jpg" alt="alt tag here ok").image__img--super
+              img(srcset="img/super480.jpg" alt="super480").image__img
+          div.super__body
 
       div.featured.container
         div.featured__primary
