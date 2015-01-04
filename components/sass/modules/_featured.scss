@@ -15,14 +15,14 @@
     width: 94%;
     @extend %center;
 
-    @include breakpoint($screen $big-menu-start) {
+    @include breakpoint($screen $large-minor-start) {
       @include span(8 of $gridpage);
     }
   }
 
   &__secondary {
 
-    @include breakpoint($screen $big-menu-start) {
+    @include breakpoint($screen $large-minor-start) {
       /*@include span(30% last of $gridpage);*/
       @include span(4 last of $gridpage);
     }
@@ -34,16 +34,18 @@
     max-width: 6.25em;
     display: inline-block;
     float: left;
+
     @include breakpoint($screen $large-start) {
       /*width: 35%;*/
       /*float: left;*/
       /*@include span(35%);*/
       @include span(3 of 8);
+      max-width: inherit;
+      position: static;
     }
   }
 
   &__body {
-
     @include breakpoint($screen $large-start) {
       /*width: 65%;*/
       /*@include span(65% last);*/
@@ -62,6 +64,7 @@
     font-family: $secondaryfont;
 
     @include breakpoint($screen $large-start) {
+      margin-left: 0;
       font-size: 1.25em;
       line-height: 1.5;
       
@@ -72,11 +75,12 @@
     color: inherit;
   }
 
-  &__teaser {
+  &__body-text {
     margin-left: 6.75em;
     font-size: 1em;
     line-height: 1.3;
     @include breakpoint($screen $large-start) {
+      margin-left: 0;
       font-size: 1.125em;
       line-height: 1.4;
       font-weight: 400;

@@ -7,13 +7,13 @@ $overlay-start: $large-start;
 
   @include breakpoint($screen $overlay-start) {
     padding-bottom: 2em;
-    border-bottom: 1px solid $mediumgray;
     color: $white;
   }
 
 
   @include breakpoint($screen $xlarge-start) {
     @include container($gridpage);
+    border-bottom: 1px solid $mediumgray;
   }
 
   &__image {
