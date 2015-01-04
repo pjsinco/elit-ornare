@@ -47,10 +47,11 @@
     font-size: 1.25em;
     line-height: 1.5;
     font-weight: 100;
+    font-family: $secondaryfont;
   }
 
   &__link {
-    color: $font-color;
+    color: inherit;
   }
 
   &__teaser {
