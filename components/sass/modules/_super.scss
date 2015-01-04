@@ -1,9 +1,15 @@
+$overlay-start: $large-start;
+
 .super {
   
   position: relative;
   padding-bottom: 2em;
-  border-bottom: 1px solid $mediumgray;
-  color: $white;
+  color: $font-color;
+
+  @include breakpoint($screen $overlay-start) {
+    border-bottom: 1px solid $mediumgray;
+    color: $white;
+  }
 
 
   @include breakpoint($screen $xlarge-start) {
@@ -16,31 +22,52 @@
   }
 
   &__body {
-    position: absolute;
-    bottom: 2.125em;
-    left: 0;
-    width: 50%;
-    transform: translateY(-10%);
-    float: right;
-    padding-top: 1em;
-    padding-right: 2em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-    background: rgba(0,0,0,.4);
-    /*border: 1px solid $white;*/
-    color: inherit;
+    position: relative;
+    top: -1em;
+    padding: 1em;
+    width: 94%;
+    max-width: $article-max-width;
+    @extend %center;
+    background: $white;
+    border-top: 3px solid $primarycolor;
+    border-right: 1px solid $mediumgray;
+    border-bottom: 1px solid $mediumgray;
+    border-left: 1px solid $mediumgray;
+    
+    
+
+    @include breakpoint($screen $overlay-start) {
+      position: absolute;
+      top: inherit;
+      bottom: 2.125em;
+      left: 0;
+      width: 50%;
+      transform: translateY(-10%);
+      float: right;
+      padding-top: 1em;
+      padding-right: 2em;
+      padding-bottom: 1em;
+      padding-left: 2em;
+      border: 0;
+      background: rgba(0,0,0,.4);
+      /*border: 1px solid $white;*/
+      color: inherit;
+    }
   }
 
   &__tag {
     position: absolute;
-    top: 1em;
-    left: 2em;
+    top: 3%;
+    left: 3%;
     padding: .5em;
     border: 1px solid $extralightgray;
     font-weight: 400;
     font-size: .875em;
     background: rgba(0,0,0,.1);
     color: $extralightgray;
+
+    @include breakpoint($screen $overlay-start) {
+    }
   }
 
   &__kicker {
@@ -49,25 +76,37 @@
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
+    font-size: .875em;
     color: $primarycolor;
   }
 
   &__date {
     font-size: .875em;
     text-transform: uppercase;
-    color: $font-color-lightest;
+    color: $font-color-lighter;
+    @include breakpoint($screen $overlay-start) {
+      color: $font-color-lightest;
+    }
   }
 
   &__head {
     margin-top: .25em;
-    margin-bottom: 0;
-    line-height: 1.2;
+    margin-bottom: .125em;
+    font-size: 1.5em;
     font-weight: 400;
-    font-size: 2em;
+    line-height: 1.2;
     color: inherit;
+
+    @include breakpoint($screen $overlay-start) {
+      margin-top: .25em;
+      margin-bottom: 0;
+      /*line-height: 1.2;*/
+      font-size: 2em;
+    }
   }
 
   &__body-text {
+    font-size: 1em;
     line-height: 1.3;
     color: inherit;
   }
