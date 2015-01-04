@@ -333,3 +333,6 @@
 * [Ms. Soueidan + svg](http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
     
 * TODO ~~banner looks funny in ie9~~ Fri Jan  2 17:44:02 2015 CST
+
+###Sun Jan  4 08:26:32 2015 CST
+* [nice responsive form pattern](http://codepen.io/chriscoyier/pen/DmnlJ?editors=110)
