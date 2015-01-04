@@ -4,9 +4,16 @@
     margin-top: 2em;
   }
 
+  &__feature {
+    position: relative;
+    margin-bottom: 1em;
+    border-bottom: 1px solid $mediumgray;
+  }
+
   &__primary {
     @include clearfix;
-
+    width: 94%;
+    @extend %center;
 
     @include breakpoint($screen $big-menu-start) {
       @include span(8 of $gridpage);
@@ -22,7 +29,11 @@
   }
 
   &__image {
-
+    position: absolute;
+    top: 1.6875em;
+    max-width: 6.25em;
+    display: inline-block;
+    float: left;
     @include breakpoint($screen $large-start) {
       /*width: 35%;*/
       /*float: left;*/
@@ -44,10 +55,17 @@
   &__head {
     margin-top: 0;
     margin-bottom: .25em;
-    font-size: 1.25em;
-    line-height: 1.5;
+    margin-left: 6.1em;
+    font-size: 1.1em;
+    line-height: 1.4;
     font-weight: 100;
     font-family: $secondaryfont;
+
+    @include breakpoint($screen $large-start) {
+      font-size: 1.25em;
+      line-height: 1.5;
+      
+    }
   }
 
   &__link {
@@ -55,9 +73,14 @@
   }
 
   &__teaser {
-    font-size: 1.125em;
-    line-height: 1.4;
-    font-weight: 400;
+    margin-left: 6.75em;
+    font-size: 1em;
+    line-height: 1.3;
+    @include breakpoint($screen $large-start) {
+      font-size: 1.125em;
+      line-height: 1.4;
+      font-weight: 400;
+    }
   }
 
   &__date {

@@ -3,10 +3,10 @@ $overlay-start: $large-start;
 .super {
   
   position: relative;
-  padding-bottom: 2em;
   color: $font-color;
 
   @include breakpoint($screen $overlay-start) {
+    padding-bottom: 2em;
     border-bottom: 1px solid $mediumgray;
     color: $white;
   }
@@ -57,6 +57,7 @@ $overlay-start: $large-start;
 
   &__tag {
     position: absolute;
+    display: none;
     top: 3%;
     left: 3%;
     padding: .5em;
@@ -67,6 +68,7 @@ $overlay-start: $large-start;
     color: $extralightgray;
 
     @include breakpoint($screen $overlay-start) {
+      display: block;
     }
   }
 
