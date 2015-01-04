@@ -1,8 +1,8 @@
 %prev-next-base {
   padding-top: 0;
-  padding-right: 1em;
+  /*padding-right: 1em;*/
   padding-bottom: 1em;
-  padding-left: 1em;
+  /*padding-left: 1em;*/
 
   display: inline-block;
   width: 100%;
@@ -12,15 +12,16 @@
 
 .prev-next {
   position: relative;
-  padding-top: 1em;
-  margin-left: -6%;
-  margin-right: -6%;
+  margin-top: 2em;
+  /*padding-top: 1em;*/
+  /*margin-left: -6%;*/
+  /*margin-right: -6%;*/
   @include clearfix;
-  background: $primarycolor;
-  color: $white;
+  /*background: $primarycolor;*/
+  color: $font-color;
 
   [class*='icon-']:before {
-    color: $white;
+    color: $font-color;
   }
   
   @include breakpoint($screen $large-start) { 
@@ -34,7 +35,7 @@
 
     @include breakpoint($screen $medium-start) { 
       float: left;
-      width: 50%;
+      width: 46%;
 
       &:after {
         position: absolute;
@@ -55,14 +56,22 @@
 
     @include breakpoint($screen $medium-start) { 
       float: right;
-      width: 50%;
+      width: 46%;
 
     }
   }
 
   &__title {
+    display: inline-block;
+    padding-top: .25em;
+    padding-right: .25em;
+    padding-bottom: .625em;
+    padding-left: .25em;
+    width: 100%;
     text-transform: uppercase;
-    color: $white;
+    color: $font-color;
+    border-bottom: 1px dashed $mediumgray;
+    
   }
 
   &__link {
@@ -76,7 +85,7 @@
     font-weight: 100;
     text-align: center;
     line-height: $bodylineheight;
-    color: $white;
+    color: $font-color-lighter;
 
     @include breakpoint($screen $medium-start) {
       /*margin-top: 1em;*/
