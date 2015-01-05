@@ -15,41 +15,56 @@
     width: 94%;
     @extend %center;
 
-    @include breakpoint($screen $large-minor-start) {
+    @include breakpoint($screen $xlarge-start) {
       @include span(8 of $gridpage);
     }
   }
 
   &__secondary {
 
-    @include breakpoint($screen $large-minor-start) {
+    @include breakpoint($screen $xlarge-start) {
       /*@include span(30% last of $gridpage);*/
       @include span(4 last of $gridpage);
     }
   }
 
   &__image {
-    position: absolute;
-    top: 1.6875em;
+    position: relative;
+    /*top: 1.6875em;*/
+    top: .1875em;
+    right: 0;
+    margin-left: .5em;
+    float: right;
     max-width: 6.25em;
     display: inline-block;
-    float: left;
+
+    @include breakpoint($screen $medium-minor-start) {
+      /*position: static;*/
+      margin-left: 0;
+      margin-right: .5em;
+      float: left;
+      /*top: 1.6875em;*/
+  
+      
+    }
 
     @include breakpoint($screen $large-start) {
       /*width: 35%;*/
       /*float: left;*/
       /*@include span(35%);*/
-      @include span(3 of 8);
+      /*@include span(3 of 8);*/
       max-width: inherit;
-      position: static;
+      /*position: static;*/
     }
   }
 
   &__body {
+
     @include breakpoint($screen $large-start) {
       /*width: 65%;*/
       /*@include span(65% last);*/
-      @include span(5 last of 8);
+      /*@include span(5 last of 8);*/
+      margin-left: 15.890625em;
     }
 
   }
@@ -57,14 +72,19 @@
   &__head {
     margin-top: 0;
     margin-bottom: .25em;
-    margin-left: 6.1em;
+    /*margin-left: 6.1em;*/
+    margin-left: 0;
     font-size: 1.1em;
     line-height: 1.4;
     font-weight: 100;
     font-family: $secondaryfont;
 
+    @include breakpoint($screen $medium-minor-start) {
+      /*margin-left: 0;*/
+            
+    }
+
     @include breakpoint($screen $large-start) {
-      margin-left: 0;
       font-size: 1.25em;
       line-height: 1.5;
       
@@ -76,9 +96,15 @@
   }
 
   &__body-text {
-    margin-left: 6.75em;
+    /*margin-left: 6.75em;*/
+    margin-left: 0;
     font-size: 1em;
     line-height: 1.3;
+
+    @include breakpoint($screen $medium-minor-start) {
+      
+    }
+
     @include breakpoint($screen $large-start) {
       margin-left: 0;
       font-size: 1.125em;
@@ -88,19 +114,30 @@
   }
 
   &__date {
+    display: block;
     font-size: .875em;
     color: $font-color-lighter;
+
+    @include breakpoint($screen $medium-minor-start) {
+      display: inline-block;
+    }
   }
 
   &__kicker {
-    display: inline-block;
+    display: block;
     margin-top: 0;
     margin-right: .25em;
     margin-bottom: .5em;
     letter-spacing: .1em;
     font-size: .875em;
     text-transform: uppercase;
+    line-height: 1.3;
     color: $primarycolor;
+
+    @include breakpoint($screen $medium-minor-start) {
+      display: inline-block;
+      line-height: 1;
+    }
   }
       
 }

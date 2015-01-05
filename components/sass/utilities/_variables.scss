@@ -39,24 +39,6 @@ $bold: 600;
 $bodylineheight: 1.4;
 $bodylineheight-bigger: 1.65;
 
-
-/*
- * Breakpoint
- */
-$all: 'all';
-$screen: 'screen';
-// $small-start not needed--for quick sizing in chrome dev
-$small-start              : 20em;     //  320px
-$small-minor-start        : 25.625em; //  410px
-$medium-start             : 30em;     //  480px
-$medium-minor-start       : 36em;     //  576px
-$medium-minor-minor-start : 43em;     //  688px
-$large-start              : 48em;     //  768px
-$leaderboard-start        : 50.5625em;//  809px
-$large-minor-start        : 56em;     //  896px
-$xlarge-start             : 64em;     //  1024px
-$xxlarge-start            : 90em;     //  1440px
-
 /*
  * Layout
  */
@@ -68,13 +50,35 @@ $outside-gutter-large: 2em;
 /*$article-max-width: 45.5em;*/
 $article-max-width: 728px;
 
-
 $story-width: 94%;
 $story-width-medium: 90%;
 
 $article-feature-image-max-width: 48em;
 
+/*
+ * Breakpoint
+ */
+$all: 'all';
+$screen: 'screen';
+// $small-start not needed--for quick sizing in chrome dev
+$small-start              : 20em;        //  320px
+$small-minor-start        : 25.625em;    //  410px
+$medium-start             : 30em;        //  480px
+$medium-minor-start       : 36em;        //  576px
+$medium-minor-minor-start : 43em;        //  688px
+$large-start              : 48em;        //  768px
+$leaderboard-start        : 50.5625em;   //  809px
+$large-minor-start        : 56em;        //  896px
+$max-site-start     : $site-width; //  992px
+$xlarge-start             : 64em;        //  1024px
+$xxlarge-start            : 90em;        //  1440px
+
+/*
+ * Breakpoint syncs
+ */
 $big-menu-start: $leaderboard-start;
+$overlay-start: $large-start;
+
 
 /*
  * Special
