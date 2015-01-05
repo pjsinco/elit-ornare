@@ -341,3 +341,6 @@
     * min height is about 478px on 992px wide
 
 * **TODAY** front-page super, featured
+
+###Mon Jan  5 08:53:30 2015 CST
+* 
