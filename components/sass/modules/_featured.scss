@@ -1,7 +1,7 @@
 .featured {
 
   @include breakpoint($screen $big-menu-start) {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 
   &__feature {
@@ -21,7 +21,7 @@
   }
 
   &__secondary {
-
+    @include clearfix;
     @include breakpoint($screen $xlarge-start) {
       /*@include span(30% last of $gridpage);*/
       @include span(4 last of $gridpage);

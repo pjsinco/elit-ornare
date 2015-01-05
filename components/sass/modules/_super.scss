@@ -5,7 +5,7 @@
   color: $font-color;
 
   @include breakpoint($screen $overlay-start) {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     color: $white;
   }
 
