@@ -44,14 +44,16 @@
     }
 
     &:after {
-      content: "Dr.ing";
+      /*content: "Dr.ing";*/
+      content: "Elit Ornare";
       line-height: .5;
       display: block;
       font-weight: bold;
       font-size: 1em;
 
       @include breakpoint($screen $medium-minor-start) {
-        content: "Doctoring";
+        /*content: "Doctoring";*/
+        content: "Elit Ornare";
         /*font-size: 2em;*/
       }
 
