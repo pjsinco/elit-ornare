@@ -22,6 +22,9 @@
 
   &__secondary {
     @include clearfix;
+    width: 94%;
+    @extend %center;
+
     @include breakpoint($screen $xlarge-start) {
       /*@include span(30% last of $gridpage);*/
       @include span(4 last of $gridpage);

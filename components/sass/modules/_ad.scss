@@ -2,19 +2,29 @@
   margin: 0 auto;
 }
 
+%med-rect {
+  width: 300px;
+}
+
 .ad {
   /*@include container();*/
 
   margin-bottom: 1em;
 
-  &--med-rect {
+  &__med-rect--article {
     @extend %ad-pos;
-    width: 300px;
+    @extend %med-rect;
 
     @include breakpoint($screen $medium-minor-start $xlarge-start) {
       float: right;
       margin-left: 1em;
     };
+  }
+
+  &__med-rect--front {
+    @extend %ad-pos;
+    @extend %med-rect;
+
   }
 
   &__img {
