@@ -1,8 +1,39 @@
-.this-is-thirds {
+%border-before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: span(4 of $gridpage);
+  border-left: 12px solid fuchsia;
+  background: #fff;
+}
 
-  @include breakpoint($screen $large-start) {
-    
-    
+.grid {
+
+
+  &--thirds {
+
+
+    &__1 {
+
+    }
+
+    &__2 {
+      &:before {
+        @extend %border-before;
+        left: span(4 of $gridpage);
+      }
+    }
+
+    &__3 {
+      &:before {
+        @extend %border-before;
+        left: (2 * (span(4 of $gridpage)));
+      }
+
+    }
   }
+
 
 }

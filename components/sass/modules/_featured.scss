@@ -50,6 +50,7 @@
   &__secondary {
     /*@extend .featured__primary;*/
     @extend %featured-base;
+    position: relative;
     
     @include breakpoint($screen $xlarge-start) {
       width: inherit;
@@ -57,7 +58,26 @@
   }
 
   &__feature--secondary {
-    @extend %feature-base;
+    /*&:not(:first-child):not(:last-child) {*/
+
+//    @include breakpoint($screen $large-start) {
+//      // make our vertical rule betweetn items
+//      &:not(:first-child) {
+//        &:before {
+//          content: '';
+//          position: absolute;
+//          top: 0;
+//          bottom: 0;
+//          z-index: -1;
+//          width: span(4 of $gridpage);
+//          left: span(4 of $gridpage);
+//          border-left: 12px solid fuchsia;
+//          background: #fff;
+//        }
+//      }
+//    }
+
+
 
     @include breakpoint($screen $large-start) {
       @include span(4 of $gridpage);
