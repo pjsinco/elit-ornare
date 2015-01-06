@@ -81,13 +81,16 @@
 
     @include breakpoint($screen $large-start) {
       @include span(4 of $gridpage);
-      padding: 1em;
+      padding: 0 1em;
       text-align: center;
 
       &:last-child {
         @include span(4 last of $gridpage);
       }
+    }
 
+    @include breakpoint($screen $large-minor-start) {
+      padding: 0 2em;
     }
   }
 
@@ -110,12 +113,9 @@
     
 
     @include breakpoint($screen $large-start) {
-      /*width: 35%;*/
       float: none;
-      /*@include span(35%);*/
-      /*@include span(3 of 8);*/
+      margin-bottom: 1em;
       max-width: inherit;
-      /*position: static;*/
     }
   }
 
@@ -142,6 +142,7 @@
     line-height: 1.4;
     font-weight: 100;
     font-family: $secondaryfont;
+    color: $font-color;
 
     @include breakpoint($screen $medium-minor-start) {
       /*margin-left: 0;*/
@@ -157,6 +158,11 @@
 
   &__head--secondary {
     @extend .featured__head;
+
+    @include breakpoint($screen $large-start) {
+      margin-bottom: 0;
+      font-size: 1.125em;
+    }
   }
 
   &__link {
@@ -182,7 +188,13 @@
   }
 
   &__body-text--secondary {
-     @extend .featured__body-text;
+    @extend .featured__body-text;
+
+    @include breakpoint($screen $large-start) {
+      font-size: 1em;
+      color: $font-color-lighter;
+      
+    }
     
   }
 
@@ -209,6 +221,7 @@
     font-size: .875em;
     text-transform: uppercase;
     line-height: 1.3;
+    font-weight: 400;
     color: $primarycolor;
 
     @include breakpoint($screen $medium-minor-start) {

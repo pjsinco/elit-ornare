@@ -1,7 +1,7 @@
 @mixin border-before {
   content: '';
   position: absolute;
-  top: 1em;
+  top: 0;
   bottom: 0;
   z-index: -1;
   width: span(4 of $gridpage);
