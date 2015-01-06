@@ -9,6 +9,25 @@
   margin-bottom: 1em;
 }
 
+%feature-image-base {
+  position: relative;
+  /*top: 1.6875em;*/
+  top: .1875em;
+  right: 0;
+  margin-left: .5em;
+  float: right;
+  max-width: 6.25em;
+  display: inline-block;
+
+  @include breakpoint($screen $medium-minor-start) {
+    /*position: static;*/
+    margin-left: 0;
+    margin-right: .5em;
+    float: left;
+    /*top: 1.6875em;*/
+  }
+}
+
 .featured {
 
   @include breakpoint($screen $big-menu-start) {
@@ -31,6 +50,10 @@
   &__secondary {
     /*@extend .featured__primary;*/
     @extend %featured-base;
+    
+    @include breakpoint($screen $xlarge-start) {
+      width: inherit;
+    }
   }
 
   &__feature--secondary {
@@ -38,6 +61,8 @@
 
     @include breakpoint($screen $large-start) {
       @include span(4 of $gridpage);
+      padding: 1em;
+      text-align: center;
 
       &:last-child {
         @include span(4 last of $gridpage);
@@ -47,22 +72,8 @@
   }
 
   &__image {
-    position: relative;
-    /*top: 1.6875em;*/
-    top: .1875em;
-    right: 0;
-    margin-left: .5em;
-    float: right;
-    max-width: 6.25em;
-    display: inline-block;
+    @extend %feature-image-base;
 
-    @include breakpoint($screen $medium-minor-start) {
-      /*position: static;*/
-      margin-left: 0;
-      margin-right: .5em;
-      float: left;
-      /*top: 1.6875em;*/
-    }
 
     @include breakpoint($screen $large-start) {
       /*width: 35%;*/
@@ -75,7 +86,17 @@
   }
 
   &__image--secondary {
-    @extend .featured__image;
+    @extend %feature-image-base;
+    
+
+    @include breakpoint($screen $large-start) {
+      /*width: 35%;*/
+      float: none;
+      /*@include span(35%);*/
+      /*@include span(3 of 8);*/
+      max-width: inherit;
+      /*position: static;*/
+    }
   }
 
   &__body {
@@ -88,6 +109,7 @@
   }
 
   &__body--secondary {
+    /*clear: both;*/
     /*@extend .featured__body;*/
   }
 
@@ -141,6 +163,7 @@
 
   &__body-text--secondary {
      @extend .featured__body-text;
+    
   }
 
   &__date {
