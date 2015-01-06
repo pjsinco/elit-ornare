@@ -343,4 +343,7 @@
 * **TODAY** front-page super, featured
 
 ###Mon Jan  5 08:53:30 2015 CST
-* 
+*  **TODAY** refining front-page featured stories
+
+###Tue Jan  6 04:59:39 2015 CST
+
