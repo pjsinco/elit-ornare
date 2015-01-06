@@ -21,14 +21,20 @@
   }
 
   &__secondary {
-    @include clearfix;
-    width: 94%;
-    @extend %center;
+//    @include clearfix;
+//    width: 94%;
+//    @extend %center;
+//
+//    @include breakpoint($screen $xlarge-start) {
+//      /*@include span(30% last of $gridpage);*/
+//      @include span(4 last of $gridpage);
+//    }
 
-    @include breakpoint($screen $xlarge-start) {
-      /*@include span(30% last of $gridpage);*/
-      @include span(4 last of $gridpage);
-    }
+    @extend .featured__primary;
+  }
+
+  &__feature--secondary {
+    @extend .featured__feature;
   }
 
   &__image {
@@ -47,8 +53,6 @@
       margin-right: .5em;
       float: left;
       /*top: 1.6875em;*/
-  
-      
     }
 
     @include breakpoint($screen $large-start) {
@@ -61,15 +65,21 @@
     }
   }
 
-  &__body {
+  &__image--secondary {
+    @extend .featured__image;
+  }
 
+  &__body {
     @include breakpoint($screen $large-start) {
       /*width: 65%;*/
       /*@include span(65% last);*/
       /*@include span(5 last of 8);*/
       margin-left: 15.890625em;
     }
+  }
 
+  &__body--secondary {
+    @extend .featured__body;
   }
 
   &__head {
@@ -94,6 +104,10 @@
     }
   }
 
+  &__head--secondary {
+    @extend .featured__head;
+  }
+
   &__link {
     color: inherit;
   }
@@ -116,6 +130,10 @@
     }
   }
 
+  &__body-text--secondary {
+     @extend .featured__body-text;
+  }
+
   &__date {
     display: block;
     font-size: .875em;
@@ -124,6 +142,10 @@
     @include breakpoint($screen $medium-minor-start) {
       display: inline-block;
     }
+  }
+
+  &__date--secondary {
+    @extend .featured__date;
   }
 
   &__kicker {
@@ -143,6 +165,9 @@
     }
   }
       
+  &__kicker--secondary {
+    @extend .featured__kicker;
+  }
 }
 
 
