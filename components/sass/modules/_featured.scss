@@ -1,3 +1,14 @@
+%featured-base {
+  @include clearfix;
+  width: 94%;
+  @extend %center;
+}
+
+%feature-base {
+  position: relative;
+  margin-bottom: 1em;
+}
+
 .featured {
 
   @include breakpoint($screen $big-menu-start) {
@@ -5,15 +16,12 @@
   }
 
   &__feature {
-    position: relative;
-    margin-bottom: 1em;
+    @extend %feature-base;
     border-bottom: 1px solid $mediumgray;
   }
 
   &__primary {
-    @include clearfix;
-    width: 94%;
-    @extend %center;
+    @extend %featured-base;
 
     @include breakpoint($screen $xlarge-start) {
       @include span(8 of $gridpage);
@@ -21,20 +29,21 @@
   }
 
   &__secondary {
-//    @include clearfix;
-//    width: 94%;
-//    @extend %center;
-//
-//    @include breakpoint($screen $xlarge-start) {
-//      /*@include span(30% last of $gridpage);*/
-//      @include span(4 last of $gridpage);
-//    }
-
-    @extend .featured__primary;
+    /*@extend .featured__primary;*/
+    @extend %featured-base;
   }
 
   &__feature--secondary {
-    @extend .featured__feature;
+    @extend %feature-base;
+
+    @include breakpoint($screen $large-start) {
+      @include span(4 of $gridpage);
+
+      &:last-child {
+        @include span(4 last of $gridpage);
+      }
+
+    }
   }
 
   &__image {
@@ -79,7 +88,7 @@
   }
 
   &__body--secondary {
-    @extend .featured__body;
+    /*@extend .featured__body;*/
   }
 
   &__head {
