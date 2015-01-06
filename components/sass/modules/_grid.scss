@@ -1,18 +1,34 @@
-%border-before {
+@mixin border-before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 1em;
   bottom: 0;
   z-index: -1;
   width: span(4 of $gridpage);
-  border-left: 12px solid fuchsia;
-  background: #fff;
+  border-left: 1px solid $mediumgray;
+  /*background: #fff;*/
 }
 
 .grid {
 
 
+  &--fourths {
+
+  }
+
   &--thirds {
+
+//    @for $i from 2 through 3 {
+//
+//      &__#{$i} {
+//        &:before {
+//          @extend %border-before;
+//          left: (($i - 1) * span(4 wide of $gridpage)) + (($i - 2) * gutter($gridpage));
+//          /*left: (2 * (span(4 of $gridpage))) + gutter($gridpage);*/
+//        }
+//      }
+//
+//    }
 
 
     &__1 {
@@ -20,20 +36,24 @@
     }
 
     &__2 {
-      &:before {
-        @extend %border-before;
-        left: span(4 of $gridpage);
+      
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: span(4 of $gridpage) + (.5 * gutter($gridpage));
+        }
       }
     }
 
     &__3 {
-      &:before {
-        @extend %border-before;
-        left: (2 * (span(4 of $gridpage)));
-      }
 
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: (2 * (span(4 of $gridpage))) + (3 * (.5 * gutter($gridpage)));
+        }
+      }
     }
   }
-
 
 }
