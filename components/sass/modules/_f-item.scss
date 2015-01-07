@@ -6,6 +6,11 @@
   border-bottom: 1px solid $mediumgray;
 }
 
+@mixin f-item-large {
+  border-bottom: 0;
+  padding: 0 1em;
+  text-align: center;
+}
 
 .f-item {
   @extend %f-item-base;
@@ -15,23 +20,47 @@
     @extend %border-bottom;
   }
 
-  @include breakpoint($screen $large-start) {
-    border-bottom: 0;
-    @include span(4 of $gridpage);
-    padding: 0 1em;
-    text-align: center;
+  &--thirds {
+    @extend .f-item;
 
-    &:last-child {
-      @include span(4 last of $gridpage);
+    @include breakpoint($screen $large-start) {
+      @include f-item-large;
+      @include span(4 of $gridpage);
+
+      &:last-child {
+        @include span(4 last of $gridpage);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 0;
+      }
     }
 
-    &:not(:last-child) {
-      border-bottom: 0;
+    @include breakpoint($screen $large-minor-start) {
+      padding: 0 2em;
     }
   }
 
-  @include breakpoint($screen $large-minor-start) {
-    padding: 0 2em;
+  &--fourths {
+    @extend .f-item;
+
+    @include breakpoint($screen $large-start) {
+      @include f-item-large;
+      @include span(3 of $gridpage);
+
+      &:last-child {
+        @include span(3 last of $gridpage);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 0;
+      }
+    }
+
+    @include breakpoint($screen $large-minor-start) {
+      padding: 0 2em;
+    }
+    
   }
 
   &__image {
@@ -113,7 +142,6 @@
   }
 
   &--thirds {
-
 //    @for $i from 2 through 3 {
 //
 //      &__#{$i} {
@@ -147,6 +175,36 @@
           left: (2 * (span(4 of $gridpage))) + (3 * (.5 * gutter($gridpage)));
         }
       }
+    }
+  }
+
+  &--fourths {
+
+    &__1-4 {
+
+    }
+
+    &__2-4 {
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: span(3 of $gridpage) + (.5 * gutter($gridpage));
+        }
+      }
+    }
+
+    &__3-4 {
+
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: (2 * (span(4 of $gridpage))) + (3 * (.5 * gutter($gridpage)));
+        }
+      }
+    }
+
+    &__4-4 {
+
     }
   }
 
