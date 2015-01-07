@@ -5,13 +5,13 @@
 }
 
 .f-row {
-    /*@extend .featured__primary;*/
-    @extend %f-row-base;
-    position: relative;
-    
-    @include breakpoint($screen $xlarge-start) {
-      width: inherit;
-    }
+  /*@extend .featured__primary;*/
+  @extend %f-row-base;
+  position: relative;
+  
+  @include breakpoint($screen $xlarge-start) {
+    width: inherit;
+  }
 
   &--thirds {
 
