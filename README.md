@@ -349,3 +349,6 @@
 * [equal-sized columns](http://webdesign.tutsplus.com/tutorials/quick-tip-solving-the-equal-height-column-conundrum--cms-20403)
 
 * **TODAY** styling more-stories on front page
+
+###Wed Jan  7 08:30:47 2015 CST
+
