@@ -11,9 +11,32 @@
 
 .grid {
 
-
   &--fourths {
+    &__1 {
 
+    }
+
+    &__2 {
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: span(4 of $gridpage) + (.5 * gutter($gridpage));
+        }
+      }
+    }
+
+    &__3 {
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: (2 * (span(4 of $gridpage))) + (3 * (.5 * gutter($gridpage)));
+        }
+      }
+    }
+
+    &__4 {
+
+    }
   }
 
   &--thirds {
@@ -29,8 +52,6 @@
 //      }
 //
 //    }
-
-
     &__1 {
 
     }

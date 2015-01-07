@@ -4,32 +4,12 @@
   @extend %center;
 }
 
-%feature-base {
+%item-base {
   margin-bottom: 1em;
-  
 }
 
 %border-bottom {
   border-bottom: 1px solid $mediumgray;
-}
-
-%feature-image-base {
-  position: relative;
-  /*top: 1.6875em;*/
-  top: .1875em;
-  right: 0;
-  margin-left: .5em;
-  float: right;
-  max-width: 6.25em;
-  display: inline-block;
-
-  @include breakpoint($screen $medium-minor-start) {
-    /*position: static;*/
-    margin-left: 0;
-    margin-right: .5em;
-    float: left;
-    /*top: 1.6875em;*/
-  }
 }
 
 .featured {
@@ -42,9 +22,9 @@
     margin-top: 1.5em;
   }
 
-  &__feature {
+  &__item {
     position: relative;
-    @extend %feature-base;
+    @extend %item-base;
 
     &:not(:last-child) {
       @extend %border-bottom;
@@ -68,18 +48,18 @@
     }
   }
 
-  &__secondary {
-    /*@extend .featured__primary;*/
-    @extend %featured-base;
-    position: relative;
-    
-    @include breakpoint($screen $xlarge-start) {
-      width: inherit;
-    }
-  }
+//  &__secondary {
+//    /*@extend .featured__primary;*/
+//    @extend %featured-base;
+//    position: relative;
+//    
+//    @include breakpoint($screen $xlarge-start) {
+//      width: inherit;
+//    }
+//  }
 
-  &__feature--secondary {
-    @extend %feature-base;
+  &__item--secondary {
+    @extend %item-base;
 
     // bottom border on every item but the last
     &:not(:last-child) {
@@ -107,7 +87,7 @@
   }
 
   &__image {
-    @extend %feature-image-base;
+    @extend %f-image-base;
 
 
     @include breakpoint($screen $large-start) {
@@ -121,7 +101,7 @@
   }
 
   &__image--secondary {
-    @extend %feature-image-base;
+    @extend %f-image-base;
     
 
     @include breakpoint($screen $large-start) {
@@ -208,7 +188,6 @@
       color: $font-color-lighter;
       
     }
-    
   }
 
   &__date {
