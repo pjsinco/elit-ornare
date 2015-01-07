@@ -5,8 +5,11 @@
 }
 
 %feature-base {
-  position: relative;
   margin-bottom: 1em;
+}
+
+%border-bottom {
+  border-bottom: 1px solid $mediumgray;
 }
 
 %feature-image-base {
@@ -35,8 +38,12 @@
   }
 
   &__feature {
+    position: relative;
     @extend %feature-base;
-    border-bottom: 1px solid $mediumgray;
+
+    &:not(:last-child) {
+      @extend %border-bottom;
+    }
   }
 
   &__primary {
@@ -58,34 +65,25 @@
   }
 
   &__feature--secondary {
-    /*&:not(:first-child):not(:last-child) {*/
+    @extend %feature-base;
 
-//    @include breakpoint($screen $large-start) {
-//      // make our vertical rule betweetn items
-//      &:not(:first-child) {
-//        &:before {
-//          content: '';
-//          position: absolute;
-//          top: 0;
-//          bottom: 0;
-//          z-index: -1;
-//          width: span(4 of $gridpage);
-//          left: span(4 of $gridpage);
-//          border-left: 12px solid fuchsia;
-//          background: #fff;
-//        }
-//      }
-//    }
-
-
+    // bottom border on every item but the last
+    &:not(:last-child) {
+      @extend %border-bottom;
+    }
 
     @include breakpoint($screen $large-start) {
+      border-bottom: 0;
       @include span(4 of $gridpage);
       padding: 0 1em;
       text-align: center;
 
       &:last-child {
         @include span(4 last of $gridpage);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 0;
       }
     }
 

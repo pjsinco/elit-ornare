@@ -1,4 +1,3 @@
-
 .super {
   
   position: relative;
@@ -28,10 +27,11 @@
     max-width: $article-max-width;
     @extend %center;
     background: $white;
-    border-top: 3px solid $primarycolor;
-    border-right: 1px solid $mediumgray;
-    border-bottom: 1px solid $mediumgray;
-    border-left: 1px solid $mediumgray;
+    border: 1px solid $primarycolor;
+    /*border-top: 3px solid $primarycolor;*/
+    /*border-right: 1px solid $mediumgray;*/
+    /*border-bottom: 1px solid $mediumgray;*/
+    /*border-left: 1px solid $mediumgray;*/
     
     
 
