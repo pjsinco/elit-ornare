@@ -351,4 +351,5 @@
 * **TODAY** styling more-stories on front page
 
 ###Wed Jan  7 08:30:47 2015 CST
+* **TODAY** styling row-of-fourths, row-of-thirds on front page
 
