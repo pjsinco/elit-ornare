@@ -6,6 +6,7 @@
 
 %feature-base {
   margin-bottom: 1em;
+  
 }
 
 %border-bottom {
@@ -37,12 +38,25 @@
     margin-top: 1em;
   }
 
+  @include breakpoint($screen $xlarge-start) {
+    margin-top: 1.5em;
+  }
+
   &__feature {
     position: relative;
     @extend %feature-base;
 
     &:not(:last-child) {
       @extend %border-bottom;
+    }
+
+    @include breakpoint($screen $large-start) {
+      padding-bottom: 1em;
+    }
+
+    @include breakpoint($screen $xlarge-start) {
+      margin-bottom: 1.5em;
+      padding-bottom: 1.5em;
     }
   }
 
@@ -178,6 +192,7 @@
     }
 
     @include breakpoint($screen $large-start) {
+      margin-bottom: 0;
       margin-left: 0;
       font-size: 1.125em;
       line-height: 1.4;
