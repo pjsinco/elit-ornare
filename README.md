@@ -356,3 +356,4 @@
 ###Thu Jan  8 05:57:15 2015 CST
 * TODO what if we use color: inherit on all our icons? let's try it
 
+* [hover effect for pseudo elements](http://stackoverflow.com/questions/8874326/how-to-make-a-hover-effect-for-pseudo-elements)
