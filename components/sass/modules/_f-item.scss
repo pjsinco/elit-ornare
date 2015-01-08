@@ -68,7 +68,7 @@
   &--fourths {
     @extend .f-item;
 
-    @include breakpoint($screen $large-start $xlarge-start) {
+    @include breakpoint($screen $large-start $xlarge-start-minus-1) {
       @include f-item-large;
       @include span(6 of $gridpage);
       clear: right;
@@ -78,7 +78,7 @@
       }
     }
 
-    @include breakpoint($screen $xlarge-start) {
+    @include breakpoint($screen ($xlarge-start)) {
       @include f-item-large;
       @include span(3 of $gridpage);
       /*clear: none;*/
