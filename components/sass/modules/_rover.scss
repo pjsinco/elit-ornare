@@ -17,6 +17,10 @@
         display: block;
       }
     }
+
+    &-parent-c {
+
+    }
   }  
 
   &-peggy {
@@ -35,6 +39,10 @@
       @include breakpoint($screen $xlarge-start) {
         display: block;
       }
+    }
+
+    &-parent-c {
+
     }
   }
 
