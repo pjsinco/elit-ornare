@@ -31,10 +31,12 @@
   position: relative;
   margin-left: -2em;
   padding-left: 2em;
+  padding-bottom: 2em;
   line-height: 1.4;
   text-transform: uppercase;
   letter-spacing: .05em;
-  font-weight: 600;
+  text-align: center;
+  font-weight: 100;
   color: $font-color-lighter;
 }
 
@@ -87,25 +89,35 @@
 
   &__title {
     @extend %title-base;
-    padding-bottom: 1em;
     font-size: 1em;
 
     &:after {
       @extend %border-after;
     }
+
+    @include breakpoint($screen $large-start) {
+      padding-bottom: 1em;
+      font-weight: 600;
+      text-align: left;
+    }
     
     &--section {
       @extend %title-base;
-      padding-bottom: .25em;
       font-size: 1.125em;
 
       &:after {
         @extend %border-after;
       }
+
+      @include breakpoint($screen $large-start) {
+        padding-bottom: .25em;
+        text-align: left;
+        font-weight: 600;
+      }
     }
 
     &--muted {
-      display: inline-block;
+      display: none;
       float: right;
       font-weight: 400;
       font-size: .875em;
@@ -114,6 +126,10 @@
       
       > span {
         color: $font-color-lightest;
+      }
+
+      @include breakpoint($screen $large-start) {
+        display: inline-block;
       }
     }
   }
