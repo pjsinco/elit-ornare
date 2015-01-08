@@ -354,3 +354,5 @@
 * **TODAY** styling row-of-fourths, row-of-thirds on front page
 
 ###Thu Jan  8 05:57:15 2015 CST
+* TODO what if we use color: inherit on all our icons? let's try it
+
