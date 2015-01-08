@@ -18,6 +18,26 @@
   color: $font-color-lighter;
 }
 
+%border-after {
+  position: absolute;
+  left: 0;
+  top: 1.625em;
+  content: '';
+  width: 100%;
+  border-bottom: 5px solid $primarycolor;
+}
+
+%title-base {
+  position: relative;
+  margin-left: -2em;
+  padding-left: 2em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+  color: $font-color-lighter;
+}
+
 .widget {
   @include clearfix;
   position: relative;
@@ -66,24 +86,35 @@
   }
 
   &__title {
-    margin-left: -2em;
+    @extend %title-base;
     padding-bottom: 1em;
-    padding-left: 2em;
     font-size: 1em;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-weight: 600;
-    color: $font-color-lighter;
-    /*border-bottom: 4px solid $mediumgray;*/
 
     &:after {
-      position: absolute;
-      left: 0;
-      top: 2.4em;
-      content: '';
-      width: 100%;
-      border-bottom: 5px solid $primarycolor;
+      @extend %border-after;
+    }
+    
+    &--section {
+      @extend %title-base;
+      padding-bottom: .25em;
+      font-size: 1.125em;
+
+      &:after {
+        @extend %border-after;
+      }
+    }
+
+    &--muted {
+      display: inline-block;
+      float: right;
+      font-weight: 400;
+      font-size: .875em;
+      letter-spacing: 0;
+      color: $font-color-lightest;
+      
+      > span {
+        color: $font-color-lightest;
+      }
     }
   }
 
