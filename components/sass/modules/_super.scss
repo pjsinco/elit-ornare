@@ -22,19 +22,24 @@
 
   &__body {
     position: relative;
-    top: -1em;
-    padding: 1em;
-    width: 94%;
-    max-width: $article-max-width;
+    /*top: -1em;*/
+    top: -.25em;
+    padding: 5% 3%;
+    margin-bottom: 1em;
+    width: 100%;
+    /*max-width: $article-max-width;*/
     @extend %center;
-    background: $white;
-    border: 1px solid $primarycolor;
-    /*border-top: 3px solid $primarycolor;*/
+    background: $verydark;
+    /*border: 1px solid $primarycolor;*/
+    border-top: 3px solid $primarycolor;
     /*border-right: 1px solid $mediumgray;*/
-    /*border-bottom: 1px solid $mediumgray;*/
+    border-bottom: 3px solid $primarycolor;
     /*border-left: 1px solid $mediumgray;*/
-    
-    
+    color: $white;
+  
+    @include breakpoint($screen $medium-start) {
+      padding: 3%;
+    }
 
     @include breakpoint($screen $overlay-start) {
       position: absolute;
