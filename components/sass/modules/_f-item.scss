@@ -160,7 +160,8 @@
   }
 
   &__date {
-    display: block;
+    /*display: block;*/
+    display: none;
     font-size: .875em;
     color: $font-color-lighter;
 
