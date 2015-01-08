@@ -90,10 +90,7 @@
   &__date {
     font-size: .875em;
     text-transform: uppercase;
-    color: $font-color-lighter;
-    @include breakpoint($screen $overlay-start) {
-      color: $font-color-lightest;
-    }
+    color: $font-color-lightest;
   }
 
   &__head {
