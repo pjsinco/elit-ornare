@@ -109,12 +109,17 @@
       }
 
       @include breakpoint($screen $large-start) {
-        /*padding-bottom: .25em;*/
+        padding-bottom: 2em;
         margin: 0 auto;
         padding-left: 0;
         text-align: left;
         font-weight: 600;
         width: 94%;
+      }
+
+      @include breakpoint($screen $xlarge-start) {
+        width: 100%;
+        
       }
     }
 
