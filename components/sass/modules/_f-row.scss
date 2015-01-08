@@ -9,9 +9,12 @@
   @extend %f-row-base;
   position: relative;
   
-  @include breakpoint($screen $xlarge-start) {
-    margin-top: 2em;
+  @include breakpoint($screen $large-start) {
     margin-bottom: 2em;
+  }
+  
+  @include breakpoint($screen $xlarge-start) {
+    margin-top: 1em;
     width: inherit;
   }
 

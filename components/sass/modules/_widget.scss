@@ -37,6 +37,7 @@
   letter-spacing: .05em;
   text-align: center;
   font-weight: 100;
+  font-size: 1.125em;
   color: $font-color-lighter;
 }
 
@@ -89,7 +90,6 @@
 
   &__title {
     @extend %title-base;
-    font-size: 1em;
 
     &:after {
       @extend %border-after;
@@ -103,16 +103,18 @@
     
     &--section {
       @extend %title-base;
-      font-size: 1.125em;
 
       &:after {
         @extend %border-after;
       }
 
       @include breakpoint($screen $large-start) {
-        padding-bottom: .25em;
+        /*padding-bottom: .25em;*/
+        margin: 0 auto;
+        padding-left: 0;
         text-align: left;
         font-weight: 600;
+        width: 94%;
       }
     }
 
