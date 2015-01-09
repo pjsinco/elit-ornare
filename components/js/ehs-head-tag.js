@@ -1,4 +1,4 @@
-    var ehs_site="ehs.pro.aoa.jaoa";
+    var ehs_site="ehs.pro.aoa.jaoatest";
     var ehs_zone="";
     var ehs_inter = 1;
     var ehs_ismobile=0;
