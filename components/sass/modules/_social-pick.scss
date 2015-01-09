@@ -1,6 +1,34 @@
 .social-pick {
 
+  @include clearfix;
+  width: 94%;
+  margin: 0 auto 2em auto;
+  
+  &__meta {
+    @include clearfix;
+  }
 
+  &__link {
+    color: $primarycolor;
+  }
 
+  &__date {
+    float: right;
+    color: $font-color-lighter;  
+  }
+
+  &__author {
+    float: left;
+    font-size: 1.25em;
+  }
+
+  &__body {
+    margin-top: .5em;
+  }
+
+  &__body-text {
+    line-height: 1.3;
+    font-size: 1em;
+  }
 
 }

@@ -71,7 +71,7 @@
       top: .5em;
       left: 1em;
       font-size: 1.5em;
-      color: #fff;
+      color: $gray;
 
       @include breakpoint($screen $big-menu-start) {
         display: none;
