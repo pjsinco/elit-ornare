@@ -372,4 +372,4 @@
 
 * article: mobile pagespeed
     * before adding ehs tags: 57
-    * after adding ehs tags: 42 (**!!!**)
+    * after adding ehs tags: 41 (**!!!**)
