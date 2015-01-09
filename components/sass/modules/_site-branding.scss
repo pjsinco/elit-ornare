@@ -77,6 +77,11 @@
     position: relative;
     top: -1em;
     display: none;
+  
+    > a {
+      color: $mediumgray;
+    }
+
     @include breakpoint($screen $big-menu-start) {
       float: right;
       top: -1.3em;
