@@ -373,3 +373,13 @@
 * article: mobile pagespeed
     * before adding ehs tags: 57
     * after adding ehs tags: 41 (**!!!**)
+        * Ilya's response to what can get done about that perf hit
+            ```
+            Unfortunately not at the moment, but we’re working on the 
+            async version of the ad tag that should not affect the page 
+            load. I don’t have an ETA right now, but we’ll definitely 
+            distribute it when ready.
+            ```
+
+
+* **TODAY** starting to style curated social; verified ehs ads will rove;
