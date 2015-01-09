@@ -7,17 +7,26 @@ html
     include header
 
     aside.ad.ad--wide-shallow
+      a(href="http://www.e-healthcaresolutions.com/forms/?did=ehs.pro.aoa.jaoatest" target="_blank")
+        
+        script.
+          var ehs_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            if (ehs_width > 767) {
+              EHS_AD("t", "r", "728x90");
+            } else {
+              EHS_AD("t", "r", "320x50");
+            }
       //-todo this is just tempoary
-      a(href="#")
-        picture
+      //-a(href="#")
+        //-picture
           <!--[if IE 9]>
           <video style="display: none">
           <![endif]-->
-          source(srcset="img/leader-0.gif" media="(min-width: 768px)") 
+          //-source(srcset="img/leader-0.gif" media="(min-width: 768px)") 
           <!--[if IE 9]>
           </video>
           <![endif]-->
-          img(srcset="img/wide-banner-0.gif" alt="Wide banner").ad__img
+          //-img(srcset="img/wide-banner-0.gif" alt="Wide banner").ad__img
 
     div.content#main
       section.content__primary#primary

@@ -34,11 +34,9 @@
 
   &--wide-shallow {
     @extend %ad-pos;
+    display: inline-block;
+    text-align: center;
     width: 100%;
-
-    @include breakpoint($screen $medium-start) {
-      /*width: 728px;*/
-    }
   }
 
   &:before {
