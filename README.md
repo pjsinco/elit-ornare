@@ -343,7 +343,7 @@
 * **TODAY** front-page super, featured
 
 ###Mon Jan  5 08:53:30 2015 CST
-*  **TODAY** refining front-page featured stories
+* **TODAY** refining front-page featured stories
 
 ###Tue Jan  6 04:59:39 2015 CST
 * [equal-sized columns](http://webdesign.tutsplus.com/tutorials/quick-tip-solving-the-equal-height-column-conundrum--cms-20403)
@@ -356,4 +356,10 @@
 ###Thu Jan  8 05:57:15 2015 CST
 * TODO what if we use color: inherit on all our icons? let's try it
 
-* [hover effect for pseudo elements](http://stackoverflow.com/questions/8874326/how-to-make-a-hover-effect-for-pseudo-elements)
+* [hover on pseudo elements](http://stackoverflow.com/questions/8874326/how-to-make-a-hover-effect-for-pseudo-elements)
+
+###Fri Jan  9 04:42:06 2015 CST
+* TODO we need vert and maybe horiz rules on our fourths row on medium screens
+
+
+
