@@ -369,3 +369,7 @@
 * try async for ehs-head-tag.js
 
 * TODO comments need more padding
+
+* article: mobile pagespeed
+    * before adding ehs tags: 57
+    * after adding ehs tags: 42 (**!!!**)
