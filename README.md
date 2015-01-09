@@ -361,5 +361,7 @@
 ###Fri Jan  9 04:42:06 2015 CST
 * TODO we need vert and maybe horiz rules on our fourths row on medium screens
 
-
-
+* secondary colors?
+    * something light, cool, subtle
+        * slategrey, paleturqoise, mintcream, lightyellow, lightsteelblue, lightslategrey, lightskyblue, lightcyan, ivory, **aliceblue**, azure, deepskyblue, ghostwhite, honeydew
+    * but do we really need a second color?
