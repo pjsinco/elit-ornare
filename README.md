@@ -373,7 +373,7 @@
 * article: mobile pagespeed
     * before adding ehs tags: 57
     * after adding ehs tags: 41 (**!!!**)
-        * Ilya's response to what can get done about that perf hit
+        * Ilya's response to whether we can get do anything about that perf hit
             ```
             Unfortunately not at the moment, but we’re working on the 
             async version of the ad tag that should not affect the page 
