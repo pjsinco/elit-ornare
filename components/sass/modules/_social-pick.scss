@@ -2,10 +2,13 @@
 
   @include clearfix;
   position: relative;
-  top: -1.8125em;
+  top: -1.6875em;
   width: 100%;
-  margin: 0 auto 2em auto;
-  padding: 5% 3%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  padding: 3% 3%;
   background: lighten($primarycolor, 43%);
   border-bottom: 1px dashed $primarycolor;
   line-height: 1.4;
@@ -19,16 +22,17 @@
     z-index: 0;
     text-align: center;
     line-height: 0;
-    font-size: 22.5em;
+    /*font-size: 22.5em;*/
+    font-size: 21em;
     font-weight: 900;
     color: $white;
-    
   }
   
-
   @include breakpoint($screen $large-start) {
-    margin: 1em auto 2em auto;
-    padding: 0;
+    padding-top: 1em;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     width: 94%;
     background: $white;
     border-bottom: 0;
@@ -112,6 +116,7 @@
   }
 
   &__body-text {
+    margin-bottom: 0;
     line-height: 1.4;
     font-size: 1em;
     color: inherit;
