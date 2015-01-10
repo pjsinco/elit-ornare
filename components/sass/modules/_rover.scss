@@ -1,9 +1,21 @@
+%parent-a {
+  display: block;
+}
+
+%parent-b {
+  display: none;
+}
+
+%parent-c {
+  display: none;
+}
+
 .rover {
 
   &-don {
 
     &-parent-a {
-      display: block;
+      @extend %parent-a;
 
       @include breakpoint($screen $xlarge-start) {
         display: none;
@@ -11,38 +23,75 @@
     }
 
     &-parent-b {
-      display: none;
+      @extend %parent-b;
 
       @include breakpoint($screen $xlarge-start) {
         display: block;
       }
     }
 
-    &-parent-c {
+    /*
+     * FRONT PAGE
+     */
+    &-parent-f-a {
+      @extend %parent-a;
+    
+      @include breakpoint($screen $large-start) {
+        display: none;
+      }
 
+      @include breakpoint($screen $xlarge-start) {
+        display: none;
+      }
+
+    }
+
+    &-parent-f-b {
+      @extend %parent-b;
+      
+      @include breakpoint($screen $large-start) {
+        display: block;
+      }
+
+      @include breakpoint($screen $xlarge-start) {
+        display: none;
+      }
+    }
+
+    &-parent-f-c {
+      @extend %parent-c;
+
+      @include breakpoint($screen $large-start) {
+        display: none;
+      }
+
+      @include breakpoint($screen $xlarge-start) {
+        display: block;
+      }
+      
     }
   }  
 
   &-peggy {
 
     &-parent-a {
-      display: block;
-
-      @include breakpoint($screen $xlarge-start) {
-        display: none;
-      }
+      @extend .rover-don-parent-a;
     }
 
     &-parent-b {
-      display: none;
-
-      @include breakpoint($screen $xlarge-start) {
-        display: block;
-      }
+      @extend .rover-don-parent-b;
     }
 
-    &-parent-c {
+    &-parent-f-a {
+      @extend .rover-don-parent-f-a;  
+    }
 
+    &-parent-f-b {
+      @extend .rover-don-parent-f-b;  
+    }
+
+    &-parent-f-c {
+      @extend .rover-don-parent-f-c;  
     }
   }
 
