@@ -385,3 +385,7 @@
 * **TODAY** starting to style curated social; verified ehs ads will rove;
 
 ###Sat Jan 10 07:37:32 2015 CST
+
+* [word wrapping in css](http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/)
+
+* we should show "follow us ..." in social pick on small screens
