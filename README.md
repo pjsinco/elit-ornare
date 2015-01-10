@@ -389,3 +389,5 @@
 * [word wrapping in css](http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/)
 
 * we should show "follow us ..." in social pick on small screens
+
+* **TODAY** more on social-pick, front-page ads roving
