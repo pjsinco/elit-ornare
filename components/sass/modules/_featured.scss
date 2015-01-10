@@ -13,6 +13,7 @@
 }
 
 .featured {
+  text-align: center;
 
   @include breakpoint($screen $big-menu-start) {
     margin-top: 1em;
@@ -25,6 +26,7 @@
   &__item {
     position: relative;
     @extend %item-base;
+    text-align: left;
 
     &:not(:last-child) {
       @extend %border-bottom;
@@ -42,6 +44,7 @@
 
   &__primary {
     @extend %featured-base;
+    text-align: center;
 
     @include breakpoint($screen $xlarge-start) {
       @include span(8 of $gridpage);

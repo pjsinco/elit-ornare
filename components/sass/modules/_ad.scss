@@ -64,6 +64,13 @@
     max-width: $site-width;
     display: block;
     /*border-bottom: 1px solid $lightgray;*/
+  }
+
+  &__group--front {
+    @include clearfix;    
+    width: 94%;
+    margin: 0 auto;
+    text-align: center;
     
   }
 

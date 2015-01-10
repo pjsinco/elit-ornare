@@ -13,7 +13,6 @@
 .rover {
 
   &-don {
-
     &-parent-a {
       @extend %parent-a;
 
@@ -43,18 +42,19 @@
       @include breakpoint($screen $xlarge-start) {
         display: none;
       }
-
     }
 
     &-parent-f-b {
       @extend %parent-b;
       
       @include breakpoint($screen $large-start) {
-        display: block;
+        display: inline-block;
+        margin-right: 1em;
       }
 
       @include breakpoint($screen $xlarge-start) {
         display: none;
+        margin-right: 0;
       }
     }
 
@@ -73,7 +73,6 @@
   }  
 
   &-peggy {
-
     &-parent-a {
       @extend .rover-don-parent-a;
     }
