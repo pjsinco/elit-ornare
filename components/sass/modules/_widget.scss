@@ -21,7 +21,7 @@
 %border-after {
   position: absolute;
   left: 0;
-  top: 1.555em;
+  top: 1.375em;
   content: '';
   width: 100%;
   border-bottom: 3px solid $primarycolor;
@@ -32,7 +32,7 @@
   margin-left: -2em;
   padding-left: 2em;
   padding-bottom: 2em;
-  line-height: 1.4;
+  /*line-height: 1.4;*/
   text-transform: uppercase;
   letter-spacing: .05em;
   text-align: center;
@@ -129,12 +129,14 @@
       font-weight: 400;
       font-size: .875em;
       letter-spacing: 0;
+      line-height: 1.4;
       color: $font-color-lightest;
 
       // style social icons
       > span:not([class*='icon-arrow']) {
         margin-left: .5em;
         font-size: 1.5em;
+        line-height: 0;
       }
       
       > span {
