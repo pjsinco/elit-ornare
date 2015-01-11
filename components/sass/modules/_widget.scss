@@ -29,6 +29,7 @@
 
 %title-base {
   position: relative;
+  margin-top: 0;
   margin-left: -2em;
   padding-left: 2em;
   padding-bottom: 2em;
@@ -41,9 +42,14 @@
   color: $font-color-lighter;
 }
 
-.widget {
+%widget-base {
   @include clearfix;
   position: relative;
+}
+
+.widget {
+  @extend %widget-base;
+  margin-top: 1em;
   margin-left: -1.25em;
   padding-left: 1.25em;
 
@@ -56,7 +62,9 @@
   }
 
   &--front {
-
+    @extend %widget-base;
+    margin-top: 0;
+    
   }
 
   &__list {

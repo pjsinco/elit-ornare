@@ -1,0 +1,57 @@
+%front-base {
+  @include clearfix;
+  position: relative;
+  width: 94%;
+  @extend %center;
+}
+
+
+%front-base-before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1em;
+  border-left: 1px solid fuchsia;
+}
+
+.front {
+  
+
+  &--one-third {
+    position: relative;
+        
+    @include breakpoint($screen $large-start) {
+      @include span(4 of $gridpage);   
+    }
+
+    &-last {
+      position: relative;
+      @include breakpoint($screen $large-start) {
+        @include span(4 last of $gridpage);   
+      }
+  
+      /*&:before {*/
+        /*@extend %front-base-before;*/
+      /*}*/
+    }
+  }
+
+  &--two-thirds {
+    @include breakpoint($screen $large-start) {
+      @include span(8 of $gridpage);   
+    }
+
+    &-last {
+      @include breakpoint($screen $large-start) {
+        @include span(8 last of $gridpage);   
+      }
+    }
+
+  }
+
+  &--half {
+
+  }
+
+}
