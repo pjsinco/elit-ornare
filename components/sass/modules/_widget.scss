@@ -55,6 +55,10 @@
     }
   }
 
+  &--front {
+
+  }
+
   &__list {
     @extend %list-base;
     padding-left: 0;
@@ -76,11 +80,13 @@
     &:before {
       position: absolute;
       left: -.75em;
+      height: 3em;
+      top: 50%;
+      margin-top: -.7708333333em;
       content: counter(list-counter);
       counter-increment: list-counter;
       font-size: 3em;
       color: $font-color-lighter;
-      
     }
   }
 
