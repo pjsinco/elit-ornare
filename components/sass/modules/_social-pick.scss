@@ -9,7 +9,8 @@
   margin-bottom: 1em;
   margin-left: auto;
   padding: 3% 3%;
-  background: lighten($primarycolor, 43%);
+  /*background: lighten($primarycolor, 43%);*/
+  background: transparent;
   border-bottom: 1px dashed $primarycolor;
   line-height: 1.4;
 
@@ -19,13 +20,19 @@
     top: .2027777778em;
     left: 0;
     width: 100%;
-    z-index: 0;
+    height: 100%;
+    z-index: -1;
     text-align: center;
     line-height: 0;
     /*font-size: 22.5em;*/
     font-size: 21em;
     font-weight: 900;
-    color: $white;
+    /*color: $white;*/
+    color: lighten($primarycolor, 43%);
+
+    @include breakpoint($screen $large-start) {
+      display: none;
+    }
   }
   
   @include breakpoint($screen $large-start) {
@@ -34,7 +41,6 @@
     padding-bottom: 0;
     padding-left: 0;
     width: 94%;
-    background: $white;
     border-bottom: 0;
   }
 
