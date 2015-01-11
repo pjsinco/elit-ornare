@@ -397,5 +397,6 @@
 * D3
     * [responsive d3](http://stackoverflow.com/questions/9400615/whats-the-best-way-to-make-a-d3-js-visualisation-layout-responsive)
     * [responsive d3](http://stackoverflow.com/questions/11942500/how-to-make-force-layout-graph-in-d3-js-responsive-to-screen-browser-size?lq=1)
+    * [dummy bar chart](http://bl.ocks.org/Caged/6476579)
 
 * [AHRF data](http://ahrf.hrsa.gov/categories.htm)
