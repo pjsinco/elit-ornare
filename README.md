@@ -401,3 +401,5 @@
     * [dummy bar chart](http://bl.ocks.org/Caged/6476579)
 
 * [AHRF data](http://ahrf.hrsa.gov/categories.htm)
+
+* Do we need the rule below the super on the front page?
