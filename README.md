@@ -393,6 +393,7 @@
 
 ###Sun Jan 11 07:32:30 2015 CST
 * we don't have a 'follow us' on the article page
+    * put it in the footer?
 
 * D3
     * [responsive d3](http://stackoverflow.com/questions/9400615/whats-the-best-way-to-make-a-d3-js-visualisation-layout-responsive)
