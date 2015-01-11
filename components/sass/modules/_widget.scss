@@ -132,14 +132,19 @@
       line-height: 1.4;
       color: $font-color-lightest;
 
+      /*> a {*/
+        /*color: inherit;*/
+        /*font-size: inherit;*/
+      /*}*/
+
       // style social icons
-      > span:not([class*='icon-arrow']) {
+      span:not([class*='icon-arrow']) {
         margin-left: .5em;
         font-size: 1.5em;
         line-height: 0;
       }
       
-      > span {
+      span {
         color: $font-color-lightest;
       }
 
