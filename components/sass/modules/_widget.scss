@@ -87,13 +87,16 @@
   
     &:before {
       position: absolute;
-      left: -.75em;
+      left: -.88em;
       height: 3em;
       top: 50%;
-      margin-top: -.7708333333em;
+      /*margin-top: -.7708333333em;*/
+      margin-top: -.65em;
       content: counter(list-counter);
       counter-increment: list-counter;
       font-size: 3em;
+      font-family: $primaryfont;
+      font-weight: 200;
       color: $font-color-lighter;
     }
   }
