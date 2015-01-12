@@ -408,3 +408,5 @@
 * @mplified
 
 * [oocss + grids](https://github.com/stubbornella/oocss/wiki/Grids)
+
+* [margins in one direction only](http://csswizardry.com/2012/06/single-direction-margin-declarations/)
