@@ -405,7 +405,7 @@
 * Do we need the rule below the super on the front page?
 
 ###Mon Jan 12 13:53:00 2015 CST
-* @mplified
+* twitter-pick: @mplified, Heartbeat, Pulse, BPM
 
 * [oocss + grids](https://github.com/stubbornella/oocss/wiki/Grids)
 

@@ -2,46 +2,56 @@
   @include last($gridpage);
 }
 
-%base-of-3 {
+%outside-gutters {
   margin-left:  (gutter($gridpage) * 2);
   margin-right: (gutter($gridpage) * 2);
 
-  @include breakpoint($screen $large-start) {
-    margin-left: 0;
-    margin-right: 0;
-  }
+
+}
+
+%base-of-3 {
+//  margin-left:  (gutter($gridpage) * 2);
+//  margin-right: (gutter($gridpage) * 2);
+//
+//  @include breakpoint($screen $large-start) {
+//    margin-left: 0;
+//    margin-right: 0;
+//  }
 }
 
 .size {
 
   &-1-of-1 {
+    @extend %outside-gutters;
     @include span(12 of $gridpage);
-
   }
 
   &-1-of-3 {
-    @extend %base-of-3;
+    @extend %outside-gutters;
     @include breakpoint($screen $large-start) {
       @include span(4 of $gridpage);        
+      margin-left: 0;
+      margin-right: 0;
     }
 
     &--last {
-      @extend %base-of-3;
+      @extend %outside-gutters;
 
       @include breakpoint($screen $large-start) {
         @include span(4 last of $gridpage);        
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
 
   &-2-of-3 {
-    margin-left:  (gutter($gridpage) * 2);
-    margin-right: (gutter($gridpage) * 2);
+    @extend %outside-gutters;
 
     @include breakpoint($screen $xlarge-start) {
+      @include span(8 of $gridpage);
       margin-left: 0;
       margin-right: 0;
-      @include span(8 of $gridpage);
     }
 
   }

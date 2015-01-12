@@ -27,20 +27,20 @@
   border-bottom: 3px solid $primarycolor;
 }
 
-%title-base {
-  position: relative;
-  margin-top: 0;
-  margin-left: -2em;
-  padding-left: 2em;
-  padding-bottom: 2em;
-  /*line-height: 1.4;*/
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  text-align: center;
-  font-weight: 100;
-  font-size: 1.125em;
-  color: $font-color-lighter;
-}
+//%title-base {
+//  position: relative;
+//  margin-top: 0;
+//  margin-left: -2em;
+//  padding-left: 2em;
+//  padding-bottom: 2em;
+//  /*line-height: 1.4;*/
+//  text-transform: uppercase;
+//  letter-spacing: .05em;
+//  text-align: center;
+//  font-weight: 100;
+//  font-size: 1.125em;
+//  color: $font-color-lighter;
+//}
 
 %widget-base {
   @include clearfix;
@@ -106,7 +106,7 @@
   }
 
   &__title {
-    @extend %title-base;
+    /*@extend %title-base;*/
 
     &:after {
       @extend %border-after;
@@ -118,27 +118,26 @@
       text-align: left;
     }
     
-    &--section {
-      @extend %title-base;
-
-      &:after {
-        @extend %border-after;
-      }
-
-      @include breakpoint($screen $large-start) {
-        padding-bottom: 2em;
-        margin: 0 auto;
-        padding-left: 0;
-        text-align: left;
-        font-weight: 600;
-        width: 94%;
-      }
-
-      @include breakpoint($screen $xlarge-start) {
-        width: 100%;
-        
-      }
-    }
+//    &--section {
+//      @extend %title-base;
+//
+//      &:after {
+//        @extend %border-after;
+//      }
+//
+//      @include breakpoint($screen $large-start) {
+//        padding-bottom: 2em;
+//        margin: 0 auto;
+//        padding-left: 0;
+//        text-align: left;
+//        font-weight: 600;
+//        width: 94%;
+//      }
+//
+//      @include breakpoint($screen $xlarge-start) {
+//        width: 100%;
+//      }
+//    }
 
     &--muted {
       display: none;
