@@ -1,15 +1,29 @@
-%f-item-base {
-  @include clearfix;
-  width: 94%;
-  @extend %center;
-}
-
-%item-base {
-  margin-bottom: 1em;
-}
+/*%f-item-base {*/
+  /*@include clearfix;*/
+  /*width: 94%;*/
+  /*@extend %center;*/
+/*}*/
 
 %border-bottom {
   border-bottom: 1px solid $mediumgray;
+}
+
+%f-item-base {
+  position: relative;
+  margin-bottom: 1em;
+
+  &:not(:last-child) {
+    @extend %border-bottom;
+  }
+
+  @include breakpoint($screen $large-start) {
+    padding-bottom: 1em;
+  }
+
+  @include breakpoint($screen $xlarge-start) {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+  }
 }
 
 %head-base {
@@ -48,6 +62,8 @@
 }
 
 .f-item {
+  
+  @extend %f-item-base;
   text-align: center;
 
   @include breakpoint($screen $big-menu-start) {
@@ -59,36 +75,22 @@
   }
 
   &--major {
+    @extend %f-item-base;
     text-align: left;
   }
 
   &__item {
-    position: relative;
-    @extend %item-base;
-    text-align: left;
 
-    &:not(:last-child) {
-      @extend %border-bottom;
-    }
-
-    @include breakpoint($screen $large-start) {
-      padding-bottom: 1em;
-    }
-
-    @include breakpoint($screen $xlarge-start) {
-      margin-bottom: 1.5em;
-      padding-bottom: 1.5em;
-    }
   }
 
-  &__primary {
-    @extend %f-item-base;
-    text-align: center;
-
-    @include breakpoint($screen $xlarge-start) {
-      @include span(8 of $gridpage);
-    }
-  }
+//  &__primary {
+//    @extend %f-item-base;
+//    text-align: center;
+//
+//    @include breakpoint($screen $xlarge-start) {
+//      @include span(8 of $gridpage);
+//    }
+//  }
 
   &__fig {
     @extend %f-image-base;

@@ -10,19 +10,25 @@
   }
 
   &-1-of-3 {
-    @include span(4 of $gridpage);
+    margin-left:  (gutter($gridpage) * 2);
+    margin-right: (gutter($gridpage) * 2);
 
-    /*&-last {*/
-      /*@include span(4 last of $gridpage);*/
-    /*}*/
+    @include breakpoint($screen $large-start) {
+      margin-left: 0;
+      margin-right: 0;
+      @include span(4 of $gridpage);
+    }
   }
 
   &-2-of-3 {
-    @include span(8 of $gridpage);
+    margin-left:  (gutter($gridpage) * 2);
+    margin-right: (gutter($gridpage) * 2);
 
-    /*&-last {*/
-
-    /*}*/
+    @include breakpoint($screen $xlarge-start) {
+      margin-left: 0;
+      margin-right: 0;
+      @include span(8 of $gridpage);
+    }
 
   }
 
