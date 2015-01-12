@@ -2,6 +2,16 @@
   @include last($gridpage);
 }
 
+%base-of-3 {
+  margin-left:  (gutter($gridpage) * 2);
+  margin-right: (gutter($gridpage) * 2);
+
+  @include breakpoint($screen $large-start) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .size {
 
   &-1-of-1 {
@@ -10,13 +20,17 @@
   }
 
   &-1-of-3 {
-    margin-left:  (gutter($gridpage) * 2);
-    margin-right: (gutter($gridpage) * 2);
-
+    @extend %base-of-3;
     @include breakpoint($screen $large-start) {
-      margin-left: 0;
-      margin-right: 0;
-      @include span(4 of $gridpage);
+      @include span(4 of $gridpage);        
+    }
+
+    &--last {
+      @extend %base-of-3;
+
+      @include breakpoint($screen $large-start) {
+        @include span(4 last of $gridpage);        
+      }
     }
   }
 

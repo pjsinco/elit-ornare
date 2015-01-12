@@ -1,5 +1,6 @@
 .row {
   @include clearfix;
+  @include container($gridpage);
   
 
 }
