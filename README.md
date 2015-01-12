@@ -412,3 +412,5 @@
 * [margins in one direction only](http://csswizardry.com/2012/06/single-direction-margin-declarations/)
     > This means always use margin-bottom to push items down the page, 
     > and margin-left to push them across the page.
+
+* [styles for hr](http://css-tricks.com/examples/hrs/)
