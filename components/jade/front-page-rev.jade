@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    include head
+  body
+    include ie8-comment
+    include header
+  
+    div.content#main
+      div.row
+        div.unit.size-1-of-1
+          div.super
+            figure.super__figure
+                picture
+                  <!--[if IE 9]>
+                  <video style="display: none">
+                  <![endif]-->
+                  //-source(srcset="img/omed992.png" media="(min-width: 700px)") 
+                  //-source(srcset="img/primary700.png" media="(min-width: 600px)") 
+                  //-source(srcset="img/primary600.png" media="(min-width: 480px)") 
+                  //-source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
+                  source(srcset="img/nih992.jpg" media="(min-width: 700px)") 
+                  source(srcset="img/nih700.jpg" media="(min-width: 480px)") 
+                  //-source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
+                  <!--[if IE 9]>
+                  </video>
+                  <![endif]-->
+                  //-img(srcset="img/primary480.png" alt="super480").image__img
+                  img(srcset="img/nih480.jpg" alt="super480").image__img
+                figcaption.super__tag Todd M. Wilson, DO 
+            div.super__body
+              h5.super__kicker Porta Parturient
+              span.super__date Dec. 31, 2014
+              h1.super__head: a(href="#").super__link Sociis natoque penatibus et magnis montes, nascetur ridiculus mus                
+              p.super__body-text Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at donec.
+
+      div.row
+        div.unit.size-2-of-3
+          article.f-item--major
+            figure.f-item__fig--major
+              img(src="img/2015235.jpg" alt="2015235").image__img
+            div.f-item__body--major 
+              h5.f-item__kicker--major Commodo Ulum
+              span.f-item__date--major Dec. 17, 2015
+              h2.f-item__head--major: a(href="#").f-item__link New Year's resolutions: 10 life hacks to increase physician productivity
+              p.f-item__body-text--major Looking to work more efficiently in the office or at home? These life hacks can help you get started on an ultra-productive 2015.
+
+          article.f-item--major
+            figure.f-item__fig--major
+              img(src="img/hands235.jpg" alt="hands235").image__img
+            div.f-item__body--major 
+              h5.f-item__kicker--major Ridiculus Fermentum
+              span.f-item__date--major Dec. 11, 2015
+              h2.f-item__head--major: a(href="#").f-item__link End-of-life care: We’re doing it wrong, experts say
+              p.f-item__body-text--major As the nation re-evaluates its approach to palliative care, DO geriatricians explain what osteopathic physicians do differently.
+
+          article.f-item--major
+            figure.f-item__fig--major
+              img(src="img/greys235.jpg" alt="greys235").image__img
+            div.f-item__body--major 
+              h5.f-item__kicker--major Ullamcorper
+              span.f-item__date--major Dec. 10, 2015
+              h2.f-item__head--major: a(href="#").f-item__link 'Grey’s Anatomy' vs. real-life residency: You already know how this turns out
+              p.f-item__body-text--major Amanda Kirzner, DO, says real-world residency is nothing like its thrill-a-minute depiction on the hit TV show.
+
+
+
+
+
+
+
+
+
+        div.unit.size-1-of-1.last
+
+
+
+    footer
+
+    include footer

@@ -1,0 +1,41 @@
+.last {
+  @include last($gridpage);
+}
+
+.size {
+
+  &-1-of-1 {
+    @include span(12 of $gridpage);
+
+  }
+
+  &-1-of-3 {
+    @include span(4 of $gridpage);
+
+    /*&-last {*/
+      /*@include span(4 last of $gridpage);*/
+    /*}*/
+  }
+
+  &-2-of-3 {
+    @include span(8 of $gridpage);
+
+    /*&-last {*/
+
+    /*}*/
+
+  }
+
+  &-1-of-4 {
+    @include span(3 of $gridpage);
+  }
+
+  &-2-of-4 {
+    @include span(6 of $gridpage);
+  }
+
+  &-3-of-4 {
+    @include span(9 of $gridpage);
+  }
+
+}

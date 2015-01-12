@@ -1,0 +1,211 @@
+%border-bottom {
+  border-bottom: 1px solid $mediumgray;
+}
+
+@mixin f-item-large {
+  border-bottom: 0;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.f-item {
+  margin-bottom: 1em;
+
+  &:not(:last-child) {
+    @extend %border-bottom;
+  }
+
+  @include breakpoint($screen $large-start) {
+    &:not(:last-child) {
+      border: 0;
+    }
+  }
+
+  &--thirds {
+    @extend .f-item;
+
+    @include breakpoint($screen $large-start) {
+      @include f-item-large;
+      @include span(4 of $gridpage);
+
+      &:last-child {
+        @include span(4 last of $gridpage);
+      }
+
+      /*&:not(:last-child) {*/
+        /*border-bottom: 0;*/
+      /*}*/
+    }
+
+    @include breakpoint($screen $large-minor-start) {
+      padding: 0 2em;
+    }
+
+    &__1-3 {
+
+    }
+
+    &__2-3 {
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: span(4 of $gridpage) + (.5 * gutter($gridpage));
+        }
+      }
+    }
+
+    &__3-3 {
+      @include breakpoint($screen $large-start) {
+        &:before {
+          @include border-before;
+          left: (2 * (span(4 of $gridpage))) + (3 * (.5 * gutter($gridpage)));
+        }
+      }
+    }
+  }
+
+  &--fourths {
+    @extend .f-item;
+
+    @include breakpoint($screen $large-start $xlarge-start-minus-1) {
+      @include f-item-large;
+      @include span(6 of $gridpage);
+      clear: right;
+
+      &:nth-child(even) {
+        @include span(6 last of $gridpage);
+      }
+    }
+
+    @include breakpoint($screen ($xlarge-start)) {
+      @include f-item-large;
+      @include span(3 of $gridpage);
+      /*clear: none;*/
+  
+      &:last-child {
+        @include span(3 last of $gridpage);
+      }
+
+    }
+
+    @include breakpoint($screen $large-minor-start) {
+      padding: 0 2em;
+    }
+    
+    &__1-4 {
+
+    }
+
+    &__2-4 {
+      @include breakpoint($screen $xlarge-start) {
+        &:before {
+          @include border-before;
+          left: span(3 of $gridpage) + (.5 * gutter($gridpage));
+        }
+      }
+    }
+
+    &__3-4 {
+      @include breakpoint($screen $xlarge-start) {
+        &:before {
+          @include border-before;
+          left: (2 * (span(3 of $gridpage))) + (3 * (.5 * gutter($gridpage)));
+        }
+      }
+    }
+
+    &__4-4 {
+      @include breakpoint($screen $xlarge-start) {
+        &:before {
+          @include border-before;
+          left: (3 * (span(3 of $gridpage))) + (5* (.5 * gutter($gridpage)));
+        }
+      }
+
+    }
+  }
+
+  &__image {
+    @extend %f-image-base;
+    @include breakpoint($screen $large-start) {
+      float: none;
+      margin-bottom: 1em;
+      margin-right: 0;
+      max-width: inherit;
+    }
+  }
+
+  &__body {
+    /*clear: both;*/
+    /*@extend .featured__body;*/
+  }
+
+  &__kicker {
+    display: block;
+    margin-top: 0;
+    margin-right: .25em;
+    margin-bottom: .5em;
+    letter-spacing: .1em;
+    font-size: .875em;
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-weight: 400;
+    color: $primarycolor;
+
+    @include breakpoint($screen $medium-minor-start) {
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+
+  &__date {
+    /*display: block;*/
+    display: none;
+    font-size: .875em;
+    color: $font-color-lighter;
+
+    @include breakpoint($screen $medium-minor-start) {
+      display: inline-block;
+    }
+  }
+
+  &__body-text {
+    margin-left: 0;
+    font-size: 1em;
+    line-height: 1.3;
+
+    @include breakpoint($screen $large-start) {
+      margin-bottom: 0;
+      margin-left: 0;
+      font-size: 1em;
+      line-height: 1.4;
+      font-weight: 400;
+      color: $font-color-lighter;
+    }
+  }
+
+  &__head {
+    margin-top: 0;
+    margin-bottom: .25em;
+    /*margin-left: 6.1em;*/
+    margin-left: 0;
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: $secondaryfont;
+    color: $font-color;
+
+    @include breakpoint($screen $large-start) {
+      margin-bottom: 0;
+      font-size: 1.125em;
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+}
+
+
+
