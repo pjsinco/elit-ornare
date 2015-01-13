@@ -66,6 +66,12 @@
   @extend %f-item-base;
   text-align: center;
 
+  @include breakpoint($screen $large-start) {
+    &:not(:last-child) {
+      border: 0;
+    }
+  }
+
   @include breakpoint($screen $big-menu-start) {
     margin-bottom: 1em;
   }
