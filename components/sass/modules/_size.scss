@@ -57,11 +57,35 @@
   }
 
   &-1-of-4 {
-    @include span(3 of $gridpage);
+    @extend %outside-gutters;
+    
+    @include breakpoint($screen $large-start) {
+      @include span(6 of $gridpage);
+    }
+
+    @include breakpoint($screen $xlarge-start) {
+      @include span(3 of $gridpage);
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--last {
+      @include breakpoint($screen $large-start) {
+        @include span(6 last of $gridpage);
+      }
+
+      @include breakpoint($screen $xlarge-start) {
+        @include span(3 last of $gridpage);
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+    }
+
   }
 
   &-2-of-4 {
-    @include span(6 of $gridpage);
+    
   }
 
   &-3-of-4 {
