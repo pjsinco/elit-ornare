@@ -6,8 +6,8 @@
 
 .row {
   @extend %row-base;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: $out-gutter-pct;
+  margin-right: $out-gutter-pct;
 
   @include breakpoint($screen $xlarge-start) {
     margin-left: 0;    

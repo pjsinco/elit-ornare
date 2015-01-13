@@ -18,21 +18,3 @@
   float: left;
 }
 
-%f-image-base {
-  position: relative;
-  /*top: 1.6875em;*/
-  top: .1875em;
-  right: 0;
-  margin-left: .5em;
-  float: right;
-  max-width: 6.25em;
-  display: inline-block;
-
-  @include breakpoint($screen $medium-minor-start) {
-    /*position: static;*/
-    margin-left: 0;
-    margin-right: .5em;
-    float: left;
-    /*top: 1.6875em;*/
-  }
-}
