@@ -426,3 +426,5 @@
 * [save all windows in vim](http://stackoverflow.com/questions/4429368/save-all-windows-tabs-in-gvim)
 
 * [honeypot](http://solutionfactor.net/blog/2014/02/01/honeypot-technique-fast-easy-spam-prevention/)
+
+* **TODAY** finished refactoring front-page

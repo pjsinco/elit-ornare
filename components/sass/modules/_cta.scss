@@ -1,0 +1,54 @@
+// call to action
+
+.cta {
+
+  border-top: 1px solid $lightgray;
+
+  &__form {
+    margin: 0 auto;
+    @include breakpoint($screen $large-start) {
+      width: 50%;
+    }
+  }
+
+  &__head {
+    margin-bottom: .5em;
+    font-weight: 200;
+    
+  }
+
+  &__body-text {
+    @extend %body-text-base;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .75em;
+    color: $font-color-lighter;
+
+    @include breakpoint($screen $large-start) {
+      width: 80%;
+    }
+  }
+
+  &__input {
+    &--pot {
+      display: none; 
+    }
+    
+    @include breakpoint($screen $medium-start) {
+      width: 80%;
+      float: left;
+    }
+  }
+
+  &__button {
+    background: #b3b3b3;
+
+    @include breakpoint($screen $medium-start) {
+      width: 20%;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  
+
+}
