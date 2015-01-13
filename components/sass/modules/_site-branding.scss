@@ -68,10 +68,12 @@
   &--alpha {
     position: relative;
     top: 1em;
-    letter-spacing: -.0625em;
+    /*letter-spacing: -.0625em;*/
+    letter-spacing: -1px;
 
     @include breakpoint($screen $big-menu-start) {
-      letter-spacing: -.1875em;
+      /*letter-spacing: -.1875em;*/
+      letter-spacing: -3px;
     }
   }
 

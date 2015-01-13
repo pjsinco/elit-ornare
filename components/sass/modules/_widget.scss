@@ -45,6 +45,7 @@
 %widget-base {
   @include clearfix;
   position: relative;
+  text-align: left;
 }
 
 .widget {

@@ -7,8 +7,8 @@ html
     include header
   
     div.content#main
-      div.row--bleed.no-m-b
-        div.unit.size-1-of-1
+      div.row--bleed-xl.no-m-b
+        div.size-1-of-1
           div.super
             figure.super__figure
                 picture
@@ -35,7 +35,7 @@ html
               p.super__body-text Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at donec.
 
       div.row
-        div.unit.size-2-of-3
+        div.size-2-of-3
           article.f-item--major
             figure.f-item__fig--major
               img(src="img/2015235.jpg" alt="2015235").image__img
@@ -73,16 +73,17 @@ html
         //-div.featured__secondary
 
         //-div.ad__group--front
-        div.row--center
-          aside(data-set="rover-don-parent").ad.ad__med-rect--front.rover-don-parent-f-b
-          aside(data-set="rover-peggy-parent").ad.ad__med-rect--front.rover-peggy-parent-f-b
+        //-div.row--center
+        aside(data-set="rover-don-parent").ad.ad__med-rect--front.rover-don-parent-f-b
+        aside(data-set="rover-peggy-parent").ad.ad__med-rect--front.rover-peggy-parent-f-b
 
-        div.unit.size-1-of-3--last
+        div.size-1-of-3--last
           aside(data-set="rover-don-parent").ad.ad__med-rect--front.rover-don-parent-f-c
           aside(data-set="rover-peggy-parent").ad.ad__med-rect--front.rover-peggy-parent-f-c
 
-      div.row--bleed
-        div.unit.size-1-of-1
+      //-div.row--bleed
+      div.row
+        div.size-1-of-1
           div.section-title More Stories #[span.section-title--muted All stories #[span.icon-arrow-right]]
             //-div.section-title__border
 
@@ -102,7 +103,7 @@ html
             figure.f-item__fig
               img(src="img/students160.jpg" alt="students160").image__img
             div.f-item__body
-              h5.f-item__kicker Vulputate
+              h5.f-item__kicker Women's History
               span.f-item__date Jan. 6, 2015
               h2.f-item__head: a(href="#").f-item__link Hero Next Door: DO historian champions profession’s female-friendly past
               p.f-item__body-text Educator Thomas Quinn, DO, wrote a book on women in osteopathic medicine that a Florida PBS station will convert to a documentary.
@@ -127,8 +128,9 @@ html
               h2.f-item__head: a(href="#").f-item__link Want to succeed in DO, MD worlds? A sports psychiatrist shares his story
               p.f-item__body-text David Baron, DO, rose to prominence in the MD realm while retaining—and celebrating—his osteopathic heritage. Here’s what he did.
     
-      div.row--bleed.no-m-b
-        div.unit.size-1-of-1
+      //-div.row--bleed.no-m-b
+      div.row.no-m-b
+        div.size-1-of-1
           div.section-title Pulse #[span.section-title--muted Follow us #[a(href="#") #[span.icon-facebook]] #[a(href="#") #[span.icon-twitter]] #[a(href="#") #[span.icon-linkedin]] #[a(href="#") #[span.icon-pinterest]]]
             //-div.section-title__border
 
@@ -141,8 +143,9 @@ html
             p.social-pick__body-text
               | First day of class for my #[a(href='#').social-pick__link @rowansom] 3rd year med student #[a(href='#').social-pick__link #FamilyMedicine] clerkship! Lecturing today. #[a(href='#').social-pick__link #babydocs]... #[a(href='#').social-pick__link http://fb.me/6YH4EPyEB]
 
-      div.row--bleed
-        div.unit.size-1-of-1
+      //-div.row--bleed
+      div.row
+        div.size-1-of-1
           div.section-title Risus Cursus
             //-div.section-title__border
 
@@ -184,23 +187,31 @@ html
             //-script.
               //-EHS_AD("t", "r", "300x250");
 
-      div.row--bleed
-        div.unit.size-2-of-3
-          div.section-title Clickable
-            //-div.section-title__border
-          svg(width="655" height='437').svg-placeholder
-              rect(width='655' height='437' fill='aliceblue' style='transform: translateY(-2em);')
+      //-div.row--bleed
+      div.row
+        div.size-2-of-3
+          div.section-title Spotlight
 
-        div.unit.size-1-of-3--last
-          div.section-title Most Read
-            //-div.section-title__border
-          aside.widget--counter.widget--front
-            ol.widget__list--counter
-              li.widget__list-item--counter: a(href='#').widget__link New Year's resolutions: 10 life hacks to increase physician productivity
-              li.widget__list-item--counter: a(href='#').widget__link 'Grey's Anatomy' vs. real-life residency: You already know how this turns out
-              li.widget__list-item--counter: a(href='#').widget__link Anesthesiology’s allure: High pay, flexibility, intellectual stimulation
-              li.widget__list-item--counter: a(href='#').widget__link How I survived the first 2 years of medical school
-              li.widget__list-item--counter: a(href='#').widget__link Making the cut: How to specialize in general surgery
+      div.row
+        div.unit.size-2-of-3
+          div.spotlight
+            figure
+              img(src="img/spotlight-placeholder.svg" alt="spotlight-placeholder").image__img
+            //-svg(width="655" height='437').svg-placeholder
+                //-rect(width='655' height='437' fill='aliceblue' style='transform: translateY(-2em);')
+
+        //-div.size-1-of-3--last
+          //-div.section-title Most Read
+          //-aside.widget--counter.widget--front
+            //-ol.widget__list--counter
+              //-li.widget__list-item--counter: a(href='#').widget__link New Year's resolutions: 10 life hacks to increase physician productivity
+              //-li.widget__list-item--counter: a(href='#').widget__link 'Grey's Anatomy' vs. real-life residency: You already know how this turns out
+              //-li.widget__list-item--counter: a(href='#').widget__link Anesthesiology’s allure: High pay, flexibility, intellectual stimulation
+              //-li.widget__list-item--counter: a(href='#').widget__link How I survived the first 2 years of medical school
+              //-li.widget__list-item--counter: a(href='#').widget__link Making the cut: How to specialize in general surgery
+
+
+
 
     footer
 

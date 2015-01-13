@@ -12,7 +12,7 @@
   @include breakpoint($screen $xlarge-start) {
     @include container($gridpage);
     padding-bottom: 1.5em;
-    border-bottom: 1px solid $mediumgray;
+    /*border-bottom: 1px solid $mediumgray;*/
   }
 
   &__figure {
