@@ -3,8 +3,8 @@
 }
 
 %outside-gutters {
-  margin-left:  (gutter($gridpage) * 2);
-  margin-right: (gutter($gridpage) * 2);
+  /*margin-left:  (gutter($gridpage) * 2);*/
+  /*margin-right: (gutter($gridpage) * 2);*/
 }
 
 %base-of-3 {
@@ -28,8 +28,8 @@
     @extend %outside-gutters;
     @include breakpoint($screen $large-start) {
       @include span(4 of $gridpage);        
-      margin-left: 0;
-      margin-right: 0;
+      /*margin-left: 0;*/
+      /*margin-right: 0;*/
     }
 
     &--last {
@@ -37,8 +37,8 @@
 
       @include breakpoint($screen $large-start) {
         @include span(4 last of $gridpage);        
-        margin-left: 0;
-        margin-right: 0;
+        /*margin-left: 0;*/
+        /*margin-right: 0;*/
       }
     }
   }
@@ -56,34 +56,38 @@
 
   &-1-of-4 {
     /*@extend %outside-gutters;*/
+    /*@include ();*/
+    /*@include span(12 of $gridpage);*/
     
     @include breakpoint($screen $large-start) {
-      @include gallery(2 of $gridrow4);
+      /*@include gallery(2 of $gridrow4);*/
+      @include gallery(6 of $gridpage);
       /*@include span(2 of $gridrow4);*/
     }
 
     @include breakpoint($screen $xlarge-start) {
       /*@include span(1 of $gridrow4);*/
-      @include gallery(1 of $gridrow4);
+      /*@include gallery(1 of $gridrow4);*/
+      @include gallery(3 of $gridpage);
       /*margin-left: 0;*/
       /*margin-right: 0;*/
     }
 
-    &--last {
-      /*@extend %outside-gutters;*/
-      @include breakpoint($screen $large-start) {
-        @include span(2 last of $gridrow4);
-        /*margin-left: 0;*/
-        /*margin-right: 0;*/
-      }
-
-      @include breakpoint($screen $xlarge-start) {
-        @include span(1 last of $gridrow4);
-        margin-left: 0;
-        margin-right: 0;
-      }
-      
-    }
+//    &--last {
+//      /*@extend %outside-gutters;*/
+//      @include breakpoint($screen $large-start) {
+//        @include span(2 last of $gridrow4);
+//        /*margin-left: 0;*/
+//        /*margin-right: 0;*/
+//      }
+//
+//      @include breakpoint($screen $xlarge-start) {
+//        @include span(1 last of $gridrow4);
+//        margin-left: 0;
+//        margin-right: 0;
+//      }
+//      
+//    }
 
   }
 

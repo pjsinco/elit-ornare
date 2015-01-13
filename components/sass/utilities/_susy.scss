@@ -30,7 +30,8 @@ $gridpage: (
 $gridrow4: (
   global-box-sizing: border-box,
   columns: 4,
-  container: $site-width,
+  /*container: $site-width,*/
+  container: 94%,
   gutters: .25,
   debug: (
     image: show-columns,

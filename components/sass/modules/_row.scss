@@ -1,6 +1,22 @@
-.row {
+%row-base {
   @include clearfix;
   @include container($gridpage);
+
+}
+
+.row {
+  @extend %row-base;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  @include breakpoint($screen $xlarge-start) {
+    margin-left: 0;    
+    margin-right: 0;    
+  }
   
+  &--bleed {
+    @extend %row-base;
+    @include bleed(0 3%);
+  }
 
 }
