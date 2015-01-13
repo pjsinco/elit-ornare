@@ -416,3 +416,5 @@
 * [styles for hr](http://css-tricks.com/examples/hrs/)
 
 * **TODAY** refactoring front-page css
+
+* use susy's [gallery mixin](http://susydocs.oddbird.net/en/latest/toolkit/?highlight=last#gallery) for .size-n-of-m!
