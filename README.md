@@ -414,3 +414,5 @@
     > and margin-left to push them across the page.
 
 * [styles for hr](http://css-tricks.com/examples/hrs/)
+
+* **TODAY** refactoring front-page css
