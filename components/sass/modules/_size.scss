@@ -45,8 +45,8 @@
 
     @include breakpoint($screen $xlarge-start) {
       @include span(8 of $gridpage);
-      margin-left: 0;
-      margin-right: 0;
+      /*margin-left: 0;*/
+      /*margin-right: 0;*/
     }
 
   }
