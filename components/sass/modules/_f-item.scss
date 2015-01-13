@@ -109,10 +109,12 @@
   @extend %f-item-base;
 
   @include breakpoint($screen $large-start) {
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: center;
-    /*&:not(:last-child) {*/
-      /*border: 0;*/
-    /*}*/
+    &:not(:last-child) {
+      border: 0;
+    }
   }
 
   @include breakpoint($screen $big-menu-start) {
