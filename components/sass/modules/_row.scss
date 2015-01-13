@@ -2,7 +2,7 @@
   @include clearfix;
   @include container($gridpage);
   position: relative;
-
+  margin-bottom: 1em;
 }
 
 .row {
@@ -13,11 +13,16 @@
   @include breakpoint($screen $xlarge-start) {
     margin-left: 0;    
     margin-right: 0;    
+    margin-bottom: 2em;
   }
   
   &--bleed {
     @extend %row-base;
     @include bleed(0 3%);
+
+    @include breakpoint($screen $large-start) {
+      
+    }
   }
 
   &--center {

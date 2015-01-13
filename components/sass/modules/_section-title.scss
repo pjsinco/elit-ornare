@@ -1,21 +1,18 @@
 %title-base {
   position: relative;
-  margin-left: -2em;
-  padding-left: 2em;
-  /*line-height: 1.4;*/
+  padding-bottom: .3888888889em;
   text-transform: uppercase;
   letter-spacing: .05em;
   text-align: center;
   font-weight: 100;
   font-size: 1.125em;
+  border-bottom: 3px solid $primarycolor;
   color: $font-color-lighter;
 
   @include breakpoint($screen $large-start) {
     margin: 0 auto;
-    padding-left: 0;
     text-align: left;
     font-weight: 600;
-    width: 94%;
   }
 
   @include breakpoint($screen $xlarge-start) {
@@ -64,6 +61,7 @@
     /*top: 1.375em;*/
     /*content: '';*/
     /*width: 100%;*/
+    display: block;
     border: 0;
     height: 0;
     border-bottom: 3px solid $primarycolor;

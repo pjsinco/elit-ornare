@@ -45,7 +45,8 @@
 
     &:after {
       /*content: "Dr.ing";*/
-      content: "Elit Ornare";
+      /*content: "Elit Ornare";*/
+      content: "The DO";
       line-height: .5;
       display: block;
       font-weight: bold;
@@ -53,7 +54,7 @@
 
       @include breakpoint($screen $medium-minor-start) {
         /*content: "Doctoring";*/
-        content: "Elit Ornare";
+        /*content: "Elit Ornare";*/
         /*font-size: 2em;*/
       }
 
@@ -67,9 +68,10 @@
   &--alpha {
     position: relative;
     top: 1em;
-    /*letter-spacing: .25em;*/
+    letter-spacing: -.0625em;
+
     @include breakpoint($screen $big-menu-start) {
-    
+      letter-spacing: -.1875em;
     }
   }
 

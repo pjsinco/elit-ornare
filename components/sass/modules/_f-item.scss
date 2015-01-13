@@ -40,14 +40,6 @@
     @extend %border-bottom;
   }
 
-  /*@include breakpoint($screen $large-start) {*/
-    /*padding-bottom: 1em;*/
-  /*}*/
-
-  @include breakpoint($screen $xlarge-start) {
-    margin-bottom: 1.5em;
-    /*padding-bottom: 1.5em;*/
-  }
 }
 
 %kicker-base {
@@ -111,6 +103,7 @@
   @include breakpoint($screen $large-start) {
     padding-left: 1em;
     padding-right: 1em;
+    margin-bottom: 0;
     text-align: center;
     &:not(:last-child) {
       border: 0;
@@ -118,15 +111,19 @@
   }
 
   @include breakpoint($screen $big-menu-start) {
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;*/
   }
 
   @include breakpoint($screen $xlarge-start) {
-    margin-bottom: 1.5em;
+    /*margin-bottom: 1.5em;*/
   }
 
   &--major {
     @extend %f-item-base;
+
+    @include breakpoint($screen $large-start) {
+      padding-bottom: 1em;
+    }
   }
 
   &__item {

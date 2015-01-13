@@ -15,8 +15,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  /*height: calc(100% - 1em);*/
   z-index: -1;
-  /*width: span(4 of $gridpage);*/
   border-left: 1px solid $mediumgray;
-  /*background: #fff;*/
 }
