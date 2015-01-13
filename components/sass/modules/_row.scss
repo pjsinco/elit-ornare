@@ -1,6 +1,7 @@
 %row-base {
   @include clearfix;
   @include container($gridpage);
+  position: relative;
 
 }
 

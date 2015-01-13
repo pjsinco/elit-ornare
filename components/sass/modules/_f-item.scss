@@ -32,7 +32,7 @@
 
 }
 %f-item-base {
-  position: relative;
+  /*position: relative;*/
   margin-bottom: 1em;
   text-align: left;
 
@@ -40,13 +40,13 @@
     @extend %border-bottom;
   }
 
-  @include breakpoint($screen $large-start) {
-    padding-bottom: 1em;
-  }
+  /*@include breakpoint($screen $large-start) {*/
+    /*padding-bottom: 1em;*/
+  /*}*/
 
   @include breakpoint($screen $xlarge-start) {
     margin-bottom: 1.5em;
-    padding-bottom: 1.5em;
+    /*padding-bottom: 1.5em;*/
   }
 }
 
