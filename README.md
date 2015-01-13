@@ -417,4 +417,5 @@
 
 * **TODAY** refactoring front-page css
 
-* use susy's [gallery mixin](http://susydocs.oddbird.net/en/latest/toolkit/?highlight=last#gallery) for .size-n-of-m!
+* use susy's [gallery mixin](http://susydocs.oddbird.net/en/latest/toolkit/?highlight=last#gallery) for displaying .size-1-of-4 (.size-1-of-3?) on medium screens!
+    * no need for ```&--last```
