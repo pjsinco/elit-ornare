@@ -423,3 +423,5 @@
 * maybe use susy's [bleed mixin](http://susy.readthedocs.org/en/latest/toolkit/#bleed) for bleeding left and right?
 
 ###Tue Jan 13 05:36:47 2015 CST
+* [save all windows in vim](http://stackoverflow.com/questions/4429368/save-all-windows-tabs-in-gvim)
+

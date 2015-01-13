@@ -20,4 +20,8 @@
     @include bleed(0 3%);
   }
 
+  &--center {
+    text-align: center;
+  }
+
 }
