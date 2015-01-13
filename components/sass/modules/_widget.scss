@@ -89,6 +89,7 @@
       position: absolute;
       left: -.88em;
       height: 3em;
+      width: .5833333333em;
       top: 50%;
       /*margin-top: -.7708333333em;*/
       margin-top: -.65em;
@@ -97,6 +98,7 @@
       font-size: 3em;
       font-family: $primaryfont;
       font-weight: 200;
+      text-align: center;
       color: $font-color-lighter;
     }
   }
