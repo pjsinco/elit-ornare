@@ -1,14 +1,18 @@
 /// http://www.slideshare.net/jewlofthelotus/decoupling-the-frontend-through-modular-css
 
-.btn {
-
+%btn-base {
   border-radius: 4px;
   display: inline-block;
   /*padding: 1em;*/
   text-align: center;
   vertical-align: middle;
+}
+
+.btn {
+  @extend %btn-base;
 
   &--primary {
+    @extend %btn-base;
     background: $gray;
   }
 
