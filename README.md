@@ -433,6 +433,5 @@
 * ["coming soon" as a story teaser](http://www.niemanlab.org/2015/01/how-do-you-get-millennials-to-care-about-local-news-the-charlotte-observer-is-testing-out-one-idea/)
 
 ###Thu Jan 15 09:02:09 2015 CST
-
 * YouTube embed responsive:
     * [this](http://help.hubspot.com/articles/KCS_Article/COS-Pages-Editor/How-do-I-make-my-embedded-YouTube-video-responsive) vs. [fitvids](http://fitvidsjs.com/)
