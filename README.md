@@ -432,4 +432,5 @@
 ###Wed Jan 14 10:36:07 2015 CST
 * ["coming soon" as a story teaser](http://www.niemanlab.org/2015/01/how-do-you-get-millennials-to-care-about-local-news-the-charlotte-observer-is-testing-out-one-idea/)
 
+###Thu Jan 15 09:02:09 2015 CST
 
