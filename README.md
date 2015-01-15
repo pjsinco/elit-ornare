@@ -435,3 +435,5 @@
 ###Thu Jan 15 09:02:09 2015 CST
 * YouTube embed responsive:
     * [this](http://help.hubspot.com/articles/KCS_Article/COS-Pages-Editor/How-do-I-make-my-embedded-YouTube-video-responsive) vs. [fitvids](http://fitvidsjs.com/)
+
+* [customize youtube embed](http://vidiseo.com/embedding-youtube-videos/)
