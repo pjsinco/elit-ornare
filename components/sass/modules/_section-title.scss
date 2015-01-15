@@ -1,19 +1,25 @@
 %title-base {
   position: relative;
-  padding-bottom: .3888888889em;
+  /*padding-bottom: .3888888889em;*/
+  padding-bottom: .2em;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  text-align: center;
-  font-weight: 100;
-  font-size: 1.125em;
-  border-bottom: 1px solid $primarycolor;
-  color: $font-color-lighter;
+  /*letter-spacing: .05em;*/
+  text-align: left;
+  font-weight: 600;
+  /*font-size: 1.125em;*/
+  font-size: 1.875em;
+  border-bottom: 2px solid $primarycolor;
+  /*color: $font-color-lighter;*/
+  color: $font-color;
 
   @include breakpoint($screen $large-start) {
     margin: 0 auto;
+    padding-bottom: .3888888889em;
     text-align: left;
     font-weight: 600;
+    font-size: 1.125em;
     border-bottom: 3px solid $primarycolor;
+    color: $font-color-lighter;
   }
 
   @include breakpoint($screen $xlarge-start) {
