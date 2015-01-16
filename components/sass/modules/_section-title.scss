@@ -2,7 +2,6 @@
   position: relative;
   /*padding-bottom: .3888888889em;*/
   padding-bottom: .2em;
-  text-transform: uppercase;
   /*letter-spacing: .05em;*/
   text-align: left;
   font-weight: 600;
@@ -19,6 +18,7 @@
     font-weight: 600;
     font-size: 1.125em;
     border-bottom: 3px solid $primarycolor;
+    text-transform: uppercase;
     color: $font-color-lighter;
   }
 
