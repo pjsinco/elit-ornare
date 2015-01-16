@@ -453,3 +453,5 @@
     ```box-shadow: 0 0 1px rgba(0, 0, 0, 0)```
 
 * [owl carousel](http://owlgraphic.com/owlcarousel/)
+
+* **TODO** make headlines in front-page popular-widget like rest of headlines on page
