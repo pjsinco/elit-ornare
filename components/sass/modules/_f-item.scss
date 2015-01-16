@@ -182,7 +182,13 @@
   }
 
   &__link {
+    transition: color .25s ease;
     color: inherit;
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      color: $primarycolor;
+    }
   }
 
   &__body-text {
