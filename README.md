@@ -451,4 +451,5 @@
 
 * here's [how to stop](https://github.com/IanLunn/Hover/wiki/Hacks-Explained) the weird 1px-ish line from drawing around an element using a transform:
     ```box-shadow: 0 0 1px rgba(0, 0, 0, 0)```
-    apply to the 
+
+* [owl carousel](http://owlgraphic.com/owlcarousel/)
