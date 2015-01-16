@@ -204,8 +204,14 @@ html
               //-svg(width="655" height='437').svg-placeholder
                 //-rect(width='655' height='437' fill='aliceblue' style='transform: translateY(-2em);')
       div.row
-        div.size-1-of-3
+        div.size-1-of-2
           div.section-title Most read
+        div.size-1-of-2--last
+          div.section-title Inside the AOA
+
+      div.row
+        div.size-1-of-2
+          //-div.section-title Most Read
           aside.widget--counter.widget--front
             ol.widget__list--counter
               li.widget__list-item--counter: a(href='#').widget__link New Year's resolutions: 10 life hacks to increase physician productivity
@@ -214,8 +220,6 @@ html
               li.widget__list-item--counter: a(href='#').widget__link How I survived the first 2 years of medical school
               li.widget__list-item--counter: a(href='#').widget__link Making the cut: How to specialize in general surgery
         
-        div.size-2-of-3--last
-          div.section-title Inside the AOA
 
       aside(data-set="rover-peggy-parent").ad.ad__med-rect--front.rover-peggy-parent-f-a
         div.rover-peggy
@@ -229,41 +233,42 @@ html
           div.section-title Also on Osteopathic.org
 
       div.row
-        div.unit--no-space.size-1-of-4.f-item
+        div.unit.size-1-of-4.f-item
           article
             figure.f-item__fig
               a(href="#"): img(src="img/do-day160.png" alt="doday160").image__img
             div.f-item__body
               //-h5.f-item__kicker Sit Condimentum
               h2.f-item__head: a(href="#").f-item__link CME credit available for DO Day on Capitol Hill
-              p.f-item__body-text Join your colleagues for an exciting opportunity to to communicate our osteopathic perspective on important health issues.
+              //-p.f-item__body-text Join your colleagues for an exciting opportunity to to communicate our osteopathic perspective on important health issues.
 
-        div.unit--no-space.size-1-of-4.f-item.border-2-of-4
+        div.unit.size-1-of-4.f-item.border-2-of-4
           article
             figure.f-item__fig
               a(href="#"): img(src="img/medstudent160.jpg" alt="medstudent160").image__img
             div.f-item__body
               //-h5.f-item__kicker Amet
               h2.f-item__head: a(href="#").f-item__link OMS III resources
-              p.f-item__body-text Make studying, doing well on your rotations, and passing your exams your priority, second only to taking good care of your health and well-being.
+              //-p.f-item__body-text Make studying, doing well on your rotations, and passing your exams your priority, second only to taking good care of your health and well-being.
 
-        div.unit--no-space.size-1-of-4.f-item.border-3-of-4
+        div.unit.size-1-of-4.f-item.border-3-of-4
           article
             figure.f-item__fig
               a(href="#"): img(src="img/hod-medals160.jpg" alt="HOD medals").image__img
             div.f-item__body
               //-h5.f-item__kicker Malesuada Porta
               h2.f-item__head: a(href="#").f-item__link Nominate a Guardian of the Profession
-              p.f-item__body-text Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+              //-p.f-item__body-text Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
-        div.unit--no-space.size-1-of-4.f-item.border-4-of-4
+        div.unit.size-1-of-4.f-item.border-4-of-4
           article
             figure.f-item__fig
               a(href="#"): img(src="img/jaoa160.jpg" alt="jaoa160").image__img
             div.f-item__body
               //-h5.f-item__kicker Consectetur Commodo
+              //-span.f-item__date Dec. 4, 2014
               h2.f-item__head: a(href="#").f-item__link History of the AOA
-              p.f-item__body-text A group of students founded the AOA in 1897.
+              //-p.f-item__body-text A group of students founded the AOA in 1897.
 
       div.row
         div.size-1-of-1.cta

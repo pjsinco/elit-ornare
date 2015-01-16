@@ -135,6 +135,14 @@
         padding-bottom: 1em;
       }
     }
+
+    @include breakpoint($screen $xlarge-start) {
+      margin-bottom: 1.5em;
+      /*padding-bottom: 1.5em;*/
+      &:not(:last-child) {
+        padding-bottom: 1.5em;
+      }
+    }
   }
 
   &__item {
