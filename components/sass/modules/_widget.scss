@@ -10,7 +10,6 @@
   font-family: $secondaryfont;
   font-weight: 200;
   color: $font-color;
-  border-bottom: 1px dashed $mediumgray;
 }
 
 %link-base {
@@ -87,17 +86,43 @@
     counter-reset: list-counter;
   }
 
+
   &__list-item {
     @include clearfix;
     @extend %list-item-base;
+    border-bottom: 1px dashed $mediumgray;
   }
 
   &__list-item--counter {
     @extend %list-item-base;
+    border-bottom: 1px dashed $mediumgray;
   
     &:before {
       position: absolute;
       left: -.88em;
+      height: 3em;
+      width: .5833333333em;
+      top: 50%;
+      /*margin-top: -.7708333333em;*/
+      margin-top: -.65em;
+      content: counter(list-counter);
+      counter-increment: list-counter;
+      font-size: 3em;
+      font-family: $primaryfont;
+      font-weight: 200;
+      text-align: center;
+      color: $font-color-lighter;
+    }
+  }
+
+  &-f__list-item--counter {
+    @extend %list-item-base;
+    font-size: 1.125em;
+    font-weight: 400;
+    
+    &:before {
+      position: absolute;
+      left: -.7777777778em;
       height: 3em;
       width: .5833333333em;
       top: 50%;
