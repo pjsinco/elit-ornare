@@ -92,3 +92,20 @@ $overlay-start: $large-start;
 %clip-path-circle {
   clip-path: ellipse(50% 50% at 50% 50%);
 }
+
+/**
+ * For hover.css
+ */
+
+// Durations
+$fastDuration: .1s;
+$mediumDuration: .3s;
+$slowDuration: .5s;
+
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true;
+$moz: false;
+$ms: false;
+$o: false;
+
+

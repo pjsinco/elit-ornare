@@ -87,7 +87,7 @@
     * deploying on [eo-build.10rempatrick.com](http://eo-build.10rempatrick.com) 
         * done: Sun Dec 21 10:14:21 CST 2014
 * EHS tag config script contains this beauty. 
-    * ```
+    ```
     document.write('<scr'+'ipt type="text/javascript" src="'+ehs_tagsrc+'"></scr'+'ipt>');
     ```
     * How to avoid it?
@@ -430,10 +430,25 @@
 * **TODAY** finished refactoring front-page
 
 ###Wed Jan 14 10:36:07 2015 CST
-* ["coming soon" as a story teaser](http://www.niemanlab.org/2015/01/how-do-you-get-millennials-to-care-about-local-news-the-charlotte-observer-is-testing-out-one-idea/)
+* ~~["coming soon" as a story teaser]~~(http://www.niemanlab.org/2015/01/how-do-you-get-millennials-to-care-about-local-news-the-charlotte-observer-is-testing-out-one-idea/)
 
 ###Thu Jan 15 09:02:09 2015 CST
 * YouTube embed responsive:
     * [this](http://help.hubspot.com/articles/KCS_Article/COS-Pages-Editor/How-do-I-make-my-embedded-YouTube-video-responsive) vs. [fitvids](http://fitvidsjs.com/)
 
 * [customize youtube embed](http://vidiseo.com/embedding-youtube-videos/)
+
+###Fri Jan 16 08:34:10 2015 CST
+* [**picture** element in wp](http://terrificwebdesign.net/use-case/)
+
+* nice: mailchimp's [pattern library](http://ux.mailchimp.com/patterns/typography)
+
+* [responsive tables](http://dbushell.com/2012/01/05/responsive-tables-2/)
+
+* more hover effects
+    * [data attributes](http://tympanus.net/codrops/2013/07/05/using-custom-data-attributes-and-pseudo-elements/)
+    * [hover.css](http://ianlunn.github.io/Hover/)
+
+* here's [how to stop](https://github.com/IanLunn/Hover/wiki/Hacks-Explained) the weird 1px-ish line from drawing around an element using a transform:
+    ```box-shadow: 0 0 1px rgba(0, 0, 0, 0)```
+    apply to the 

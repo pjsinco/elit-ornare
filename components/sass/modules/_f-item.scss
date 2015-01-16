@@ -9,6 +9,7 @@
 }
 
 %f-fig-base {
+  display: inline-block;
   position: relative;
   /*top: 1.6875em;*/
   top: .1875em;
@@ -16,7 +17,11 @@
   margin-left: .5em;
   float: right;
   max-width: 6.25em;
-  display: inline-block;
+
+  // this stops tiny weird stuff happening around an element
+  // when we apply a transform
+  // https://github.com/IanLunn/Hover/wiki/Hacks-Explained
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
   @include breakpoint($screen $medium-minor-start) {
     /*position: static;*/
@@ -28,6 +33,7 @@
 
   @include breakpoint($screen $large-start) {
     max-width: inherit;
+    @include underline-reveal;
   }
 
 }
@@ -40,6 +46,7 @@
     @extend %border-bottom;
     padding-bottom: 1em;
   }
+
 
 }
 
