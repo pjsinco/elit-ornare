@@ -465,3 +465,83 @@
 * [wp theme unit test](http://codex.wordpress.org/Theme_Unit_Test)
 
 * [deploying wp w/ git](http://culttt.com/2013/04/08/how-to-deploy-wordpress-themes-with-git/)
+
+* [livereload + grunt + wp](http://robandlauren.com/2014/02/05/live-reload-grunt-wordpress/)
+
+* [The Definitive Guide to adding Javascript & CSS to WordPress](http://pressing-matters.io/the-definitive-guide-to-adding-javascript-css-to-wordpress/)
+
+* tentative steps for tooling + wp--let's see how they work
+    1. steps for grunt, compass, susy in wp
+    
+        ```
+        sudo npm init
+        sudo npm install grunt --save-dev
+        sudo npm install grunt-contrib-compass --save-dev
+        sudo gem install susy
+        sudo gem install compass-normalize
+        ```
+    
+    2. here's my config.rb, in theme dir
+        ```
+        require 'susy'
+        require 'compass-normalize'
+        http_path = '/'
+        css_dir = '.'
+        #fonts_dir = 'builds/dev/fonts'
+        sass_dir = 'sass'
+        javascripts_dir = 'js'
+        output_style = :nested
+        #images_dir = 'builds/dev/img'
+        relative_assets = true
+        line_comments = true
+        ```
+
+    3. enqueue livereload in functions.php 
+        ```
+        wp_enqueue_script('eo-play-livereload', 'http://localhost:35729/livereload.js', array(), '', true);
+        ```
+
+    4. set up Gruntfile.js to livereload
+        ```
+        module.exports = function(grunt) {
+        
+          grunt.loadNpmTasks("grunt-contrib-watch");
+          grunt.loadNpmTasks("grunt-contrib-compass");
+        
+          grunt.initConfig({
+        
+            compass: {
+              dev: {
+                options: {
+                  config: 'config.rb'
+                }
+              }
+            },
+        
+        
+            watch: {
+              options: {
+                livereload: true
+              },
+              
+              sass: {
+                files: ['sass/**/*.scss'],
+                tasks: ['compass:dev'] 
+              },
+        
+              php: {
+                files: ['**/*.php'],
+                options: {
+                  livereload: 35729
+                }
+              },
+            
+            } // watch
+        
+          }); // initConfig
+          
+          grunt.registerTask('compile-sass', ['compass:dev']);
+          grunt.registerTask('default', ['watch']);
+        
+        }; // exports
+        ```
