@@ -460,3 +460,6 @@
 
 * **TODO** see how to looks to show twitter author's picture, maybe clipped in a circle, in social-pick**
     * [see here](http://www.git-tower.com/learn/)
+
+###Sat Jan 17 10:11:38 2015 CST
+* [wp theme unit test](http://codex.wordpress.org/Theme_Unit_Test)
