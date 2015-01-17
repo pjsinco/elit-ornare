@@ -43,8 +43,9 @@ h1 {
   color: $verydark;
 }
 
-ul {
+ul, ol {
   /*list-style: none;*/
+  margin-top: 0;
 }
 
 img {

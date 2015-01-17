@@ -1,6 +1,7 @@
 %title-base {
   position: relative;
   /*padding-bottom: .3888888889em;*/
+  margin-bottom: .5333333333em;
   padding-bottom: .2em;
   /*letter-spacing: .05em;*/
   text-align: left;
@@ -9,10 +10,13 @@
   font-size: 1.875em;
   border-bottom: 2px solid $primarycolor;
   /*color: $font-color-lighter;*/
-  color: $font-color;
+  /*color: $font-color;*/
+  color: $primarycolor;
 
   @include breakpoint($screen $large-start) {
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
     padding-bottom: .3888888889em;
     text-align: left;
     font-weight: 600;

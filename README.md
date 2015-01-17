@@ -457,3 +457,6 @@
 * **TODO** make headlines in front-page popular-widget like rest of headlines on page
 
 * **TODO** hide 'More stories' on smallish screens
+
+* **TODO** see how to looks to show twitter author's picture, maybe clipped in a circle, in social-pick**
+    * [see here](http://www.git-tower.com/learn/)
