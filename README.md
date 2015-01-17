@@ -463,3 +463,5 @@
 
 ###Sat Jan 17 10:11:38 2015 CST
 * [wp theme unit test](http://codex.wordpress.org/Theme_Unit_Test)
+
+* [deploying wp w/ git](http://culttt.com/2013/04/08/how-to-deploy-wordpress-themes-with-git/)
