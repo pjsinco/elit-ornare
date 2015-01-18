@@ -553,3 +553,5 @@
 
 * [multiple bgrounds and borders with :before, :after](http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/)
     * [and on css-tricks](http://css-tricks.com/pseudo-element-roundup/)
+
+* [css stripes](http://css-tricks.com/stripes-css/)
