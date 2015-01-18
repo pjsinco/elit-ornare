@@ -550,3 +550,6 @@
 * [css shapes](http://css-tricks.com/examples/ShapesOfCSS/)
 
 * [twitter api -- profile image sizes](https://dev.twitter.com/overview/general/user-profile-images-and-banners)
+
+* [multiple bgrounds and borders with :before, :after](http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/)
+    * [and on css-tricks](http://css-tricks.com/pseudo-element-roundup/)
