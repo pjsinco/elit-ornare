@@ -1,11 +1,15 @@
 .social-pick-red {
 
+  padding: .5em;
   margin-bottom: 4em;
   border-radius: $border-radius;
   background: $primarycolor;
+  text-align: left;
   color: $white;
 
-  @include breakpoint($screen $large-minor-start) {
+  /*@include breakpoint($screen $large-minor-start) {*/
+  @include breakpoint($screen $xlarge-start) {
+    padding: 0;
     width: 98%;
     float: right;
     height: 4em;
@@ -16,37 +20,54 @@
   }
 
   &__img {
-    position: relative;
-    top: -.5em;
-    float: left;
-    margin-right: 1em;
-    @extend %clip-path-circle;
+    position: absolute;
+    top: 4em;
 
-    @include breakpoint($screen $large-minor-start) {
+
+    @include breakpoint($screen $xlarge-start) {
+      position: relative;
+      top: -.5em;
+      float: left;
+      margin-right: 1em;
+      clip-path: ellipse(50% 50% at 50% 50%);
+      /*@extend %clip-path-circle;*/
+    }
+
+    /*@include breakpoint($screen $large-minor-start) {*/
+    @include breakpoint($screen $xlarge-start) {
       left: -1em
     }
 
-    &:before {
-      content: '';
-      position: absolute;
-      width: 104%;
-      height: 104%;
-      border: 3px solid $mediumgray;
-      border-radius: 50%;
-      /*background: repeating-linear-gradient(90deg, #ef3f23, #ef3f23 2px, white 4px, white 2px)*/
+    @include breakpoint($screen $xlarge-start) {
+      
+      &:before {
+        content: '';
+        position: absolute;
+        width: 104%;
+        height: 104%;
+        border: 3px solid $mediumgray;
+        border-radius: 50%;
+        /*background: repeating-linear-gradient(90deg, #ef3f23, #ef3f23 2px, white 4px, white 2px)*/
+      }
     }
   }
 
   &__meta {
-    position: relative;
-    left: -.5em;
-    top: 21%;
-    float: left; 
-    max-width: 39%;
-    height: 100%;  
-    font-size: 2.5em;
-    overflow: hidden;
+    margin-bottom: .5em;
+    line-height: 1.5;
+    font-size: 1.875em;
+    border-bottom: 1px solid $white;
 
+    @include breakpoint($screen $xlarge-start) {
+      position: relative;
+      left: -.5em;
+      top: 21%;
+      float: left; 
+      max-width: 39%;
+      height: 100%;  
+      font-size: 2.5em;
+      overflow: hidden;
+    }
   }
 
   &__author {
@@ -58,18 +79,43 @@
   }
 
   &__body {
-    position: relative;
-    top: 50%;
-    padding-right: .5em;
-    transform: translateY(-50%);
     color: inherit;
+
+    @include breakpoint($screen $xlarge-start) {
+      position: relative;
+      top: 50%;
+      padding-right: .5em;
+      transform: translateY(-50%);
+    }
   }
 
   &__body-text {
-    font-size: 1em;
-    text-align: left;
-    line-height: 1.2;
     color: inherit;
+
+
+    @include breakpoint($screen $xlarge-start) {
+      font-size: 1em;
+      text-align: left;
+      line-height: 1.2;
+    }
+  }
+
+  &__note {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .875em;
+    letter-spacing: 1px;
+    font-weight: 200;
+    border-top: 1px solid $white;
+    color: $white;
+    
+
   }
   
+  &__icons {
+    display: block;
+    border-top: 1px solid $white;
+    font-size: 2em;
+    text-align: right;
+  }
 }
