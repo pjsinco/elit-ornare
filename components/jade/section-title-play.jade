@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    include head
+
+    style.
+
+      .hello__head:before {
+        content: '';
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        top: 8px;
+        left: -4px;
+        transform: skew(32deg);
+        background: gold;
+        
+      }
+
+      .hello {
+        position: relative;
+        display: inline-block;
+      }
+
+
+      .hello__head {
+
+      }
+  body
+    include ie8-comment
+    include header
+  
+    div.content#main
+      //-div.row
+        //-div.size-1-of-1
+          //-div.section-title 
+            //-#[span.section-title__text More Stories] 
+
+      div.hello
+        div.hello__head 
+          h5 Hiya how are you?
+
+    include footer
