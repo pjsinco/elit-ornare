@@ -470,7 +470,7 @@
 
 * [The Definitive Guide to adding Javascript & CSS to WordPress](http://pressing-matters.io/the-definitive-guide-to-adding-javascript-css-to-wordpress/)
 
-* tentative steps for tooling + wp--let's see how they work
+* steps for tooling + wp--let's see how they work ```(so far so good)```
     1. steps for grunt, compass, susy in wp
     
         ```
@@ -545,3 +545,5 @@
         
         }; // exports
         ```
+
+###Sun Jan 18 09:12:46 2015 CST
