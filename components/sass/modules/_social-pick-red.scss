@@ -1,5 +1,6 @@
 .social-pick-red {
 
+  @include clearfix;
   padding: .5em;
   margin-bottom: 4em;
   border-radius: $border-radius;
@@ -20,8 +21,12 @@
   }
 
   &__img {
-    position: absolute;
-    top: 4em;
+    position: relative;
+    top: 50px;
+    float: left;
+    height: 128px;
+    margin-right: 11px;
+  
 
 
     @include breakpoint($screen $xlarge-start) {
@@ -53,6 +58,9 @@
   }
 
   &__meta {
+    position: relative;
+    top: -133px;
+    height: 30px;
     margin-bottom: .5em;
     line-height: 1.5;
     font-size: 1.875em;
@@ -80,6 +88,9 @@
 
   &__body {
     color: inherit;
+    display: inline;
+    border-top: 1px solid $white;
+    @include clearfix;
 
     @include breakpoint($screen $xlarge-start) {
       position: relative;
@@ -90,6 +101,8 @@
   }
 
   &__body-text {
+    font-size: 1em;
+    line-height: 1.37;
     color: inherit;
 
 
