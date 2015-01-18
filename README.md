@@ -547,3 +547,4 @@
         ```
 
 ###Sun Jan 18 09:12:46 2015 CST
+* [css shapes](http://css-tricks.com/examples/ShapesOfCSS/)
