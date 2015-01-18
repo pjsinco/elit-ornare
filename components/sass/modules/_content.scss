@@ -1,6 +1,6 @@
 .content {
   position: relative;
-  @include clearfix();
+  /*@include clearfix();*/
   @include breakpoint($screen $large-minor-start) {
     @include container($gridpage);
   }
