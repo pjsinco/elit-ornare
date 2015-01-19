@@ -555,3 +555,6 @@
     * [and on css-tricks](http://css-tricks.com/pseudo-element-roundup/)
 
 * [css stripes](http://css-tricks.com/stripes-css/)
+
+###Mon Jan 19 11:02:01 2015 CST
+* made a demo icon set on [fontello](http://fontello.com/)
