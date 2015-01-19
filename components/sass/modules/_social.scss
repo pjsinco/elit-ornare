@@ -52,7 +52,21 @@
       padding-left: 1em;
       padding-right: 1em;
     }
-  }
+
+    &--white {
+      display: block;
+      @extend %link-padding;
+      
+      @include breakpoint($screen $large-start) {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      span[class*='icon-'] {
+        color: $white;
+      }
+    } // end &--white
+  } // end &__link
 
   [class^="icon-"], [class*=" icon-"] {
     font-size: 2em;
@@ -89,4 +103,7 @@
   [class*='icon-email'] {
     color: $mediumgray;
   }
+
+
+  
 }
