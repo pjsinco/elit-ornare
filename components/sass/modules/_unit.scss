@@ -9,4 +9,8 @@
       margin-bottom: 0;
     }
   }
+
+  @include breakpoint($screen $xlarge-start) {
+    padding-bottom: 0;
+  }
 }

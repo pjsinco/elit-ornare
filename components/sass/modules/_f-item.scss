@@ -42,7 +42,7 @@
   margin-bottom: 1em;
   text-align: left;
 
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     @extend %border-bottom;
     padding-bottom: 1em;
   }
@@ -131,7 +131,7 @@
     @extend %f-item-base;
 
     @include breakpoint($screen $large-start) {
-      &:not(:last-child) {
+      &:not(:last-of-type) {
         padding-bottom: 1em;
       }
     }
@@ -139,7 +139,7 @@
     @include breakpoint($screen $xlarge-start) {
       margin-bottom: 1.5em;
       /*padding-bottom: 1.5em;*/
-      &:not(:last-child) {
+      &:not(:last-of-type) {
         padding-bottom: 1.5em;
       }
     }

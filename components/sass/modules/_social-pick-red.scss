@@ -210,12 +210,21 @@
   &__note {
     @include clearfix;
     margin-top: .25em;
+    margin-bottom: 2em;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
     /*border-top: 1px solid $white;*/
     color: $font-color-lightest;
+
+    @include breakpoint($screen $medium-minor-start) {
+      margin-bottom: 1em;
+    }
+
+    @include breakpoint($screen $large-start) {
+      /*margin-bottom: 2em;*/
+    }
 
     // so we're experimenting here with some child
     // selectors, moving on to less stable terrain
@@ -230,17 +239,26 @@
       
       @include breakpoint($screen $medium-start) {
         position: absolute;
-        right: 220px;
+        right: 13.75em;
         font-size: 1em;
         width: 100%;
         text-align: right;
+      }
+
+      @include breakpoint($screen $leaderboard-start) {
+        right: 12.5em;
       }
     }
 
     [class*='icon-'] {
       font-size: 2.5em;
-      vertical-align: middle;
+      vertical-align: top;
+      line-height: 1.2;
       color: $font-color-lightest;
+
+      @include breakpoint($screen $leaderboard-start) {
+        font-size: 2em;
+      }
     }
 
     > ul {
@@ -256,6 +274,7 @@
         float: right;
         clear: none;
       }
+
     }
 
     .icon-facebook:before {
