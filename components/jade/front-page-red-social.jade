@@ -36,7 +36,7 @@ html
  
 
       div.row
-        div.size-2-of-3
+        div.size-2-of-3.module
           article.f-item--major
             figure.f-item__fig--major
               a(href="#"): img(src="img/2015235.jpg" alt="2015235").image__img
@@ -89,7 +89,7 @@ html
             #[span.section-title-hat__text More Stories] #[span.section-title--muted All stories #[span.icon-arrow-right]]
             //-div.section-title__border
 
-      div.row
+      div.row.module
         div.unit.size-1-of-4.f-item
           article
             figure.f-item__fig
@@ -137,25 +137,26 @@ html
             //-div.section-title__border
 
       div.row
-        div.size-1-of-1.social-pick-red
-          //-div.social-pick-red__meta #[span.social-pick-red__author #[a(href='#').social-pick-red__link @DrMinorityDoctor]]
+        div.size-1-of-1.social-pick-red.module
 
-          div.social-pick-red__img: img(src='img/minoritydoctor-bigger.jpg').image__img
-          //-div.social-pick-red__meta #[span.social-pick-red__author #[a(href='#').social-pick-red__link @DrMinorityDoctor]]
-          div.social-pick-red__meta #[span.social-pick-red__author #[a(href='#').social-pick-red__link @Dr Vulputate Po]]
-            //-div.social-pick-red__date Jan. 15
-
+          div.social-pick-red__date Jan. 15 on Twitter
           div.social-pick-red__body
+            div.social-pick-red__img: img(src='img/minoritydoctor-bigger.jpg').image__img
             p.social-pick-red__body-text
               | Praesent commodo cursus magna, vel scelerisque nisl consectetur etsed posuere consectetur est at lobortis. Lorem ipsum #[a(href="#").social-pick-red__link #medschoolproblems]
+              //-| Praesent commodo cursus magna, vel scelerisque nisl consectetur etsed posuere 
               //-| Done with all my exams for this week, so now I finally have time to study for next week's big exam :-/ #[a(href="#").social-pick-red__link #medschoolproblems]
-        
-            p.social-pick-red__note  Follow us 
+            //-div.social-pick-red__author #[a(href='#').social-pick-red__link @DrVulputatePoPox]
+            //-div.social-pick-red__author #[a(href='#').social-pick-red__link @minoritydoctor]
+            div.social-pick-red__author #[a(href='#').social-pick-red__link @TheDOmezzanine]
+
+          div.social-pick-red__note 
+            p Follow us 
             ul.social  
-              li.social__icon: a(href='https://www.facebook.com/americanosteopathicassociation').social__link--white: span.icon-facebook #[span.text-replace Facebook]
-              li.social__icon: a(href='https://twitter.com/TheDOmagazine').social__link--white: span.icon-twitter #[span.text-replace Twitter]
-              li.social__icon: a(href='https://www.linkedin.com/groups/American-Osteopathic-Association-76192').social__link--white: span.icon-linkedin #[span.text-replace LinkedIn]
-              li.social__icon: a(href='http://www.pinterest.com/AOAHealth/').social__link--white: span.icon-pinterest #[span.text-replace Pinterest]
+              li.social__icon: a(href='https://www.facebook.com/americanosteopathicassociation').social__link: span.icon-facebook #[span.text-replace Facebook]
+              li.social__icon: a(href='https://twitter.com/TheDOmagazine').social__link: span.icon-twitter #[span.text-replace Twitter]
+              li.social__icon: a(href='https://www.linkedin.com/groups/American-Osteopathic-Association-76192').social__link: span.icon-linkedin #[span.text-replace LinkedIn]
+              li.social__icon: a(href='http://www.pinterest.com/AOAHealth/').social__link: span.icon-pinterest #[span.text-replace Pinterest]
               //-| Follow us #[span.social-pick-red__icons #[a(href="#").social-pick-red__link #[span.icon-facebook]] #[a(href="#").social-pick-red__link #[span.icon-twitter]] #[a(href="#").social-pick-red__link #[span.icon-linkedin]] #[a(href="#").social-pick-red__link #[span.icon-pinterest]]]
 
       //-div.row--bleed
@@ -202,7 +203,7 @@ html
           div.section-title-hat #[span.section-title-hat__text Spotlight]
 
       div.row
-        div.unit.size-1-of-1
+        div.unit.size-1-of-1.module
           div.spotlight#spotlight
             div.spotlight__feature-wrapper
               iframe(width="655" height="400" src="//www.youtube.com/embed/SbTcdzb1HR0?color=white&autohide=1&modestbranding=1" frameborder="0" allowfullscreen )
@@ -218,7 +219,7 @@ html
               //-svg(width="655" height='437').svg-placeholder
                 //-rect(width='655' height='437' fill='aliceblue' style='transform: translateY(-2em);')
       div.row
-        div.size-1-of-3
+        div.size-1-of-3.module
           div.section-title-hat #[span.section-title-hat__text Most read]
           aside.widget--counter.widget--front
             ol.widget__list--counter
@@ -228,7 +229,7 @@ html
               li.widget-f__list-item--counter: a(href='#').widget__link How I survived the first 2 years of medical school
               li.widget-f__list-item--counter: a(href='#').widget__link Making the cut: How to specialize in general surgery
         
-        div.size-2-of-3--last.inside-the-aoa
+        div.size-2-of-3--last.inside-the-aoa.module
           div.section-title-hat #[span.section-title-hat__text Inside the AOA]
           article.f-item--minor
             figure.f-item__fig--minor
@@ -273,7 +274,7 @@ html
         div.size-1-of-1
           div.section-title-hat #[span.section-title-hat__text Also on Osteopathic.org]
 
-      div.row
+      div.row.module
         div.unit--no-space.size-1-of-4.f-item
           article
             figure.f-item__fig
