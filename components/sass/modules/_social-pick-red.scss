@@ -11,12 +11,12 @@
 
 
   /*@include breakpoint($screen $large-minor-start) {*/
-  @include breakpoint($screen $large-minor-start) {
-    padding: 0;
-    width: 98%;
-    float: right;
-    height: 3.4375em;
-  }
+//  @include breakpoint($screen $large-minor-start) {
+//    padding: 0;
+//    width: 98%;
+//    float: right;
+//    height: 3.4375em;
+//  }
 
   &__link {
     color: inherit;
@@ -46,25 +46,24 @@
       border: 2px solid $white;
       border-radius: 50%;
 
-      @include breakpoint($screen $large-minor-start) {
-        border-color: $lightgray;
-      }
+//      @include breakpoint($screen $large-minor-start) {
+//        border-color: $lightgray;
+//      }
     }
 
 
-    @include breakpoint($screen $large-minor-start) {
-      position: absolute;
-      top: -1.5em;
-      left: -32px;
-      /*position: relative;*/
-      /*top: -.5em;*/
-      /*float: left;*/
-      /*margin-right: 1em;*/
-      /*clip-path: ellipse(50% 50% at 50% 50%);*/
-      /*@extend %clip-path-circle;*/
-    }
+//    @include breakpoint($screen $large-minor-start) {
+//      position: absolute;
+//      top: -1.5em;
+//      left: -32px;
+//      /*position: relative;*/
+//      /*top: -.5em;*/
+//      /*float: left;*/
+//      /*margin-right: 1em;*/
+//      /*clip-path: ellipse(50% 50% at 50% 50%);*/
+//      /*@extend %clip-path-circle;*/
+//    }
 
-    /*@include breakpoint($screen $large-minor-start) {*/
     @include breakpoint($screen $large-minor-start) {
       /*left: -1em*/
     }
@@ -109,17 +108,17 @@
     }
 
 
-    @include breakpoint($screen $large-minor-start) {
-      position: relative;
-      right: 0;
-      top: -42px;
-      padding-right: 0;
-      float: right; 
-      max-width: 39%;
-      height: 100%;  
-      overflow: hidden;
-      border: 0;
-    }
+//    @include breakpoint($screen $large-minor-start) {
+//      position: relative;
+//      right: 0;
+//      top: -42px;
+//      padding-right: 0;
+//      float: right; 
+//      max-width: 39%;
+//      height: 100%;  
+//      overflow: hidden;
+//      border: 0;
+//    }
 
     @include breakpoint($screen $xlarge-start) {
       font-size: 1.375em;
@@ -133,9 +132,9 @@
     text-transform: uppercase;
     color: $primarycolor;
 
-    @include breakpoint($screen $large-minor-start) {
-      text-align: right;
-    }
+//    @include breakpoint($screen $large-minor-start) {
+//      text-align: right;
+//    }
   }
 
   &__body {
@@ -163,9 +162,9 @@
       border-style: solid;
       border-color: $primarycolor transparent;
 
-      @include breakpoint($screen $large-minor-start) {
-        top: .375em;
-      }
+//      @include breakpoint($screen $large-minor-start) {
+//        top: .375em;
+//      }
       
     }
 
@@ -173,18 +172,18 @@
       height: 6.375em;
     }
 
-    @include breakpoint($screen $large-minor-start) {
-      /*position: absolute;*/
-      position: relative;
-      /*width: 96%;*/
-      padding-right: .5em;
-      /*top: 0;*/
-      /*right: 0;*/
-      height: 100%;
-      /*top: 50%;*/
-      padding-right: .5em;
-      /*transform: translateY(-50%);*/
-    }
+//    @include breakpoint($screen $large-minor-start) {
+//      /*position: absolute;*/
+//      position: relative;
+//      /*width: 96%;*/
+//      padding-right: .5em;
+//      /*top: 0;*/
+//      /*right: 0;*/
+//      height: 100%;
+//      /*top: 50%;*/
+//      padding-right: .5em;
+//      /*transform: translateY(-50%);*/
+//    }
   }
 
   &__body-text {
@@ -197,18 +196,19 @@
     color: inherit;
 
 
-    @include breakpoint($screen $large-minor-start) {
-      position: relative;
-      top: -.25em;
-      max-width: 71%;
-      margin-left: 4em;
-      text-align: left;
-      line-height: 1.2;
-      
-    }
+//    @include breakpoint($screen $large-minor-start) {
+//      position: relative;
+//      top: -.25em;
+//      max-width: 71%;
+//      margin-left: 4em;
+//      text-align: left;
+//      line-height: 1.2;
+//      
+//    }
   }
 
   &__note {
+    @include clearfix;
     margin-top: .25em;
     text-align: left;
     text-transform: uppercase;
@@ -229,8 +229,11 @@
       color: inherit;
       
       @include breakpoint($screen $medium-start) {
+        position: absolute;
+        right: 220px;
         font-size: 1em;
-        width: 30%;
+        width: 100%;
+        text-align: right;
       }
     }
 
@@ -249,6 +252,8 @@
       }
 
       @include breakpoint($screen $medium-start) {
+        display: inline-block;
+        float: right;
         clear: none;
       }
     }
