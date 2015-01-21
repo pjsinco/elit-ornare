@@ -49,9 +49,21 @@
       border-radius: $border-radius;
     }
 
+
+    @include breakpoint($screen $large-start) {
+      
+      &:hover {
+        background: rgba($white,1);
+        transition-property: background;
+        transition-duration: $mediumduration;
+        /*cursor: pointer;*/
+      }
+    }
+    
     @include breakpoint($screen $xlarge-start) {
       border-top: 1px solid $mediumgray;
       border-bottom: 1px solid $mediumgray;
+
     }
   }
   
@@ -65,7 +77,14 @@
   }
 
   &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
     color: inherit;
+    
+    &:hover, &:active {
+      text-decoration: none;
+    }
   }
 
   &__head {
