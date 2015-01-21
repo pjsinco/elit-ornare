@@ -71,6 +71,10 @@
       /*margin-left: 0;*/
       /*margin-right: 0;*/
     }
+    
+    &--bleed {
+      @extend .size-1-of-4;
+    }
 
 //    &--last {
 //      /*@extend %outside-gutters;*/

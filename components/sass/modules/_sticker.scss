@@ -1,9 +1,26 @@
 .sticker {
-
+  position: relative;  
 
   &__img {
-    width: 100%;
-    height: auto;
+    max-height: 18em;
+
+    @include breakpoint($screen $large-start) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__body {
+    position: absolute;
   }
   
+  &__body-text {
+    font-weight: 200;
+    font-size: 1.75em;
+    color: $primarycolor
+  }
+
+  &__attrib {
+    color: $font-color-lightest;
+  }
 }
