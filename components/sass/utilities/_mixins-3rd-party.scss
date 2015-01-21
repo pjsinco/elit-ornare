@@ -64,7 +64,7 @@
 
 /* Underline From Center */
 @mixin underline-from-center {
-  $duration: $mediumDuration;
+  $duration: $mediumduration;
 
   @include hacks();
   position: relative;
@@ -98,7 +98,7 @@
 /* Underline Reveal */
 // modified by me
 @mixin underline-reveal {
-  $duration: $mediumDuration;
+  $duration: $mediumduration;
 
   @include hacks();
   position: relative;
