@@ -127,6 +127,16 @@
     /*margin-bottom: 1.5em;*/
   }
 
+  &--full {
+    @extend %f-item-base;
+    
+    @include breakpoint($screen $large-start) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      
+    }
+  }
+
   &--major {
     @extend %f-item-base;
 

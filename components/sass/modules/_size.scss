@@ -72,9 +72,12 @@
       /*margin-right: 0;*/
     }
     
-    &--bleed {
-      @extend .size-1-of-4;
-    }
+//    &--bleed {
+//      @extend .size-1-of-4;
+//      @include breakpoint($screen $xlarge-start) {
+//        @include bleed(0 3em !important);
+//      }
+//    }
 
 //    &--last {
 //      /*@extend %outside-gutters;*/

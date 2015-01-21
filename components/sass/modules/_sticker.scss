@@ -1,26 +1,99 @@
+%note-base {
+  margin-top: 0;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: left;
+  font-size: .875em;
+  color: $font-color-lighter;
+}
+
 .sticker {
   position: relative;  
+  @include clearfix;
+  text-align: center;
+
+  @include breakpoint($screen $xlarge-start) {
+    width: 124%;
+    left: -12%;
+    overflow: hidden;
+  }
 
   &__img {
+    width: 100%;
+    height: auto;
     max-height: 18em;
+    max-width: 12em;
 
-    @include breakpoint($screen $large-start) {
-      width: 100%;
+    @include breakpoint($screen $xlarge-start) {
+      /*width: 100%;*/
+      /*width: 150%;*/
       height: auto;
+      max-height: none;
+      max-width: none;
     }
   }
 
   &__body {
     position: absolute;
+    top: 50%;
+    padding: .75em;
+    transform: translateY(-50%);
+    text-align: center;
+    background: rgba($white, .8);
+    
+    @include breakpoint($screen $medium-start $xlarge-start-minus-1) {
+      width: 80%;
+      left: 10%;
+      border: 1px solid $mediumgray;
+      border-radius: $border-radius;
+    }
+
+    @include breakpoint($screen $xlarge-start) {
+      border-top: 1px solid $mediumgray;
+      border-bottom: 1px solid $mediumgray;
+    }
   }
   
   &__body-text {
-    font-weight: 200;
-    font-size: 1.75em;
+    margin-bottom: .5em;
+    font-weight: 600;
+    /*font-size: 1.75em;*/
+    font-size: 1.25em;
+    line-height: 1.25;
     color: $primarycolor
   }
 
+  &__link {
+    color: inherit;
+  }
+
+  &__head {
+    display: inline-block;
+    padding: .5em;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    border-bottom: 1px solid $gray;
+    border-radius: $border-radius;
+    /*background: rgba($white, .65);*/
+    color: $font-color;
+    
+  }
+
+  &__date {
+    @extend %note-base;
+    @include breakpoint($screen $xlarge-start) {
+      display: none;
+    }
+  }
+
   &__attrib {
-    color: $font-color-lightest;
+    @extend %note-base;
+    text-align: right;
+
+    &:before {
+      content: '\2014';
+    }
   }
 }
