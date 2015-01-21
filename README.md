@@ -563,3 +563,7 @@
 
 ###Wed Jan 21 09:40:14 2015 CST
 * [animating svg](http://css-tricks.com/animating-svg-css/)
+
+* [glyphs ref](http://css-tricks.com/snippets/html/glyphs/)
+
+* [scaling SVGs in ie](https://gist.github.com/larrybotha/7881691)
