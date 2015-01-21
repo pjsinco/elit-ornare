@@ -561,3 +561,5 @@
 
 ###Tue Jan 20 05:15:34 2015 CST
 
+###Wed Jan 21 09:40:14 2015 CST
+* [animating svg](http://css-tricks.com/animating-svg-css/)
