@@ -567,3 +567,12 @@
 * [glyphs ref](http://css-tricks.com/snippets/html/glyphs/)
 
 * [scaling SVGs in ie](https://gist.github.com/larrybotha/7881691)
+
+###Thu Jan 22 06:48:30 2015 CST
+
+* [make a link easier to click](http://stackoverflow.com/questions/8457298/anchor-tag-under-list-in-horizontal-menu-bar-and-its-block-behaviour)
+    ```
+    Adding display:block to the <a> element is not mendatory, but one advantage of it is it will take the full size of his parent (<li>) if you specify one (specially the height).
+    ```
+
+
