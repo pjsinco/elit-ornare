@@ -267,6 +267,13 @@
       .social__link {
         padding-left: .5em;
         padding-right: 0;
+        text-decoration: none;
+        /*transition: color .25s ease;*/
+
+        & > * {
+          transition: color .25s ease;
+          @include red-hover;
+        }
       }
 
       @include breakpoint($screen $medium-start) {

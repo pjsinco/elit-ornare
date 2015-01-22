@@ -51,6 +51,9 @@
   &__link {
     display: block;
     @extend %link-padding;
+    
+
+    /*@include red-hover;*/
 
     &:hover,
     &:active {
