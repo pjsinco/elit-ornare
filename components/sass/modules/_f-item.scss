@@ -99,9 +99,6 @@
   font-size: .875em;
   color: $font-color-lighter;
 
-  @include breakpoint($screen $medium-minor-start) {
-    display: inline-block;
-  }
 }
 
 .f-item {
@@ -262,9 +259,14 @@
 
   &__date {
     @extend %date-base;
+
       
     &--major {
       @extend %date-base;
+
+      @include breakpoint($screen $medium-minor-start) {
+        display: inline-block;
+      }
     }
 
     &--minor {
