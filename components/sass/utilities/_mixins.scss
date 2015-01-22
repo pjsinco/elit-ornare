@@ -27,3 +27,14 @@
     color: $primarycolor;
   }
 }
+
+@mixin red-hover-border {
+  &:hover, &:active {
+    text-decoration: none;
+    border-bottom: 1px solid $primarycolor;
+    padding-bottom: 4px;
+    color: $primarycolor;
+    
+  }
+  
+}

@@ -34,6 +34,10 @@
     /*color: #fff;*/
     color: $primarycolor;
     font-size: 2em;
+
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
   
     @include breakpoint($screen $big-menu-start) {
       color: $primarycolor;
@@ -84,6 +88,13 @@
   
     > a {
       color: $mediumgray;
+      transition: color .25ms ease;
+
+      &:hover, &:active {
+        color: $aoatrue;
+        text-decoration: none;
+
+      }
     }
 
     @include breakpoint($screen $big-menu-start) {
