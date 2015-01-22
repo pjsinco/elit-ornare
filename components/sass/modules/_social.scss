@@ -30,6 +30,10 @@
     &__link {
       @extend %link-padding;
 
+      &:hover {
+        text-decoration: none;
+      }
+
       @include breakpoint($screen $medium-start) {
         padding-left: 0;
       }
@@ -47,6 +51,11 @@
   &__link {
     display: block;
     @extend %link-padding;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
     
     @include breakpoint($screen $large-start) {
       padding-left: 1em;

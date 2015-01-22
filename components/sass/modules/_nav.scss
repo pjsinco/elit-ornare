@@ -51,6 +51,7 @@
       font-size: 0.8125em;
     }
     &--link {
+      display: block;
       color: $verydark;
       @include breakpoint($screen $big-menu-start) {
         color: $font-color-lighter;
