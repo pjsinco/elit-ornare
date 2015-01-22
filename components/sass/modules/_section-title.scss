@@ -36,6 +36,11 @@
 
   @extend %title-base;
 
+  &__link {
+    @include clearfix;
+
+  }
+
   &--muted {
     display: none;
     float: right;
@@ -44,6 +49,21 @@
     letter-spacing: 0;
     line-height: 1.4;
     color: $font-color-lightest;
+    transition: color .25s ease;
+
+    & [class*='icon-arrow'] {
+      transition: color .25s ease;
+    }
+
+    &:hover {
+      color: $primarycolor;
+
+      & [class*='icon-arrow'] {
+        color: $primarycolor;
+      }
+    }
+
+    /*@include red-hover;*/
 
     /*> a {*/
       /*color: inherit;*/
