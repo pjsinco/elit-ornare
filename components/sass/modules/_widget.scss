@@ -17,6 +17,8 @@
   font-size: inherit;
   line-height: 1.3;
   color: inherit;
+  transition: color .25s ease;
+  @include red-hover;
 }
 
 %border-after {
@@ -134,7 +136,8 @@
       font-family: $primaryfont;
       font-weight: 200;
       text-align: center;
-      color: $font-color-lighter;
+      /*color: $font-color-lighter;*/
+      color: $primarycolor;
     }
   }
 
