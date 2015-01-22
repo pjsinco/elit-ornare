@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'eo-icons';
+  /*src: url('../font/eo-icons.eot?83594534');*/
+  src: font-url('eo-icons.eot');
+  src: font-url('eo-icons.eot') format('embedded-opentype'),
+       font-url('eo-icons.woff') format('woff'),
+       font-url('eo-icons.ttf') format('truetype'),
+       font-url('eo-icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'eo-icons';
+    src: url('../font/eo-icons.svg?83594534#eo-icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="eo-icon-"]:before, [class*=" eo-icon-"]:before {
+  font-family: "eo-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  /*display: inline-block;*/
+  text-decoration: inherit;
+  /*width: 1em;*/
+  /*margin-right: .2em;*/
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  /*line-height: 1em;*/
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /*margin-left: .2em;*/
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.eo-icon-twitter-bird:before {
+  content: '\e800'; 
+  color: inherit;
+}
+.eo-icon-linkedin-rect:before {
+  content: '\e801'; 
+  color: inherit;
+}
+.eo-icon-facebook-rect:before {
+  content: '\e802'; 
+  color: inherit;
+}
+.eo-icon-pinterest-circled:before {
+  content: '\e803'; 
+  color: inherit;
+}
+.eo-icon-angle-circled-left:before {
+  content: '\e804'; 
+  color: inherit;
+}
+.eo-icon-angle-circled-right:before {
+  content: '\e805'; 
+  color: inherit;
+}
+.eo-icon-angle-circled-up:before {
+  content: '\e806'; 
+  color: inherit;
+}
+.eo-icon-angle-circled-down:before {
+  content: '\e807'; 
+  color: inherit;
+}
+.eo-icon-comment:before {
+  content: '\e808'; 
+  color: inherit;
+}
+.eo-icon-mail-alt:before {
+  content: '\e809'; 
+  color: inherit;
+}
+.eo-icon-search:before {
+  content: '\e80a'; 
+  color: inherit;
+}
+.eo-icon-icons2_aoa-solid:before {
+  content: '\e80b'; 
+  color: inherit;
+}
+.eo-icon-comment_comment:before {
+  content: '\e80c'; 
+  color: inherit;
+}
