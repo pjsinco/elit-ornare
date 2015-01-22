@@ -574,5 +574,5 @@
     ```
     Adding display:block to the <a> element is not mendatory, but one advantage of it is it will take the full size of his parent (<li>) if you specify one (specially the height).
     ```
-
+* [edit hosts file on a mac](http://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/)
 
