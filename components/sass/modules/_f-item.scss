@@ -33,7 +33,7 @@
 
   @include breakpoint($screen $large-start) {
     max-width: inherit;
-    @include underline-reveal;
+    @include underline-reveal(4px);
   }
 
 }

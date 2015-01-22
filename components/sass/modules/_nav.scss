@@ -54,11 +54,19 @@
       color: $verydark;
       @include breakpoint($screen $big-menu-start) {
         color: $font-color-lighter;
-        transition-property: border, color;
+        transition-property: color;
         transition-duration: .25s; 
         transition-timing-function: ease;
-        @include red-hover-border;
-        
+
+        /*@include underline-reveal(2px);      */
+
+        &:visited {
+          color: $font-color-lighter;
+        }
+        &:hover, &:active {
+          text-decoration: none;
+        }
+        @include red-hover;
       }
     }
 
