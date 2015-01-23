@@ -580,3 +580,8 @@
 * do we need a tagline by our flag?
 
 * [down triangles with css](http://jhaurawachsman.com/2013/css-triangles-border-stroke/)
+
+* possible bground for social-pick
+    ```
+    background: repeating-linear-gradient(45deg, #F4543B , #F4543B 10px, #ef3f23 10px, #ef3f23 20px);
+    ```
