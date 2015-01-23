@@ -48,15 +48,13 @@
 
 
     @include breakpoint($screen $large-minor-start) {
+      float: none;
       position: absolute;
-      top: -1.5em;
-      left: -32px;
-      /*position: relative;*/
-      /*top: -.5em;*/
-      /*float: left;*/
-      /*margin-right: 1em;*/
-      /*clip-path: ellipse(50% 50% at 50% 50%);*/
-      /*@extend %clip-path-circle;*/
+      top: 50%;
+      left: -2em;
+      padding: 0;
+      height: auto; 
+      transform: translateY(-50%);
     }
 
     @include breakpoint($screen $large-minor-start) {
@@ -81,6 +79,7 @@
   }
 
   &__author {
+    
     margin-left: 0;
     margin-right: 0;
     padding-left: .75em;
@@ -104,14 +103,26 @@
 
     @include breakpoint($screen $large-minor-start) {
       position: relative;
-      right: 0;
-      top: -42px;
+      left: 2.125em;
+      top: 50%;
+      transform: translateY(-50%);
       padding-right: 0;
-      float: right; 
-      max-width: 39%;
+      display: inline-block;
+      float: left; 
+      max-width: 36%;
+      width: auto;
       height: 100%;  
       overflow: hidden;
       border: 0;
+      font-size: 1.5em;
+      font-weight: 400;
+      line-height: 2.3;
+
+      & > a {
+        display: inline-block;
+        padding-right: .4em;
+        border-right: 1px solid $white;
+      }
     }
 
     @include breakpoint($screen $xlarge-start) {
@@ -189,11 +200,15 @@
 
     @include breakpoint($screen $large-minor-start) {
       position: relative;
-      top: -.25em;
-      max-width: 71%;
-      margin-left: 4em;
+      top: 50%;
+      left: 4.25em;
+      max-width: 93%;
+      margin-left: 0;
+      padding: 0;
       text-align: left;
       line-height: 1.2;
+      transform: translateY(-50%);
+      font-size: .875em;
       
     }
   }
