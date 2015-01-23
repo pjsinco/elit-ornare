@@ -578,3 +578,5 @@
 
 ###Fri Jan 23 06:57:43 2015 CST
 * do we need a tagline by our flag?
+
+* [down triangles with css](http://jhaurawachsman.com/2013/css-triangles-border-stroke/)
