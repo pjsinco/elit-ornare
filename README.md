@@ -576,3 +576,5 @@
     ```
 * [edit hosts file on a mac](http://www.tekrevue.com/tip/edit-hosts-file-mac-os-x/)
 
+###Fri Jan 23 06:57:43 2015 CST
+* do we need a tagline by our flag?
