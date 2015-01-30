@@ -30,7 +30,7 @@ html
     div.content#main
       section.content__primary#primary
         article
-          figure.image--primary
+          figure.image--primary.image-overlay
             picture
               <!--[if IE 9]>
               <video style="display: none">
@@ -42,8 +42,12 @@ html
               </video>
               <![endif]-->
               img(srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO").image__img
-            figcaption.image__caption.caption.caption--feature.caption--right 
-              | Sed Consectetur Lobortis, LL
+              //-div.image-overlay
+            div.image-overlay__body
+              span.image_overlay__text
+                | Terrie E. Taylor, DO, a pediatric malaria researcher in Malawi, says her interest in her work outweighs the dangers she faces. "The risks are manageable," she says. 
+          figcaption.image__caption.caption.caption--feature.caption--right 
+            | Sed Consectetur Lobortis, LL
           div.story
             header.story-header
               h5.story-header__kicker Duis Arte
