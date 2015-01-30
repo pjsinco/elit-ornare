@@ -1,0 +1,51 @@
+.image-overlay {
+
+  /*@include clearfix;*/
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .image-overlay__body {
+    bottom: 0;
+    /*background: rgba($verydark, .8);*/
+  }
+
+  &__img {
+
+    /*&:hover .image-overlay__body {*/
+      /*opacity: 1;*/
+      /*background: rgba($verydark, .8);*/
+    /*}*/
+
+  }
+
+  &__body {
+    position: absolute;
+    /*bottom: 0;*/
+    bottom: -100%;
+    padding: .5em;
+    max-width: $article-max-width;
+    color: $white;
+    /*opacity: 0;*/
+    /*opacity: 0;*/
+    /*background: rgba($verydark, 0);*/
+    background: $verydark;
+    /*transition: background, opacity;*/
+    transition: bottom;
+    transition-duration: $slowduration;
+
+    &:hover {
+      /*opacity: 1;*/
+      /*background: rgba($verydark, .8);*/
+    }
+
+  }
+
+  &__text {
+
+  }
+
+}
