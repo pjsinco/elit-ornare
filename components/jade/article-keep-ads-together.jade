@@ -1,0 +1,133 @@
+doctype html
+html
+  head
+    include head
+  body
+    include ie8-comment
+    include header
+
+    aside.ad.ad--wide-shallow
+      //-a(href="http://www.e-healthcaresolutions.com/forms/?did=ehs.pro.aoa.jaoatest" target="_blank")
+        //-script.
+          //-var ehs_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            //-if (ehs_width > 767) {
+              //-EHS_AD("t", "r", "728x90");
+            //-} else {
+              //-EHS_AD("t", "r", "320x50");
+            //-}
+      //-todo this is just tempoary
+      a(href="#")
+        picture
+          <!--[if IE 9]>
+          <video style="display: none">
+          <![endif]-->
+          source(srcset="img/leader-0.gif" media="(min-width: 768px)") 
+          <!--[if IE 9]>
+          </video>
+          <![endif]-->
+          img(srcset="img/wide-banner-0.gif" alt="Wide banner").ad__img
+
+    div.content#main
+      section.content__primary#primary
+        article
+          figure.image--primary.image-overlay
+            picture
+              <!--[if IE 9]>
+              <video style="display: none">
+              <![endif]-->
+              //-source(srcset="img/caudle-omed.jpg" media="(min-width: 768px)") 
+              source(srcset="img/caudle-omed@.75.jpg" media="(min-width: 652px)") 
+              source(srcset="img/caudle-omed@.50.jpg" media="(min-width: 410px)") 
+              <!--[if IE 9]>
+              </video>
+              <![endif]-->
+              img(srcset="img/caudle-omed@.33.jpg" alt="Jennifer Caudle, DO").image__img
+              //-div.image-overlay
+            div.image-overlay__body
+              span.image_overlay__text
+                | Terrie E. Taylor, DO, a pediatric malaria researcher in Malawi, says her interest in her work outweighs the dangers she faces. "The risks are manageable," she says. 
+          figcaption.image__caption.caption.caption--feature.caption--right 
+            | Sed Consectetur Lobortis, LL
+          div.story
+            header.story-header
+              h5.story-header__kicker Duis Arte
+              h1.story-header__title Media 101: How to position yourself as a medical expert
+              h3.story-header__teaser Do you see yourself as the next Dr. Sanjay Gupta? A seasoned expert shares words of wisdom on working with the media.
+              div
+                div.story-meta #[span.story-meta__by By] #[span.story-meta__author Euismod Mollis Purus] #[span.story-meta__date Wednesday, Dec. 14, 2014]
+                  #[span.meta__comment-link.comment-link #[a(href='#comments').comment-link__link #[span.icon-comment #[span.text-replace Comments]] #[span.comment-link__body 5]]]
+  
+              ul.social.social--shiftable
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-facebook #[span.text-replace Facebook]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-twitter #[span.text-replace Twitter]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-linkedin #[span.text-replace LinkedIn]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-pinterest #[span.text-replace Pinterest]
+                li.social__icon: a(href='#').social--shiftable__link: span.icon-email #[span.text-replace Email]
+                //-li.social__icon: a(href='#'): span.icon-comment #[span.text-replace Comments]
+            div.story__body-text
+              p
+                | Many physicians write articles for local news outlets and pursue radio and television appearances to stay up-to-date on health news and increase their practice's visibility. But physicians should realize that their active involvement with the media can also benefit their community and public health, said media health expert Jennifer Caudle, DO, during an OMED session Tuesday.
+              
+              p
+                | When working with the media, physicians can use their expertise to educate a greater pool of the public than just their patient population, noted Dr. Caudle, who regularly appears on CNN, Fox News and other media outlets.
+
+              aside(data-set="rover-don-parent").ad.ad__med-rect--article.rover-don-parent-a
+                div.rover-don
+                  a(href="#"): img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+  
+              aside(data-set="rover-peggy-parent").ad.ad__med-rect--article.rover-peggy-parent-a
+                div.rover-peggy
+                  a(href="#"): img(src="img/medium-rect-0.gif" alt='medium-rectangle')
+
+            footer.story-footer  
+              ul.social
+                li.social__icon: a(href='#').social__link: span.icon-facebook #[span.text-replace Facebook]
+                li.social__icon: a(href='#').social__link: span.icon-twitter #[span.text-replace Twitter]
+                li.social__icon: a(href='#').social__link: span.icon-linkedin #[span.text-replace LinkedIn]
+                li.social__icon: a(href='#').social__link: span.icon-pinterest #[span.text-replace Pinterest]
+                li.social__icon: a(href='#').social__link: span.icon-email #[span.text-replace Email]
+
+              div.story-footer__jump-link: a(href='#comments') #[span.story-nav__emph 5] comments #[span.icon-arrow-down]
+
+              div.story-nav
+                div.story-nav__title Topics
+                  ul.topics 
+                    li.topics__topic: a(href='#').topics__link Social Media
+                    li.topics__topic: a(href='#').topics__link Media
+                    li.topics__topic: a(href='#').topics__link OMED 2014
+                    li.topics__topic: a(href='#').topics__link Jennifer Caudle DO
+                  
+
+              
+              div.story-footer__section
+                div.story-footer__title About the author
+                img(src='img/milam112.jpg' alt='Elit Commodo Purus' width='95px').story-footer__img
+                div.story-footer__body
+                  | Elit Commodo Purus, OMS IV, dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+              div.story-footer__section
+                div.story-footer__title Credit
+                div.story-footer__body
+                  | Top of page: Photo of Dr. Caudle by #[a(href="#") Tristique Cras].
+
+              div.story-nav__more-in More in #[a(href='#').story-nav__emph Patient Care #[span.icon-arrow-right]]
+
+              div.prev-next
+                div.prev-next__next
+                  a(href="#").prev-next__title Newer #[span.icon-arrow-right.space-to-left]
+                  a(href='#').prev-next__link New Year’s resolutions: 10 life hacks to increase physician productivity 
+                div.prev-next__prev
+                  a(href="#").prev-next__title #[span.icon-arrow-left.space-to-right] Older
+                  a(href='#').prev-next__link In Memoriam: Dec. 4, 2014
+
+              //-div.story-footer__jump-link: a(href='#primary') Top of page #[span.icon-arrow-up]
+
+
+            include comments
+
+      section.content__secondary#secondary
+        aside(data-set="rover-don-parent").ad.rover-don-parent-b
+        aside(data-set="rover-peggy-parent").ad.rover-peggy-parent-b
+        //-include widget-latest
+        //-include widget-popular
+    include footer
