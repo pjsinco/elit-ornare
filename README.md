@@ -585,3 +585,5 @@
     ```
     background: repeating-linear-gradient(45deg, #F4543B , #F4543B 10px, #ef3f23 10px, #ef3f23 20px);
     ```
+###Wed Jul 22 08:31:38 2015 CDT
+* Smashing Magazine: [Smarter Grids With Sass And Susy](http://www.smashingmagazine.com/2015/07/smarter-grids-with-sass-and-susy/)
